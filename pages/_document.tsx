@@ -31,10 +31,10 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <link rel="icon" href="/favicon.ico" />
-          <link href="http://fonts.cdnfonts.com/css/aquire" rel="stylesheet" />
-          <link href="http://fonts.cdnfonts.com/css/inter" rel="stylesheet" />
-          <link href="http://fonts.cdnfonts.com/css/poppins" rel="stylesheet" />
-          <link href="http://fonts.cdnfonts.com/css/arial-rounded-mt-bold" rel="stylesheet" />
+          <link href="https://fonts.cdnfonts.com/css/aquire" rel="stylesheet" />
+          <link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet" />
+          <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet" />
+          <link href="https://fonts.cdnfonts.com/css/arial-rounded-mt-bold" rel="stylesheet" />
         </Head>
         <body>
           <Main />

@@ -1,0 +1,37 @@
+{
+  "name": "galaxy-balls",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "cypress": "cypress open",
+    "cypress:headless": "cypress run",
+    "e2e": "start-server-and-test start http://localhost:3000 cypress",
+    "e2e:headless": "start-server-and-test start http://localhost:3000 cypress:headless"
+  },
+  "dependencies": {
+    "next": "12.3.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-gallery-carousel": "^0.2.10",
+    "react-icons": "^4.4.0",
+    "react-perfect-scrollbar": "^1.5.8",
+    "styled-components": "^5.3.5"
+  },
+  "devDependencies": {
+    "@builder.io/partytown": "^0.7.0",
+    "@types/node": "18.7.18",
+    "@types/react": "18.0.20",
+    "@types/react-dom": "18.0.6",
+    "@types/styled-components": "^5.1.26",
+    "babel-plugin-styled-components": "^2.0.7",
+    "cypress": "^10.8.0",
+    "eslint": "8.23.1",
+    "eslint-config-next": "12.3.0",
+    "start-server-and-test": "^1.14.0",
+    "typescript": "4.8.3"
+  }
+}

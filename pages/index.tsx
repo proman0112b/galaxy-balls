@@ -1,13 +1,13 @@
 import type { NextPage } from 'next'
-import IntroSection from './home/intro-section'
-import DownloadSection from './home/dowload-section'
-import GameSection from './home/game-section'
-import RuleSection from './home/rule-section'
-import WorldMapSection from './home/worldmap-section'
-import WinnersSection from './home/winners-section'
-import ConditionSection from './home/condition-section'
-import PrizesSection from './home/prizes-section'
-import FaqSection from './home/faq-section'
+import IntroSection from '../common/home/intro-section'
+import DownloadSection from '../common/home/dowload-section'
+import GameSection from '../common/home/game-section'
+import RuleSection from '../common/home/rule-section'
+import WorldMapSection from '../common/home/worldmap-section'
+import WinnersSection from '../common/home/winners-section'
+import ConditionSection from '../common/home/condition-section'
+import PrizesSection from '../common/home/prizes-section'
+import FaqSection from '../common/home/faq-section'
 
 const Home: NextPage = () => {
   return (

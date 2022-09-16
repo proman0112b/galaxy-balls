@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Wrapper from '../../wrapper'
-import DownloadSection from '../../../pages/home/dowload-section'
+import DownloadSection from '../../../common/home/dowload-section'
 import { FooterContainer, Title, MeteorImg, BGWrapper, Title1, SocialLinks, References } from './styled'
 
 const Footer: React.FC = () => {

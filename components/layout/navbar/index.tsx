@@ -1,34 +1,61 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
+import { useMediaQuery } from 'react-responsive'
+import { IoMdClose } from 'react-icons/io'
+import { HiMenu } from 'react-icons/hi'
 import Wrapper from '../../wrapper'
-import { NavbarContainer, Logo, Menu, DownloadButton, LangButton } from './styled'
+import { NavbarContainer, Logo, DownloadButton, LangButton, SmallMenu, NavMenu } from './styled'
+import Menu from './menu'
 
 const Navbar: React.FC = () => {
+  const isMobile = useMediaQuery({ query: '(max-width: 426px)' })
+  const isSmallMenu = useMediaQuery({ query: '(max-width: 1200px)' })
+  const [showSmallMenu, setShowSmallMenu] = useState<boolean>(false)
+
   return (
-    <Wrapper height={130}>
+    <Wrapper>
       <NavbarContainer>
         <Logo>
           <span>Galaxy</span>
-          <Image src={'/assets/icons/logo-sm.png'} alt="no logo" width="42px" height="45px" layout="fixed" />
+          <Image
+            src="/assets/icons/logo-sm.png"
+            alt="no logo"
+            width={isMobile ? '28px' : '42px'}
+            height={isMobile ? '28px' : '42px'}
+            layout="fixed"
+          />
           <span>Balls</span>
         </Logo>
-        <Menu>
-          <Link href="/">Home</Link>
-          <Link href="/">Start</Link>
-          <Link href="/">Rules</Link>
-          <Link href="/">World Map</Link>
-          <Link href="/">Winner</Link>
-          <Link href="/">SpaceBalls</Link>
-          <Link href="/">Partner</Link>
-          <Link href="/">Transporter</Link>
-          <Link href="/">Faq</Link>
-        </Menu>
-        <DownloadButton type="button">Download</DownloadButton>
-        <LangButton>
-          <Image src={'/assets/icons/flag-us.png'} alt="no logo" width="15px" height="11.83px" layout="fixed" />
-          <span>En</span>
-        </LangButton>
+        {!isSmallMenu && <Menu />}
+        {!isSmallMenu && <DownloadButton type="button">Download</DownloadButton>}
+        {isSmallMenu ? (
+          <div style={{ display: 'flex' }}>
+            <LangButton>
+              <Image src="/assets/icons/flag-us.png" alt="no logo" width="15px" height="11.83px" layout="fixed" />
+              <span>En</span>
+            </LangButton>
+            <NavMenu onClick={() => setShowSmallMenu(true)}>
+              <HiMenu />
+            </NavMenu>
+          </div>
+        ) : (
+          <LangButton>
+            <Image src="/assets/icons/flag-us.png" alt="no logo" width="15px" height="11.83px" layout="fixed" />
+            <span>En</span>
+          </LangButton>
+        )}
+        {isSmallMenu && showSmallMenu && (
+          <SmallMenu>
+            <section>
+              <Image src="/assets/icons/logo-md.png" alt="no logo" width="51px" height="49px" layout="fixed" />
+              <IoMdClose onClick={() => setShowSmallMenu(false)} />
+            </section>
+            <section>
+              <Menu />
+              <DownloadButton type="button">Download</DownloadButton>
+            </section>
+          </SmallMenu>
+        )}
       </NavbarContainer>
     </Wrapper>
   )

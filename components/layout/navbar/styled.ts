@@ -7,6 +7,18 @@ export const NavbarContainer = styled(Container)`
   padding: 40.5px 38px 38.5px 43.8px;
   display: flex;
   background: transparent;
+  position: relative;
+
+  @media screen and (max-width: 1200px) {
+    justify-content: space-between;
+    padding: 30.5px 28px 28.5px 33.8px;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 376px) {
+    padding: 22px 20px 22px 25px;
+    align-items: center;
+  }
 `
 
 export const Logo = styled.div`
@@ -24,6 +36,12 @@ export const Logo = styled.div`
   background-clip: text;
   text-shadow: 0px 0.599887px 3.59932px rgba(250, 250, 250, 0.86);
   z-index: 1;
+
+  @media screen and (max-width: 426px) {
+    font-size: 10.2844px;
+    line-height: 9px;
+    letter-spacing: 1.53291px;
+  }
 `
 
 export const Menu = styled.div`
@@ -47,6 +65,61 @@ export const Menu = styled.div`
     line-height: 19px;
     color: #777da8;
   }
+
+  @media screen and (max-width: 1300px) {
+    padding: 0 10px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    max-width: 161px;
+    height: 530px;
+    flex-direction: column;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+
+    a {
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 34px;
+    }
+  }
+`
+
+export const SmallMenu = styled.div`
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 375px;
+  height: 812px;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10.5px);
+  padding-bottom: 50px;
+  z-index: 99999;
+
+  section:nth-child(1) {
+    padding: 11px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    svg {
+      color: #626aae;
+      font-size: 30px;
+      cursor: pointer;
+    }
+  }
+
+  section:nth-child(2) {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `
 
 export const DownloadButton = styled.button`
@@ -64,6 +137,19 @@ export const DownloadButton = styled.button`
   color: #7a49ff;
   cursor: pointer;
   z-index: 1;
+
+  @media screen and (max-width: 1200px) {
+    width: 189.35px;
+    height: 63.62px;
+    font-family: ${theme.fontFamily.primary};
+    font-size: 23.669px;
+    line-height: 28px;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 57px;
+    box-shadow: 3.94483px 3.94483px 17.0943px #0d0d11, -3.94483px -3.94483px 17.0943px rgba(59, 59, 88, 0.732873);
+    border-radius: 13.1494px;
+  }
 `
 export const LangButton = styled.button`
   width: 56px;
@@ -91,4 +177,36 @@ export const LangButton = styled.button`
     background-clip: text;
   }
   z-index: 1;
+
+  @media screen and (max-width: 426px) {
+    width: 58px;
+    height: 30px;
+  }
+`
+
+export const NavMenu = styled.button`
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(133.32deg, #222236 2.76%, #181827 100%);
+  border: 1px solid rgba(63, 47, 107, 0.34);
+  box-shadow: 3px 3px 9px rgba(8, 8, 10, 0.66), -2px -2px 9px rgba(65, 65, 92, 0.26);
+  border-radius: 12px;
+  margin-left: 10px;
+  svg {
+    color: #7a49ff;
+    font-size: 25px;
+  }
+  cursor: pointer;
+  z-index: 1;
+
+  @media screen and (max-width: 426px) {
+    width: 30px;
+    height: 30px;
+    svg {
+      font-size: 20px;
+    }
+  }
 `

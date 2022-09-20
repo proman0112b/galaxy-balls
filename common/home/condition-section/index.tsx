@@ -1,6 +1,7 @@
-import React, { useState, useRef } from 'react'
+import React, { useRef } from 'react'
 import Carousel from 'react-gallery-carousel'
 import type { CarouselRef } from 'react-gallery-carousel'
+import { useMediaQuery } from 'react-responsive'
 import Wrapper from '../../../components/wrapper'
 import { ConditionSectionContainer, Title, CarouselWrapper, LeftButton, RightButton } from './styled'
 
@@ -11,6 +12,7 @@ const ConditionSection: React.FC = () => {
     { src: '/assets/images/banner3.png' },
     { src: '/assets/images/banner4.png' },
   ]
+  const isTablet = useMediaQuery({ query: '(max-width: 1024px)' })
   const carouselRef = useRef<CarouselRef | null>(null)
 
   return (
@@ -33,8 +35,17 @@ const ConditionSection: React.FC = () => {
             canAutoPlay={false}
             ref={carouselRef}
           />
-          <LeftButton onClick={() => carouselRef.current?.goLeft()}>‹</LeftButton>
-          <RightButton onClick={() => carouselRef.current?.goRight()}>›</RightButton>
+          {isTablet ? (
+            <div style={{ display: 'flex', gap: '34px' }}>
+              <LeftButton onClick={() => carouselRef.current?.goLeft()}>‹</LeftButton>
+              <RightButton onClick={() => carouselRef.current?.goRight()}>›</RightButton>
+            </div>
+          ) : (
+            <>
+              <LeftButton onClick={() => carouselRef.current?.goLeft()}>‹</LeftButton>
+              <RightButton onClick={() => carouselRef.current?.goRight()}>›</RightButton>
+            </>
+          )}
         </CarouselWrapper>
       </ConditionSectionContainer>
     </Wrapper>

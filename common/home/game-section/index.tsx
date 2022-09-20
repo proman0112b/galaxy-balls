@@ -8,12 +8,12 @@ const GameSection: React.FC = () => {
     <Wrapper>
       <Title>Für Spieler</Title>
       <GameSectionContainer>
-        <Card height={332.79}>
+        <Card>
           <Image src="/assets/icons/winner.png" width={161} height={161} layout="fixed" alt="no img" />
           <label style={{ color: '#3FBE96' }}>Winner prize</label>
           <p>Find all 7 Galaxy Balls in your country and win 10.000 € /$</p>
         </Card>
-        <Card height={579.52} style={{ marginTop: '66px' }}>
+        <Card>
           <Image src="/assets/icons/team.png" width={161} height={161} layout="fixed" alt="no img" />
           <label style={{ color: '#3F73FF' }}>Team bilden</label>
           <p>
@@ -21,7 +21,7 @@ const GameSection: React.FC = () => {
             erhöhen mehrere Galaxy-Balls zu finden und gewinnt den Höchstpreis von 10.000 € /$
           </p>
         </Card>
-        <Card height={356.55}>
+        <Card>
           <Image src="/assets/icons/price.png" width={161} height={161} layout="fixed" alt="no img" />
           <label style={{ color: '#BE4CFF' }}>Preis für jede Kugel</label>
           <p>Für jeden Galaxy Ball, den du findest, erhältst du 1.000 € /$</p>

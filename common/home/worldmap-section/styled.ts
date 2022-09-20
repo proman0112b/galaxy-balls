@@ -13,8 +13,23 @@ export const BGWrapper = styled(Wrapper)`
   height: 922px;
   position: absolute;
   top: 50px;
-  background: url(/assets/images/world-map.png);
+  background: url(/assets/images/world-map.png) no-repeat;
   background-size: 100% 100%;
+
+  @media screen and (max-width: 1200px) {
+    height: 850px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    height: 70vw;
+  }
+
+  @media screen and (max-width: 426px) {
+    height: 277px;
+    background: url(/assets/images/world-map-sm.png) no-repeat;
+    background-size: 100% 100%;
+    top: 150px;
+  }
 `
 
 export const WorldMapSectionContainer = styled(Container)`
@@ -23,6 +38,10 @@ export const WorldMapSectionContainer = styled(Container)`
   margin-top: 144px;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 46px;
+  }
 
   h1 {
     font-family: ${theme.fontFamily.secondary};
@@ -34,6 +53,20 @@ export const WorldMapSectionContainer = styled(Container)`
     background-clip: text;
     text-align: center;
     z-index: 1;
+
+    @media screen and (max-width: 1200px) {
+      font-size: 140px;
+    }
+
+    @media screen and (max-width: 1024px) {
+      font-size: 11.66vw;
+      line-height: 11.5vw;
+    }
+
+    @media screen and (max-width: 426px) {
+      font-size: 32px;
+      line-height: 31px;
+    }
   }
 
   p {
@@ -45,6 +78,20 @@ export const WorldMapSectionContainer = styled(Container)`
     color: ${theme.color.typography.primary};
     margin-top: 15px;
     z-index: 1;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 18px;
+      width: 98vw;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+      line-height: 25px;
+    }
+
+    @media screen and (max-width: 426px) {
+      width: 335px;
+    }
   }
 `
 
@@ -54,10 +101,30 @@ export const DiscoverButton = styled.button`
   width: 422px;
   height: 185px;
   background: url(/assets/images/discover-btn.png);
+  background-size: 100% 100%;
   border-radius: 42px;
   cursor: pointer;
   margin-top: 109px;
   z-index: 1;
+
+  @media screen and (max-width: 1024px) {
+    width: 41.2vw;
+    height: 18vw;
+    margin-top: 50px;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 31.2vw;
+    height: 15vw;
+    margin-top: 50px;
+  }
+
+  @media screen and (max-width: 426px) {
+    width: 159px;
+    height: 72px;
+    margin-top: 80px;
+    border-radius: 12px;
+  }
 `
 
 export const GrosstessImg = styled.div`
@@ -67,4 +134,21 @@ export const GrosstessImg = styled.div`
   background-size: 100% 100%;
   margin-top: 70px;
   z-index: 1;
+
+  @media screen and (max-width: 1200px) {
+    width: 1000px;
+    height: 150px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: 95vw;
+    height: 14vw;
+    margin-top: 30px;
+  }
+
+  @media screen and (max-width: 426px) {
+    width: 323px;
+    height: 49px;
+    margin-top: 50px;
+  }
 `

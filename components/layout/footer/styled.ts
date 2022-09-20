@@ -17,6 +17,21 @@ export const MeteorImg = styled.div`
   height: 195px;
   background: url(/assets/images/meteor4.png);
   background-size: 100% 100%;
+
+  @media screen and (max-width: 1024px) {
+    width: 30vw;
+    height: 18vw;
+    right: 0;
+    top: 5.37vw;
+  }
+
+  @media screen and (max-width: 768px) {
+    top: 100px;
+  }
+
+  @media screen and (max-width: 426px) {
+    display: none;
+  }
 `
 
 export const Title = styled.div`
@@ -33,6 +48,28 @@ export const Title = styled.div`
   border-top-right-radius: 50px;
   border-bottom-left-radius: 50px;
   margin: 147px 0 54.85px 12px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 35px;
+    line-height: 48px;
+    width: 300px;
+    height: 60px;
+    padding: 6px 25px;
+    margin-left: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    margin-top: 110.74px;
+  }
+
+  @media screen and (max-width: 426px) {
+    width: 216px;
+    height: 53px;
+    padding: 12px 33.9px 11px 21.19px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 `
 
 export const BGWrapper = styled(Wrapper)`
@@ -54,6 +91,19 @@ export const BGWrapper = styled(Wrapper)`
     mix-blend-mode: normal;
     opacity: 0.68;
     margin-top: 11px;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 10px;
+      line-height: 13px;
+    }
+
+    @media screen and (max-width: 426px) {
+      margin-top: 8px;
+    }
+  }
+
+  @media screen and (max-width: 426px) {
+    height: 226px;
   }
 `
 
@@ -62,19 +112,37 @@ export const Title1 = styled.h2`
   font-family: 'Aquire';
   font-style: normal;
   font-weight: 300;
-  font-size: 65px;
-  line-height: 57px;
+  font-size: 4.64vw;
+  line-height: 4.07vw;
   text-align: center;
   background: linear-gradient(180deg, #f8f8f8 0%, #a7a7a7 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-shadow: 0px 3px 8px #ffffff;
+
+  @media screen and (max-width: 426px) {
+    font-size: 25px;
+    line-height: 22px;
+    margin-top: 100px;
+  }
 `
 export const SocialLinks = styled.div`
-  margin-top: 112px;
+  margin-top: 8vw;
   display: flex;
   gap: 20px;
+
+  @media screen and (max-width: 1200px) {
+    margin-top: 72px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    margin-top: 50px;
+  }
+
+  @media screen and (max-width: 426px) {
+    margin-top: 30px;
+  }
 `
 
 export const References = styled.div`
@@ -88,5 +156,13 @@ export const References = styled.div`
     line-height: 32px;
     text-align: center;
     color: #7c91d2;
+    @media screen and (max-width: 1024px) {
+      font-size: 10px;
+      line-height: 13px;
+    }
+  }
+
+  @media screen and (max-width: 426px) {
+    margin-top: 8px;
   }
 `

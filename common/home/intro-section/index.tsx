@@ -1,24 +1,25 @@
 import React from 'react'
-import Image from 'next/image'
-import { IntroSectionWrapper, IntroSectionContainer, IozvImg, Title, PhoneImg } from './styled'
+import Wrapper from '../../../components/wrapper'
+import { BgImg, IntroSectionContainer, IozvImg, LogoImg, Title, PhoneImg } from './styled'
 
 const IntroSection: React.FC = () => {
   return (
-    <IntroSectionWrapper>
+    <Wrapper>
+      <BgImg />
       <IntroSectionContainer>
         <IozvImg />
         <Title>
           <p>
             <span>Galaxy</span>Galaxy
           </p>
-          <Image src="/assets/icons/logo-lg.png" width={353.61} height={344.53} layout="fixed" alt="no img" />
+          <LogoImg />
           <p>
             <span>Balls</span>Balls
           </p>
         </Title>
         <PhoneImg />
       </IntroSectionContainer>
-    </IntroSectionWrapper>
+    </Wrapper>
   )
 }
 

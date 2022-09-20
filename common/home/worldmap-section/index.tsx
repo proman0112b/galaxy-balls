@@ -7,8 +7,10 @@ const WorldMapSection: React.FC = () => {
       <BGWrapper />
       <WorldMapSectionContainer>
         <h1>WORLD MAP</h1>
-        <p>Hier siehst du in welchem Land sich die GalaxyBalls derzeit befinden.</p>
-        <p>Du kannst aber auch erfahren in welches zukünftige Land die GalaxyBalls landen werden. </p>
+        <p>
+          Hier siehst du in welchem Land sich die GalaxyBalls derzeit befinden.Du kannst aber auch erfahren in welches zukünftige Land die GalaxyBalls
+          landen werden.
+        </p>
         <DiscoverButton></DiscoverButton>
         <GrosstessImg />
       </WorldMapSectionContainer>

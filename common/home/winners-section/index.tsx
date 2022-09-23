@@ -68,11 +68,9 @@ const WinnersSection: React.FC = () => {
             </Tip>
             <ListButton onClick={toggle}>Vollständige Liste</ListButton>
           </Description>
-        </div>
-        <WinnersList />
-        <WinnersModal isShown={isShown} hide={toggle} />
         </section>
         {!isTablet && <WinnersList />}
+        <WinnersModal isShown={isShown} hide={toggle} />
       </WinnersSectionContainer>
     </Wrapper>
   )

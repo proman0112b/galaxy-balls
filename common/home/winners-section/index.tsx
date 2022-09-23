@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import { useModal } from '../../../hooks/useModal'
 import { useMediaQuery } from 'react-responsive'
 import { FaFacebookF } from 'react-icons/fa'
 import { AiFillInstagram, AiOutlineTwitter } from 'react-icons/ai'
@@ -8,7 +9,10 @@ import { WinnersSectionContainer, Title, Description, Tip, ListButton, MeteorImg
 import type { WinnerlistStaticData } from '../../../types/winnerlist-static-data'
 import { winnerlistStaticData } from '../../../static/winnerlist-static-data'
 
+import WinnersModal from '../../animated/winners'
+
 const WinnersSection: React.FC = () => {
+  const { isShown, toggle } = useModal()
   const isTablet = useMediaQuery({ query: '(max-width: 1300px)' })
   const isMobile = useMediaQuery({ query: '(max-width: 426px)' })
 
@@ -62,8 +66,11 @@ const WinnersSection: React.FC = () => {
               <Image src="/assets/icons/tip2.png" width={44.55} height={44.55} layout="fixed" alt="no img" />
               <span style={{ color: '#FEA500' }}>Alle Regeln findest du in unseren Teilnahmebedingungen</span>
             </Tip>
-            <ListButton>Vollständige Liste</ListButton>
+            <ListButton onClick={toggle}>Vollständige Liste</ListButton>
           </Description>
+        </div>
+        <WinnersList />
+        <WinnersModal isShown={isShown} hide={toggle} />
         </section>
         {!isTablet && <WinnersList />}
       </WinnersSectionContainer>

@@ -26,29 +26,32 @@ const WinnersSection: React.FC = () => {
             {isTablet && !isMobile && <WinnersList />}
             {isMobile && (
               <WinnerTable>
-                <tr>
-                  <th>#</th>
-                  <th>Finder name</th>
-                  <th>Link</th>
-                </tr>
-
-                {winnerlistStaticData.map((data: WinnerlistStaticData, index: number) => (
-                  <tr key={index}>
-                    <td style={{ color: `${data.color}` }}>{data.id}</td>
-                    <td style={{ color: `${data.color}` }}>{data.name}</td>
-                    <td>
-                      <div>
-                        <FaFacebookF />
-                      </div>
-                      <div>
-                        <AiFillInstagram />
-                      </div>
-                      <div>
-                        <AiOutlineTwitter />
-                      </div>
-                    </td>
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Finder name</th>
+                    <th>Link</th>
                   </tr>
-                ))}
+                </thead>
+                <tbody>
+                  {winnerlistStaticData.map((data: WinnerlistStaticData, index: number) => (
+                    <tr key={index}>
+                      <td style={{ color: `${data.color}` }}>{data.id}</td>
+                      <td style={{ color: `${data.color}` }}>{data.name}</td>
+                      <td>
+                        <div>
+                          <FaFacebookF />
+                        </div>
+                        <div>
+                          <AiFillInstagram />
+                        </div>
+                        <div>
+                          <AiOutlineTwitter />
+                        </div>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
               </WinnerTable>
             )}
             <Tip style={{ marginTop: '60.1px' }}>

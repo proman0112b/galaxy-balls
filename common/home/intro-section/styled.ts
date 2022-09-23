@@ -7,7 +7,7 @@ export const BgImg = styled.div`
   top: 0;
   width: 100%;
   height: 1038px;
-  background: url(/assets/images/intro-bg1.png) no-repeat;
+  background: url(/assets/images/home/intro-bg1.png) no-repeat;
   background-size: 100% 100%;
 
   @media screen and (max-width: 1200px) {
@@ -15,7 +15,7 @@ export const BgImg = styled.div`
   }
 
   @media screen and (max-width: 768px) {
-    background: url(/assets/images/intro-bg-sm.png) no-repeat;
+    background: url(/assets/images/home/intro-bg-sm.png) no-repeat;
     background-size: 120% 100%;
     background-position: center;
     top: 0;
@@ -41,7 +41,7 @@ export const IntroSectionContainer = styled(Container)`
 export const IozvImg = styled.div`
   width: 1164px;
   height: 69px;
-  background: url(/assets/images/iozv.png) no-repeat;
+  background: url(/assets/images/home/iozv.png) no-repeat;
   background-size: 100% 100%;
   z-index: 1;
 
@@ -117,7 +117,7 @@ export const PhoneImg = styled.div`
   margin-top: -90px;
   width: 900px;
   height: 500px;
-  background: url(/assets/images/phone.png) no-repeat;
+  background: url(/assets/images/home/phone.png) no-repeat;
   background-size: 100% 100%;
   z-index: 1;
 

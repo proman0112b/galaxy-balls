@@ -67,7 +67,7 @@ export const Description = styled.p`
 export const BGWrapper = styled(Wrapper)`
   width: 100%;
   height: 812px;
-  background: url(/assets/images/prizes-bg.png);
+  background: url(/assets/images/home/prizes-bg.png);
   background-size: 100% 100%;
 
   @media screen and (max-width: 1200px) {

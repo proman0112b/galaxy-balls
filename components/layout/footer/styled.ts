@@ -15,7 +15,7 @@ export const MeteorImg = styled.div`
   right: 47px;
   width: 346px;
   height: 195px;
-  background: url(/assets/images/meteor4.png);
+  background: url(/assets/images/home/meteor4.png);
   background-size: 100% 100%;
 
   @media screen and (max-width: 1024px) {
@@ -74,7 +74,7 @@ export const Title = styled.div`
 
 export const BGWrapper = styled(Wrapper)`
   height: 41.23vw;
-  background: url(/assets/images/footer-bg.png);
+  background: url(/assets/images/home/footer-bg.png);
   background-size: 100% 100%;
   border-top-right-radius: 50% 20%;
   border-top-left-radius: 50% 20%;

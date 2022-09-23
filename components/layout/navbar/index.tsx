@@ -9,7 +9,7 @@ import Menu from './menu'
 
 const Navbar: React.FC = () => {
   const isMobile = useMediaQuery({ query: '(max-width: 426px)' })
-  const isSmallMenu = useMediaQuery({ query: '(max-width: 1200px)' })
+  const isSmallMenu = useMediaQuery({ query: '(max-width: 1250px)' })
   const [showSmallMenu, setShowSmallMenu] = useState<boolean>(false)
 
   return (

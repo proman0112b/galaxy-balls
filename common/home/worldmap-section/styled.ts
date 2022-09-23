@@ -13,7 +13,7 @@ export const BGWrapper = styled(Wrapper)`
   height: 922px;
   position: absolute;
   top: 50px;
-  background: url(/assets/images/world-map.png) no-repeat;
+  background: url(/assets/images/home/world-map.png) no-repeat;
   background-size: 100% 100%;
 
   @media screen and (max-width: 1200px) {
@@ -26,7 +26,7 @@ export const BGWrapper = styled(Wrapper)`
 
   @media screen and (max-width: 426px) {
     height: 277px;
-    background: url(/assets/images/world-map-sm.png) no-repeat;
+    background: url(/assets/images/home/world-map-sm.png) no-repeat;
     background-size: 100% 100%;
     top: 150px;
   }
@@ -70,6 +70,7 @@ export const WorldMapSectionContainer = styled(Container)`
   }
 
   p {
+    max-width: 960px;
     font-family: 'Inter';
     font-weight: 400;
     font-size: 23px;
@@ -100,7 +101,7 @@ export const DiscoverButton = styled.button`
   border: none;
   width: 422px;
   height: 185px;
-  background: url(/assets/images/discover-btn.png);
+  background: url(/assets/images/home/discover-btn.png);
   background-size: 100% 100%;
   border-radius: 42px;
   cursor: pointer;
@@ -130,7 +131,7 @@ export const DiscoverButton = styled.button`
 export const GrosstessImg = styled.div`
   width: 1200px;
   height: 200px;
-  background: url(/assets/images/grosstess.png);
+  background: url(/assets/images/home/grosstess.png);
   background-size: 100% 100%;
   margin-top: 70px;
   z-index: 1;

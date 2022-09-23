@@ -9,7 +9,7 @@ export const NavbarContainer = styled(Container)`
   background: transparent;
   position: relative;
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1250px) {
     justify-content: space-between;
     padding: 30.5px 28px 28.5px 33.8px;
     align-items: center;
@@ -70,7 +70,7 @@ export const Menu = styled.div`
     padding: 0 10px;
   }
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1250px) {
     max-width: 161px;
     height: 530px;
     flex-direction: column;
@@ -93,7 +93,8 @@ export const SmallMenu = styled.div`
   position: absolute;
   right: 0;
   top: 0;
-  width: 375px;
+  max-width: 425px;
+  width: 100%;
   height: 812px;
   background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(10.5px);
@@ -138,7 +139,7 @@ export const DownloadButton = styled.button`
   cursor: pointer;
   z-index: 1;
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1250px) {
     width: 189.35px;
     height: 63.62px;
     font-family: ${theme.fontFamily.primary};

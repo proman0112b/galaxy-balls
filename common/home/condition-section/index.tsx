@@ -7,10 +7,10 @@ import { ConditionSectionContainer, Title, CarouselWrapper, LeftButton, RightBut
 
 const ConditionSection: React.FC = () => {
   const images = [
-    { src: '/assets/images/banner 1.png' },
-    { src: '/assets/images/banner2.png' },
-    { src: '/assets/images/banner3.png' },
-    { src: '/assets/images/banner4.png' },
+    { src: '/assets/images/home/banner 1.png' },
+    { src: '/assets/images/home/banner2.png' },
+    { src: '/assets/images/home/banner3.png' },
+    { src: '/assets/images/home/banner4.png' },
   ]
   const isTablet = useMediaQuery({ query: '(max-width: 1024px)' })
   const carouselRef = useRef<CarouselRef | null>(null)

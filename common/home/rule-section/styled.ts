@@ -14,7 +14,7 @@ export const RuleSectionContainer = styled(Container)`
 export const MeteorImg1 = styled.div`
   width: 245px;
   height: 220px;
-  background: url(/assets/images/meteor1.png);
+  background: url(/assets/images/home/meteor1.png);
   background-size: 100% 100%;
   position: absolute;
   right: 33px;
@@ -41,7 +41,7 @@ export const MeteorImg1 = styled.div`
 export const MeteorImg2 = styled.div`
   width: 158px;
   height: 144px;
-  background: url(/assets/images/meteor2.png);
+  background: url(/assets/images/home/meteor2.png);
   background-size: 100% 100%;
   position: absolute;
   left: 32px;

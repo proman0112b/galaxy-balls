@@ -22,7 +22,7 @@ export const WinnersSectionContainer = styled(Container)`
 export const MeteorImg = styled.div`
   width: 300px;
   height: 221px;
-  background: url(/assets/images/meteor3.png);
+  background: url(/assets/images/home/meteor3.png);
   background-size: 100% 100%;
   position: absolute;
   top: 0;
@@ -163,7 +163,7 @@ export const ListButton = styled.button`
 export const WinnersList = styled.div`
   width: 784px;
   height: 806px;
-  background: url(/assets/images/list.png);
+  background: url(/assets/images/home/list.png);
   background-size: 100% 100%;
   margin-top: 120px;
   position: relative;

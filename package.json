@@ -21,6 +21,8 @@
     "react-perfect-scrollbar": "^1.5.8",
     "react-spring": "^9.5.4",
     "styled-components": "^5.3.5"
+    "react-responsive": "^9.0.0",
+    "swiper": "^8.4.2"
   },
   "devDependencies": {
     "@builder.io/partytown": "^0.7.0",

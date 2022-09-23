@@ -9,8 +9,8 @@ const PrizesSection: React.FC = () => {
       <PrizesSectionContainer>
         <Title>Deine Preise warten auf dich</Title>
         <Description>
-          Viele galaktische Kugeln nähern sich bereits der Erde.
-          <br /> Sei unter den Ersten, die sich auf die Suche nach ihnen macht und erhalte eine Galaktische Belohnung!
+          Viele galaktische Kugeln nähern sich bereits der Erde. Sei unter den Ersten, die sich auf die Suche nach ihnen macht und erhalte eine
+          Galaktische Belohnung!
         </Description>
         <BGWrapper />
       </PrizesSectionContainer>

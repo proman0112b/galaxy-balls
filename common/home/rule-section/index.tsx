@@ -1,9 +1,12 @@
 import React from 'react'
 import Image from 'next/image'
+import { useMediaQuery } from 'react-responsive'
 import Wrapper from '../../../components/wrapper'
 import { RuleSectionContainer, MeteorImg1, MeteorImg2, Title, Description, CardList, CardWrapper, Card } from './styled'
 
 const RuleSection: React.FC = () => {
+  const isMobile = useMediaQuery({ query: '(max-width: 426px)' })
+
   return (
     <Wrapper>
       <RuleSectionContainer>
@@ -20,13 +23,13 @@ const RuleSection: React.FC = () => {
         <CardList>
           <CardWrapper>
             <Card>
-              <Image src="/assets/icons/key-circle.png" width={42} height={37} layout="fixed" alt="no img" />
+              <Image src="/assets/icons/key-circle.png" width={isMobile ? 23.38 : 42} height={isMobile ? 22.62 : 37} layout="fixed" alt="no img" />
               <p>Wenn du einen Galaxy Ball findest, erhältst du 1.000 Euro / USD/ Crypto</p>
             </Card>
           </CardWrapper>
           <CardWrapper style={{ background: '#3283FF11' }}>
             <Card style={{ background: '#3283FF33' }}>
-              <Image src="/assets/icons/magic-circle.png" width={42} height={37} layout="fixed" alt="no img" />
+              <Image src="/assets/icons/magic-circle.png" width={isMobile ? 29.46 : 42} height={isMobile ? 29.52 : 37} layout="fixed" alt="no img" />
               <p>Wenn du alle 7 Galaxy Balls findest, erhältst du sogar 10.000 Euro / USD/ Crypto</p>
             </Card>
           </CardWrapper>

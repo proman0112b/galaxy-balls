@@ -91,6 +91,10 @@ export const Description = styled.div`
     padding: 0;
   }
 
+  @media screen and (max-width: 768px) {
+    margin-left: 0;
+  }
+
   p {
     font-family: ${theme.fontFamily.primary};
     font-size: 18px;
@@ -105,9 +109,9 @@ export const Description = styled.div`
     }
 
     @media screen and (max-width: 426px) {
-      font-size: 13px;
+      font-size: 12px;
       line-height: 19px;
-      width: 360px;
+      width: 350px;
       margin-top: 25.73px;
     }
   }

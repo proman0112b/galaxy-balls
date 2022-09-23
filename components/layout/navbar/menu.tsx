@@ -2,18 +2,40 @@ import React from 'react'
 import Link from 'next/link'
 import { Menu } from './styled'
 
-const MenuComponent: React.FC = () => {
+interface MenuComponentProps {
+  setShowSmallMenu: Function
+}
+
+const MenuComponent: React.FC<MenuComponentProps> = ({ setShowSmallMenu }) => {
   return (
     <Menu>
-      <Link href="/">Home</Link>
-      <Link href="/documents">Documents</Link>
-      <Link href="/">Rules</Link>
-      <Link href="/">World Map</Link>
-      <Link href="/">Winner</Link>
-      <Link href="/spaceballs">SpaceBalls</Link>
-      <Link href="/partners">Partner</Link>
-      <Link href="/transporter">Transporter</Link>
-      <Link href="/">Faq</Link>
+      <Link href="/">
+        <a onClick={() => setShowSmallMenu(false)}>Home</a>
+      </Link>
+      <Link href="/">
+        <a onClick={() => setShowSmallMenu(false)}>Start</a>
+      </Link>
+      <Link href="/">
+        <a onClick={() => setShowSmallMenu(false)}>Rules</a>
+      </Link>
+      <Link href="/">
+        <a onClick={() => setShowSmallMenu(false)}>World Map</a>
+      </Link>
+      <Link href="/">
+        <a onClick={() => setShowSmallMenu(false)}>Winner</a>
+      </Link>
+      <Link href="/spaceballs">
+        <a onClick={() => setShowSmallMenu(false)}>SpaceBalls</a>
+      </Link>
+      <Link href="/partners">
+        <a onClick={() => setShowSmallMenu(false)}>Partner</a>
+      </Link>
+      <Link href="/transporter">
+        <a onClick={() => setShowSmallMenu(false)}>Transporter</a>
+      </Link>
+      <Link href="/documents">
+        <a onClick={() => setShowSmallMenu(false)}>Faq</a>
+      </Link>
     </Menu>
   )
 }

@@ -1,9 +1,14 @@
 import React from 'react'
 import Image from 'next/image'
+import { useModal } from '../../../hooks/useModal'
 import Wrapper from '../../../components/wrapper'
 import { WinnersSectionContainer, Title, Description, Tip, ListButton, MeteorImg, WinnersList } from './styled'
 
+import WinnersModal from '../../animated/winners'
+
 const WinnersSection: React.FC = () => {
+  const { isShown, toggle } = useModal()
+
   return (
     <Wrapper>
       <WinnersSectionContainer>
@@ -23,10 +28,11 @@ const WinnersSection: React.FC = () => {
               <Image src="/assets/icons/tip2.png" width={44.55} height={44.55} layout="fixed" alt="no img" />
               <span style={{ color: '#FEA500' }}>Alle Regeln findest du in unseren Teilnahmebedingungen</span>
             </Tip>
-            <ListButton>Vollständige Liste</ListButton>
+            <ListButton onClick={toggle}>Vollständige Liste</ListButton>
           </Description>
         </div>
         <WinnersList />
+        <WinnersModal isShown={isShown} hide={toggle} />
       </WinnersSectionContainer>
     </Wrapper>
   )

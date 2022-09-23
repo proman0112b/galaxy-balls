@@ -9,6 +9,10 @@ export const ConditionSectionContainer = styled(Container)`
   justify-content: center;
   align-items: center;
 
+  @media screen and (max-width: 1300px) {
+    margin-top: 113px;
+  }
+
   p {
     margin-top: 60px;
     font-family: ${theme.fontFamily.primary};
@@ -18,6 +22,17 @@ export const ConditionSectionContainer = styled(Container)`
     color: ${theme.color.typography.primary};
     width: 658px;
     text-align: center;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 40px;
+      width: 95vw;
+    }
+
+    @media screen and (max-width: 426px) {
+      font-size: 14px;
+      line-height: 20px;
+      width: 335px;
+    }
   }
 
   .Carousel {
@@ -32,9 +47,24 @@ export const ConditionSectionContainer = styled(Container)`
 
     div:nth-child(1) {
       height: 579px;
+
+      @media screen and (max-width: 1024px) {
+        height: 479px;
+      }
+
+      @media screen and (max-width: 768px) {
+        height: 62.36vw;
+      }
+
+      @media screen and (max-width: 426px) {
+        height: 220px;
+      }
     }
 
     div:nth-child(2) {
+      @media screen and (max-width: 1024px) {
+        display: none;
+      }
       margin-top: 34px;
       width: 100%;
       height: 108px;
@@ -59,6 +89,16 @@ export const Title = styled.h2`
   line-height: 68px;
   text-align: center;
   color: #8a8ac4;
+
+  @media screen and (max-width: 768px) {
+    width: 95vw;
+  }
+
+  @media screen and (max-width: 426px) {
+    font-size: 25px;
+    line-height: 38px;
+    width: 326px;
+  }
 `
 
 export const CarouselWrapper = styled.div`
@@ -66,6 +106,25 @@ export const CarouselWrapper = styled.div`
   height: 721px;
   margin-top: 112px;
   position: relative;
+
+  @media screen and (max-width: 1024px) {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    gap: 30px;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 91.14vw;
+    margin-top: 50px;
+  }
+
+  @media screen and (max-width: 426px) {
+    width: 335px;
+  }
 `
 
 export const RightButton = styled.button`
@@ -81,11 +140,24 @@ export const RightButton = styled.button`
   font-size: 42px;
   font-weight: 900;
   color: #8a8ac4;
-  text-shadow: 0px 1px 1px rgba(80, 80, 253, 0.67), 0px -3px 10px rgba(80, 80, 253, 0.54), -2px -3px 5px rgba(109, 109, 255, 0.4), 2px 3px 3px #1f1404,
-    inset 0.5px 0.5px 1px #8d8dff;
+  text-shadow: 2px -3px 3px rgba(80, 80, 253, 0.67);
   display: flex;
   justify-content: center;
   cursor: pointer;
+
+  @media screen and (max-width: 1200px) {
+    width: 48px;
+    height: 48px;
+    font-size: 30px;
+    right: -50px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    position: static;
+    width: 55px;
+    height: 55px;
+    font-size: 35px;
+  }
 `
 
 export const LeftButton = styled.button`
@@ -100,9 +172,21 @@ export const LeftButton = styled.button`
   font-size: 42px;
   font-weight: 900;
   color: #8a8ac4;
-  text-shadow: 0px 1px 1px rgba(80, 80, 253, 0.67), 0px -3px 10px rgba(80, 80, 253, 0.54), -2px -3px 5px rgba(109, 109, 255, 0.4), 2px 3px 3px #1f1404,
-    inset 0.5px 0.5px 1px #8d8dff;
+  text-shadow: -2px -3px 3px rgba(80, 80, 253, 0.67);
   display: flex;
   justify-content: center;
   cursor: pointer;
+  @media screen and (max-width: 1200px) {
+    width: 48px;
+    height: 48px;
+    font-size: 30px;
+    left: -50px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    position: static;
+    width: 55px;
+    height: 55px;
+    font-size: 35px;
+  }
 `

@@ -9,22 +9,97 @@ export const Title = styled.h2`
   text-align: center;
   color: #8a8ac4;
   margin: 57.8px 0 21px 0;
+
+  @media screen and (max-width: 426px) {
+    font-size: 25px;
+    line-height: 38px;
+  }
 `
 
 export const GameSectionContainer = styled(Container)`
   display: flex;
   justify-content: center;
   gap: 71px;
+
+  div:nth-child(1) {
+    height: 332.79px;
+  }
+
+  div:nth-child(2) {
+    height: 579.52px;
+    margin-top: 66px;
+  }
+
+  div:nth-child(3) {
+    height: 356.55px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    gap: 20px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    gap: 20px;
+    max-width: 700px;
+    flex-wrap: wrap;
+
+    div:nth-child(1) {
+      order: 1;
+    }
+
+    div:nth-child(2) {
+      order: 3;
+      margin: 0;
+    }
+
+    div:nth-child(3) {
+      order: 2;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    max-width: 335px;
+    gap: 30px;
+    flex-direction: column;
+
+    div:nth-child(1) {
+      order: 1;
+    }
+
+    div:nth-child(2) {
+      order: 2;
+    }
+
+    div:nth-child(3) {
+      order: 3;
+    }
+  }
+
+  @media screen and (max-width: 426px) {
+    max-width: 335px;
+    gap: 30px;
+    flex-direction: column;
+
+    div:nth-child(1) {
+      order: 1;
+      height: 342px;
+    }
+
+    div:nth-child(2) {
+      order: 2;
+      height: 423px;
+    }
+
+    div:nth-child(3) {
+      order: 3;
+      height: 330px;
+    }
+  }
 `
 
-interface CardProps {
-  height: number
-}
-
-export const Card = styled.div<CardProps>`
+export const Card = styled.div`
   display: flex;
   width: 335px;
-  height: ${props => `${props.height}px`};
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -50,5 +125,15 @@ export const Card = styled.div<CardProps>`
     line-height: 32px;
     color: ${theme.color.typography.primary};
     text-align: center;
+
+    @media screen and (max-width: 426px) {
+      padding: 0 20px;
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+
+  @media screen and (max-width: 426px) {
+    border-radius: 30px;
   }
 `

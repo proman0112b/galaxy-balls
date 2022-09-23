@@ -6,9 +6,23 @@ export const DownloadSectionContainer = styled(Container)`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  section:nth-child(1) {
+    margin-right: 36.88px;
+    @media screen and (max-width: 1024px) {
+      margin-right: 0;
+    }
+  }
+
+  section:nth-child(3) {
+    margin-left: 63.86px;
+    @media screen and (max-width: 1024px) {
+      margin-left: 0;
+    }
+  }
 `
 
-export const Card = styled.div`
+export const Card = styled.section`
   width: 267px;
   height: 94px;
   padding: 22px 32px 21px 60px;
@@ -20,6 +34,22 @@ export const Card = styled.div`
   color: ${theme.color.typography.secondary};
   font-family: ${theme.fontFamily.primary};
 
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 34vw;
+    height: 12.23vw;
+    padding: 0;
+  }
+
+  @media screen and (max-width: 426px) {
+    width: 87.6px;
+    height: 61px;
+    border-radius: 16px;
+  }
+
   div {
     display: flex;
     align-items: center;
@@ -28,6 +58,15 @@ export const Card = styled.div`
       font-size: 18px;
       line-height: 27px;
       opacity: 0.8;
+
+      @media screen and (max-width: 426px) {
+        font-size: 11px;
+        line-height: 16px;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      gap: 3vw;
     }
   }
 
@@ -36,5 +75,9 @@ export const Card = styled.div`
     line-height: 22px;
     letter-spacing: 0.5em;
     opacity: 0.4;
+    @media screen and (max-width: 426px) {
+      font-size: 6px;
+      line-height: 9px;
+    }
   }
 `

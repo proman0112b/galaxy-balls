@@ -156,10 +156,10 @@ export const LocationList = styled.ol`
 
 interface MarkerWrapperProps {
   color: string
-  tooltip: string
+  tooltip: number
 }
 
-export const MarkerWrapper = styled.div`
+export const MarkerWrapper = styled.div<MarkerWrapperProps>`
   div {
     position: relative;
     width: 48px;

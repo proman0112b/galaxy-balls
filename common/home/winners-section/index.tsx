@@ -5,7 +5,7 @@ import { useMediaQuery } from 'react-responsive'
 import { FaFacebookF } from 'react-icons/fa'
 import { AiFillInstagram, AiOutlineTwitter } from 'react-icons/ai'
 import Wrapper from '../../../components/wrapper'
-import { WinnersSectionContainer, Title, Description, Tip, ListButton, MeteorImg, WinnersList, WinnerTable } from './styled'
+import { WinnersSectionContainer, Title, Description, Tip, ListButton, MeteorImg, WinnersList, WinnerTable, WinnersListButton } from './styled'
 import type { WinnerlistStaticData } from '../../../types/winnerlist-static-data'
 import { winnerlistStaticData } from '../../../static/winnerlist-static-data'
 
@@ -27,7 +27,15 @@ const WinnersSection: React.FC = () => {
               Hier findest du alle Gewinner, die einen GalaxyBalls in deinem Land gefunden haben. Finde die Kugeln und werde in die Rangliste
               aufgenommen, umso mehr Kugeln du findest, desto mehr Einträge bekommst du!
             </p>
-            {isTablet && !isMobile && <WinnersList />}
+            {isTablet && !isMobile && (
+              <WinnersList>
+                <WinnersListButton onClick={toggle}>
+                  <div className="wrapper">
+                    <span>Show all Winners</span>
+                  </div>
+                </WinnersListButton>
+              </WinnersList>
+            )}
             {isMobile && (
               <WinnerTable>
                 <thead>
@@ -69,7 +77,15 @@ const WinnersSection: React.FC = () => {
             <ListButton onClick={toggle}>Vollständige Liste</ListButton>
           </Description>
         </section>
-        {!isTablet && <WinnersList />}
+        {!isTablet && (
+          <WinnersList>
+            <WinnersListButton onClick={toggle}>
+              <div className="wrapper">
+                <span>Show all Winners</span>
+              </div>
+            </WinnersListButton>
+          </WinnersList>
+        )}
         <WinnersModal isShown={isShown} hide={toggle} />
       </WinnersSectionContainer>
     </Wrapper>

@@ -15,7 +15,11 @@ const WorldMapSection: React.FC = () => {
           Hier siehst du in welchem Land sich die GalaxyBalls derzeit befinden.Du kannst aber auch erfahren in welches zukünftige Land die GalaxyBalls
           landen werden.
         </p>
-        <DiscoverButton onClick={toggle}></DiscoverButton>
+        <DiscoverButton onClick={toggle}>
+          <div className="wrapper">
+            <div className="content">Discover the World</div>
+          </div>
+        </DiscoverButton>
         <GrosstessImg />
       </WorldMapSectionContainer>
       <WorldMapModal isShown={isShown} hide={toggle} />

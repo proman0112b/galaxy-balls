@@ -91,7 +91,7 @@ export const AnimatedMapWrapper = styled.div`
   position: relative;
 
   img {
-    width: 100%;
+    width: 860px;
   }
 `
 

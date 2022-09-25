@@ -35,7 +35,7 @@ export const Logo = styled.div`
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-shadow: 0px 0.599887px 3.59932px rgba(250, 250, 250, 0.86);
-  z-index: 1;
+  z-index: 99;
 
   @media screen and (max-width: 426px) {
     font-size: 10.2844px;
@@ -56,7 +56,7 @@ export const Menu = styled.div`
   border: 1px solid #23233d;
   box-shadow: 7px 8px 16px rgba(7, 7, 9, 0.37), -6px -6px 16px rgba(44, 44, 64, 0.32);
   border-radius: 12px;
-  z-index: 1;
+  z-index: 99;
 
   a {
     font-family: 'Inter';
@@ -137,7 +137,7 @@ export const DownloadButton = styled.button`
   line-height: 22px;
   color: #7a49ff;
   cursor: pointer;
-  z-index: 1;
+  z-index: 99;
 
   @media screen and (max-width: 1250px) {
     width: 189.35px;
@@ -153,9 +153,9 @@ export const DownloadButton = styled.button`
   }
 `
 export const LangButton = styled.button`
-  width: 56px;
+  width: 70px;
   height: 48px;
-  margin-left: 24px;
+  margin-left: 10px;
   background: linear-gradient(133.32deg, #222236 2.76%, #181827 100%);
   border: 1px solid rgba(63, 47, 107, 0.34);
   box-shadow: 3px 3px 9px rgba(8, 8, 10, 0.66), -2px -2px 9px rgba(65, 65, 92, 0.26);
@@ -165,8 +165,9 @@ export const LangButton = styled.button`
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  position: relative;
 
-  span {
+  label {
     font-family: ${theme.fontFamily.primary};
     font-weight: 700;
     font-size: 14px;
@@ -177,11 +178,47 @@ export const LangButton = styled.button`
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
-  z-index: 1;
+  z-index: 99;
+
+  :hover {
+    section {
+      display: flex;
+    }
+  }
 
   @media screen and (max-width: 426px) {
-    width: 58px;
     height: 30px;
+  }
+`
+
+export const LangMenu = styled.section`
+  position: absolute;
+  top: 48px;
+  left: 2px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  width: 65px;
+  height: auto;
+  padding: 20px 0;
+  background: linear-gradient(133.32deg, #222236 2.76%, #181827 100%);
+  border: 1px solid rgba(63, 47, 107, 0.34);
+  box-shadow: 1px 1px 3px rgba(8, 8, 10, 0.66), -1px -1px 3px rgba(65, 65, 92, 0.26);
+  border-radius: 12px;
+  z-index: 99;
+
+  div {
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 426px) {
+    top: 32px;
   }
 `
 
@@ -201,7 +238,7 @@ export const NavMenu = styled.button`
     font-size: 25px;
   }
   cursor: pointer;
-  z-index: 1;
+  z-index: 99;
 
   @media screen and (max-width: 426px) {
     width: 30px;

@@ -1,16 +1,39 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { useMediaQuery } from 'react-responsive'
 import { IoMdClose } from 'react-icons/io'
 import { HiMenu } from 'react-icons/hi'
 import Wrapper from '../../wrapper'
-import { NavbarContainer, Logo, DownloadButton, LangButton, SmallMenu, NavMenu } from './styled'
+import { NavbarContainer, Logo, DownloadButton, LangButton, SmallMenu, NavMenu, LangMenu } from './styled'
 import Menu from './menu'
+import type { LangStaticData } from '../../../types/navbar'
+import { langStaticData } from '../../../static/lang-static-data'
 
 const Navbar: React.FC = () => {
   const isMobile = useMediaQuery({ query: '(max-width: 426px)' })
   const isSmallMenu = useMediaQuery({ query: '(max-width: 1250px)' })
   const [showSmallMenu, setShowSmallMenu] = useState<boolean>(false)
+  const [selectedLang, setSelectedLang] = useState<LangStaticData>(langStaticData[0])
+  const { pathname, query, asPath } = useRouter()
+
+  const LangSection = (
+    <LangButton>
+      <Image src={selectedLang.src} alt="no logo" width="30px" height="30px" layout="fixed" />
+      <label>{selectedLang.label}</label>
+      <LangMenu>
+        {langStaticData.map((data: LangStaticData, index: number) => (
+          <Link href={{ pathname, query }} as={asPath} locale={data.locale} key={index}>
+            <div onClick={() => setSelectedLang(langStaticData[index])}>
+              <Image src={data.src} alt="no logo" width="30px" height="30px" layout="fixed" />
+              <label>{data.label}</label>
+            </div>
+          </Link>
+        ))}
+      </LangMenu>
+    </LangButton>
+  )
 
   return (
     <Wrapper>
@@ -30,19 +53,13 @@ const Navbar: React.FC = () => {
         {!isSmallMenu && <DownloadButton type="button">Download</DownloadButton>}
         {isSmallMenu ? (
           <div style={{ display: 'flex' }}>
-            <LangButton>
-              <Image src="/assets/icons/flag-us.png" alt="no logo" width="15px" height="11.83px" layout="fixed" />
-              <span>En</span>
-            </LangButton>
+            {LangSection}
             <NavMenu onClick={() => setShowSmallMenu(true)}>
               <HiMenu />
             </NavMenu>
           </div>
         ) : (
-          <LangButton>
-            <Image src="/assets/icons/flag-us.png" alt="no logo" width="15px" height="11.83px" layout="fixed" />
-            <span>En</span>
-          </LangButton>
+          LangSection
         )}
         {isSmallMenu && showSmallMenu && (
           <SmallMenu>

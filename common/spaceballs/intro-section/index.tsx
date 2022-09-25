@@ -1,18 +1,19 @@
 import React from 'react'
 import Wrapper from '../../../components/wrapper'
 import { IntroSectionContainer, BGImg, MeteorImg, TitleContainer, PlayButton } from './styled'
+import { useRouter } from 'next/router'
+import { trans } from '../../../utils/i18n'
 
 const IntroSection: React.FC = () => {
+  const { locale } = useRouter()
+
   return (
     <Wrapper>
       <IntroSectionContainer>
         <TitleContainer>
           <MeteorImg />
-          <h1>Spaceballs</h1>
-          <p>
-            The virtual balls from the galaxy are here and waiting for you. Experience unique moments in Augment Realty that you have never seen
-            before!
-          </p>
+          <h1>{trans(locale, 'space-balls', 'title')}</h1>
+          <p>{trans(locale, 'space-balls', 'desc')}</p>
           <PlayButton>
             <span>Let&apos;s play</span>
           </PlayButton>

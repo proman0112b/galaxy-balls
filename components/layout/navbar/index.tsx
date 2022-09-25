@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
           />
           <span>Balls</span>
         </Logo>
-        {!isSmallMenu && <Menu />}
+        {!isSmallMenu && <Menu setShowSmallMenu={setShowSmallMenu} />}
         {!isSmallMenu && <DownloadButton type="button">Download</DownloadButton>}
         {isSmallMenu ? (
           <div style={{ display: 'flex' }}>
@@ -51,7 +51,7 @@ const Navbar: React.FC = () => {
               <IoMdClose onClick={() => setShowSmallMenu(false)} />
             </section>
             <section>
-              <Menu />
+              <Menu setShowSmallMenu={setShowSmallMenu} />
               <DownloadButton type="button">Download</DownloadButton>
             </section>
           </SmallMenu>

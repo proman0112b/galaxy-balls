@@ -4,12 +4,37 @@ import Container from '../../../components/container'
 
 export const FeaturesSectionContainer = styled(Container)`
   margin-top: 79.67px;
+
+  section:nth-child(2) {
+    margin-top: 145px;
+
+    @media screen and (max-width: 1300px) {
+      flex-direction: column-reverse;
+    }
+
+    @media screen and (max-width: 768px) {
+      margin-top: 100px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 100px;
+  }
 `
 
-export const Feature = styled.div`
+export const Feature = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 145px;
+
+  @media screen and (max-width: 1300px) {
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 768px) {
+    gap: 80px;
+  }
 `
 
 export const BallImg1 = styled.div`
@@ -17,12 +42,22 @@ export const BallImg1 = styled.div`
   height: 593px;
   background: url(/assets/images/spaceballs/ball1.png);
   background-size: 100% 100%;
+
+  @media screen and (max-width: 768px) {
+    width: 309px;
+    height: 309px;
+  }
 `
 export const BallImg2 = styled.div`
   width: 560px;
   height: 560px;
   background: url(/assets/images/spaceballs/ball2.png);
   background-size: 100% 100%;
+
+  @media screen and (max-width: 768px) {
+    width: 306px;
+    height: 306px;
+  }
 `
 
 export const Content = styled.div`
@@ -37,6 +72,15 @@ export const Content = styled.div`
     line-height: 56px;
     letter-spacing: -0.02em;
     color: #fcfcfd;
+    @media screen and (max-width: 1300px) {
+      text-align: center;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 335px;
+      font-size: 28px;
+      line-height: 40px;
+    }
   }
 
   p {
@@ -47,6 +91,19 @@ export const Content = styled.div`
     font-size: 16px;
     line-height: 24px;
     color: #8a8ac3;
+    @media screen and (max-width: 1300px) {
+      text-align: center;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+      line-height: 24px;
+      width: 250px;
+    }
+  }
+
+  @media screen and (max-width: 1300px) {
+    align-items: center;
   }
 `
 

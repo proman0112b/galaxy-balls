@@ -8,8 +8,7 @@ export const ChanceSectionContainer = styled(Container)`
 `
 
 export const Card = styled.div`
-  max-width: 1100px;
-  width: 100%;
+  width: 1100px;
   padding: 24px 96px;
   background: linear-gradient(216.81deg, #2a2a41 0%, #1b1b29 100%);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -24,6 +23,12 @@ export const Card = styled.div`
     letter-spacing: -0.01em;
     color: #d2d2ef;
     text-align: center;
+
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+      line-height: 40px;
+      width: 227px;
+    }
   }
 
   p {
@@ -34,6 +39,17 @@ export const Card = styled.div`
     line-height: 24px;
     text-align: center;
     color: #8a8ac3;
+  }
+
+  @media screen and (max-width: 1200px) {
+    width: 95vw;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 337px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 `
 
@@ -52,6 +68,13 @@ export const CardBody = styled.div`
   p {
     margin-top: 13.78px;
   }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 40.88px;
+    flex-direction: column;
+    align-items: center;
+    gap: 51px;
+  }
 `
 
 export const DoubleArrow = styled.div`
@@ -63,6 +86,10 @@ export const DoubleArrow = styled.div`
   svg {
     color: #7b7ba8;
     font-weight: 700;
+  }
+
+  @media screen and (max-width: 768px) {
+    transform: rotate(90deg);
   }
 `
 

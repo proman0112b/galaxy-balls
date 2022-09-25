@@ -2,16 +2,16 @@ import React from 'react'
 import Image from 'next/image'
 import Wrapper from '../../../components/wrapper'
 import { PrizesSectionContainer, Title, Description, BGWrapper } from './styled'
+import { useRouter } from 'next/router'
+import { trans } from '../../../static/i18n'
 
 const PrizesSection: React.FC = () => {
+  const { locale } = useRouter()
   return (
     <Wrapper>
       <PrizesSectionContainer>
-        <Title>Deine Preise warten auf dich</Title>
-        <Description>
-          Viele galaktische Kugeln nähern sich bereits der Erde. Sei unter den Ersten, die sich auf die Suche nach ihnen macht und erhalte eine
-          Galaktische Belohnung!
-        </Description>
+        <Title>{trans(locale, 'home', 'prize-title')}</Title>
+        <Description>{trans(locale, 'home', 'prize-text')}</Description>
         <BGWrapper />
       </PrizesSectionContainer>
     </Wrapper>

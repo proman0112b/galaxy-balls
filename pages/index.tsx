@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import { useRouter } from 'next/router'
 import IntroSection from '../common/home/intro-section'
 import DownloadSection from '../common/home/dowload-section'
 import GameSection from '../common/home/game-section'

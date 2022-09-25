@@ -5,7 +5,7 @@ import { FaqSectionContainer, Title, Description, CardListWrapper, CardList, Car
 import { faqStaticData } from '../../../static/faq-static-data'
 import type { FaqStaticData } from '../../../types/faq-static-data'
 import { useRouter } from 'next/router'
-import { trans } from '../../../static/i18n'
+import { trans } from '../../../utils/i18n'
 
 const FaqSection: React.FC = () => {
   const [selectedIndex, setSelectedIndex] = useState<number>(0)

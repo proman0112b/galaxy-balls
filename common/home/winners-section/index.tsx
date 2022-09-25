@@ -9,7 +9,7 @@ import { WinnersSectionContainer, Title, Description, Tip, ListButton, MeteorImg
 import type { WinnerlistStaticData } from '../../../types/winnerlist-static-data'
 import { winnerlistStaticData } from '../../../static/winnerlist-static-data'
 import { useRouter } from 'next/router'
-import { trans } from '../../../static/i18n'
+import { trans } from '../../../utils/i18n'
 
 import WinnersModal from '../../animated/winners'
 

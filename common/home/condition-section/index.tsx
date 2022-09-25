@@ -5,7 +5,7 @@ import { useMediaQuery } from 'react-responsive'
 import Wrapper from '../../../components/wrapper'
 import { ConditionSectionContainer, Title, CarouselWrapper, LeftButton, RightButton } from './styled'
 import { useRouter } from 'next/router'
-import { trans } from '../../../static/i18n'
+import { trans } from '../../../utils/i18n'
 
 const ConditionSection: React.FC = () => {
   const images = [

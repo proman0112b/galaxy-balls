@@ -4,7 +4,7 @@ import { useMediaQuery } from 'react-responsive'
 import Wrapper from '../../../components/wrapper'
 import { RuleSectionContainer, MeteorImg1, MeteorImg2, Title, Description, CardList, CardWrapper, Card } from './styled'
 import { useRouter } from 'next/router'
-import { trans } from '../../../static/i18n'
+import { trans } from '../../../utils/i18n'
 
 const RuleSection: React.FC = () => {
   const isMobile = useMediaQuery({ query: '(max-width: 426px)' })

@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 import Image from 'next/image'
 import Wrapper from '../../../components/wrapper'
 import { Title, GameSectionContainer, Card } from './styled'
-import { trans } from '../../../static/i18n'
+import { trans } from '../../../utils/i18n'
 
 const GameSection: React.FC = () => {
   const { locale } = useRouter()

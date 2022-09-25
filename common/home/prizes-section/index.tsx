@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Wrapper from '../../../components/wrapper'
 import { PrizesSectionContainer, Title, Description, BGWrapper } from './styled'
 import { useRouter } from 'next/router'
-import { trans } from '../../../static/i18n'
+import { trans } from '../../../utils/i18n'
 
 const PrizesSection: React.FC = () => {
   const { locale } = useRouter()

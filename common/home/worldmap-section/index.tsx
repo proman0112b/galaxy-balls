@@ -3,7 +3,7 @@ import { useModal } from '../../../hooks/useModal'
 import { BGWrapper, WorldMapSectionContainer, WorldMapSectionWrapper, DiscoverButton, GrosstessImg } from './styled'
 import WorldMapModal from '../../animated/world-map'
 import { useRouter } from 'next/router'
-import { trans } from '../../../static/i18n'
+import { trans } from '../../../utils/i18n'
 
 const WorldMapSection: React.FC = () => {
   const { isShown, toggle } = useModal()

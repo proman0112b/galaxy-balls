@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import { useRouter } from 'next/router'
 import IntroSection from '../common/home/intro-section'
 import DownloadSection from '../common/home/dowload-section'
 import GameSection from '../common/home/game-section'
@@ -10,6 +11,8 @@ import PrizesSection from '../common/home/prizes-section'
 import FaqSection from '../common/home/faq-section'
 
 const Home: NextPage = () => {
+  const { locale, locales, asPath } = useRouter()
+  console.log(locale)
   return (
     <>
       <IntroSection />

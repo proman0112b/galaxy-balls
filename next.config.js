@@ -5,6 +5,10 @@ const nextConfig = {
   experimental: {
     nextScriptWorkers: true,
   },
+  i18n: {
+    locales: ["en-US", "fr-FR", "es-ES", "de-DE", "pt-PT"],
+    defaultLocale: "en-US"
+  }
 }
 
 module.exports = nextConfig

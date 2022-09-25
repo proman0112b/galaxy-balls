@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
 import Wrapper from '../../../components/wrapper'
 import { IntroSectionContainer, BGImg, MeteorImg, TitleContainer, PlayButton } from './styled'
 

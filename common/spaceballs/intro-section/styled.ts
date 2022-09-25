@@ -1,21 +1,50 @@
 import styled from 'styled-components'
 import theme from '../../../styles/theme'
 import Container from '../../../components/container'
-import Wrapper from '../../../components/wrapper'
 
 export const IntroSectionContainer = styled(Container)`
   padding-left: 149px;
+  margin-top: -128px;
   display: flex;
   gap: 31px;
   align-items: center;
+
+  @media screen and (max-width: 1300px) {
+    margin-top: 0;
+    padding-left: 0;
+    gap: 0;
+  }
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    gap: 62px;
+  }
 `
 
 export const BGImg = styled.div`
-  margin-top: -128px;
   width: 738px;
   height: 691px;
   background: url(/assets/images/spaceballs/intro-bg.png) no-repeat;
   background-size: 100% 100%;
+
+  @media screen and (max-width: 1300px) {
+    width: 520px;
+    height: 480px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    order: 1;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 425px;
+    height: 381px;
+  }
+
+  @media screen and (max-width: 426px) {
+    width: 100%;
+    height: 89.64vw;
+  }
 `
 
 export const MeteorImg = styled.div`
@@ -24,6 +53,10 @@ export const MeteorImg = styled.div`
   height: 113px;
   background: url(/assets/images/spaceballs/meteor1.png) no-repeat;
   background-size: 100% 100%;
+
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
 `
 
 export const TitleContainer = styled(Container)`
@@ -42,6 +75,11 @@ export const TitleContainer = styled(Container)`
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-shadow: 0px 2px 12px #fafafa;
+
+    @media screen and (max-width: 768px) {
+      font-size: 36px;
+      line-height: 35px;
+    }
   }
 
   p {
@@ -51,6 +89,18 @@ export const TitleContainer = styled(Container)`
     font-size: 18px;
     line-height: 27px;
     color: #8a8ac4;
+
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+      line-height: 150%;
+      width: 335px;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    order: 2;
+    text-align: center;
+    align-items: center;
   }
 `
 
@@ -72,5 +122,15 @@ export const PlayButton = styled.button`
     line-height: 22px;
     text-align: center;
     color: #f3f0fb;
+
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 160px;
+    height: 50px;
   }
 `

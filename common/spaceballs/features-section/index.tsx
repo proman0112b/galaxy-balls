@@ -1,14 +1,17 @@
 import React from 'react'
+import { useMediaQuery } from 'react-responsive'
 import Wrapper from '../../../components/wrapper'
 import { FeaturesSectionContainer, Feature, BallImg1, BallImg2, Content, CardList, Card } from './styled'
 import type { FeatureStaticData } from '../../../types/feature-static-data'
 import { featureStaticData } from '../../../static/feature-static-data'
 
 const FeaturesSection: React.FC = () => {
+  const isTablet = useMediaQuery({ query: '(max-width: 1300px)' })
+
   return (
     <Wrapper>
       <FeaturesSectionContainer>
-        <Feature style={{ gap: '145px' }}>
+        <Feature>
           <BallImg1 />
           <Content>
             <h1>Something about SpaceBalls</h1>
@@ -26,7 +29,7 @@ const FeaturesSection: React.FC = () => {
             </CardList>
           </Content>
         </Feature>
-        <Feature style={{ marginTop: '144.5px', gap: '102px' }}>
+        <Feature>
           <Content>
             <h1>What happens when you find a SpaceBall?</h1>
             <p>Three other important things you should know</p>

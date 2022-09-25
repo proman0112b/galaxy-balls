@@ -11,8 +11,6 @@ import PrizesSection from '../common/home/prizes-section'
 import FaqSection from '../common/home/faq-section'
 
 const Home: NextPage = () => {
-  const { locale, locales, asPath } = useRouter()
-  console.log(locale)
   return (
     <>
       <IntroSection />

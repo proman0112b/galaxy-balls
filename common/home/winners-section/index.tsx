@@ -8,6 +8,8 @@ import Wrapper from '../../../components/wrapper'
 import { WinnersSectionContainer, Title, Description, Tip, ListButton, MeteorImg, WinnersList, WinnerTable } from './styled'
 import type { WinnerlistStaticData } from '../../../types/winnerlist-static-data'
 import { winnerlistStaticData } from '../../../static/winnerlist-static-data'
+import { useRouter } from 'next/router'
+import { trans } from '../../../static/i18n'
 
 import WinnersModal from '../../animated/winners'
 
@@ -15,6 +17,7 @@ const WinnersSection: React.FC = () => {
   const { isShown, toggle } = useModal()
   const isTablet = useMediaQuery({ query: '(max-width: 1300px)' })
   const isMobile = useMediaQuery({ query: '(max-width: 426px)' })
+  const { locale } = useRouter()
 
   return (
     <Wrapper>

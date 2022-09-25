@@ -6,8 +6,8 @@ const nextConfig = {
     nextScriptWorkers: true,
   },
   i18n: {
-    locales: ["en-US", "fr-FR", "es-ES", "de-DE", "pt-PT"],
-    defaultLocale: "en-US"
+    locales: ["en", "fr", "es", "de", "pt", "it"],
+    defaultLocale: "en"
   }
 }
 

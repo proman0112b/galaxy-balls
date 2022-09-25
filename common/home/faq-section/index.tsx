@@ -4,15 +4,18 @@ import Wrapper from '../../../components/wrapper'
 import { FaqSectionContainer, Title, Description, CardListWrapper, CardList, Card } from './styled'
 import { faqStaticData } from '../../../static/faq-static-data'
 import type { FaqStaticData } from '../../../types/faq-static-data'
+import { useRouter } from 'next/router'
+import { trans } from '../../../static/i18n'
 
 const FaqSection: React.FC = () => {
   const [selectedIndex, setSelectedIndex] = useState<number>(0)
+  const { locale } = useRouter()
 
   return (
     <Wrapper>
       <FaqSectionContainer>
         <Title>FAQ</Title>
-        <Description>Hier findest du alle wichtigen und häufig gestellten Fragen.</Description>
+        <Description>{trans(locale, 'home', 'faq-title')}</Description>
         <CardListWrapper>
           <CardList>
             {faqStaticData.map((data: FaqStaticData, index: number) => {

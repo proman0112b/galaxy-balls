@@ -26,10 +26,7 @@ const WinnersSection: React.FC = () => {
         <section>
           <Title>Winners</Title>
           <Description>
-            <p>
-              Hier findest du alle Gewinner, die einen GalaxyBalls in deinem Land gefunden haben. Finde die Kugeln und werde in die Rangliste
-              aufgenommen, umso mehr Kugeln du findest, desto mehr Einträge bekommst du!
-            </p>
+            <p>{trans(locale, 'home', 'winners-text')}</p>
             {isTablet && !isMobile && (
               <WinnersList>
                 <WinnersListButton onClick={toggle}>
@@ -71,13 +68,13 @@ const WinnersSection: React.FC = () => {
             )}
             <Tip style={{ marginTop: '60.1px' }}>
               <Image src="/assets/icons/tip1.png" width={44.55} height={44.55} layout="fixed" alt="no img" />
-              <span style={{ color: '#FE6A88' }}>Garantierte Auszahlung von Gewinnen</span>
+              <span style={{ color: '#FE6A88' }}>{trans(locale, 'home', 'winners-text-1')}</span>
             </Tip>
             <Tip style={{ marginTop: '28.3px' }}>
               <Image src="/assets/icons/tip2.png" width={44.55} height={44.55} layout="fixed" alt="no img" />
-              <span style={{ color: '#FEA500' }}>Alle Regeln findest du in unseren Teilnahmebedingungen</span>
+              <span style={{ color: '#FEA500' }}>{trans(locale, 'home', 'winners-text-2')}</span>
             </Tip>
-            <ListButton onClick={toggle}>Vollständige Liste</ListButton>
+            <ListButton onClick={toggle}>{trans(locale, 'home', 'winners-button')}</ListButton>
           </Description>
         </section>
         {!isTablet && (

@@ -4,6 +4,8 @@ import type { CarouselRef } from 'react-gallery-carousel'
 import { useMediaQuery } from 'react-responsive'
 import Wrapper from '../../../components/wrapper'
 import { ConditionSectionContainer, Title, CarouselWrapper, LeftButton, RightButton } from './styled'
+import { useRouter } from 'next/router'
+import { trans } from '../../../static/i18n'
 
 const ConditionSection: React.FC = () => {
   const images = [
@@ -14,15 +16,13 @@ const ConditionSection: React.FC = () => {
   ]
   const isTablet = useMediaQuery({ query: '(max-width: 1024px)' })
   const carouselRef = useRef<CarouselRef | null>(null)
+  const { locale } = useRouter()
 
   return (
     <Wrapper>
       <ConditionSectionContainer>
-        <Title>Die Bedingung für den Start eines Spiels</Title>
-        <p>
-          Lade die GalaxyBalls-App herunter und registriere dich mit deiner E-Mail-Adresse. Dann musst du nur noch 5 Spaceballs (virtuelle Bälle)
-          finden, um dein GalaxyRadar vollständig zu aktivieren und schon kannst du loslegen.
-        </p>
+        <Title>{trans(locale, 'home', 'conditions-title')}</Title>
+        <p>{trans(locale, 'home', 'conditions-text')}</p>
         <CarouselWrapper>
           <Carousel
             className="Carousel"

@@ -15,7 +15,11 @@ const WorldMapSection: React.FC = () => {
       <WorldMapSectionContainer>
         <h1>WORLD MAP</h1>
         <p>{trans(locale, 'home', 'world-map-text')}</p>
-        <DiscoverButton onClick={toggle}></DiscoverButton>
+        <DiscoverButton onClick={toggle}>
+          <div className="wrapper">
+            <div className="content">Discover the World</div>
+          </div>
+        </DiscoverButton>
         <GrosstessImg />
       </WorldMapSectionContainer>
       <WorldMapModal isShown={isShown} hide={toggle} />

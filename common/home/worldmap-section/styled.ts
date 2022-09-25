@@ -96,35 +96,81 @@ export const WorldMapSectionContainer = styled(Container)`
   }
 `
 
-export const DiscoverButton = styled.button`
-  outline: none;
-  border: none;
-  width: 422px;
-  height: 185px;
-  background: url(/assets/images/home/discover-btn.png);
-  background-size: 100% 100%;
-  border-radius: 42px;
+export const DiscoverButton = styled.div`
+  width: 387px;
+  height: 147px;
+  background: rgba(99, 47, 255, 0.5);
+  border-radius: 30px;
   cursor: pointer;
   margin-top: 109px;
   z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 8.34859px 8.34859px 16.6972px rgba(7, 7, 9, 0.662234), -6.26144px -6.26144px 16.6972px rgba(44, 44, 64, 0.480059);
+  :hover {
+    box-shadow: none;
+  }
+  .wrapper {
+    width: 375px;
+    height: 134px;
+    background: linear-gradient(135deg, #222236cc -29.19%, #181820cc 70.81%);
+    border: 1.04357px solid rgba(122, 82, 251, 0.5);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-  @media screen and (max-width: 1024px) {
-    width: 41.2vw;
-    height: 18vw;
-    margin-top: 50px;
+    .content {
+      width: 342px;
+      height: 105px;
+      background: linear-gradient(135deg, #2d223699 0%, #18182099 100%);
+      border: 1px solid #642bff;
+      border-radius: 16px;
+      font-family: 'Inter';
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 36px;
+      color: #7a52fb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media screen and (max-width: 1024px) {
+        font-size: 2.92vw;
+        line-height: 3.51vw;
+      }
+    }
   }
 
-  @media screen and (max-width: 768px) {
-    width: 31.2vw;
-    height: 15vw;
+  @media screen and (max-width: 1024px) {
+    width: 37.79vw;
+    height: 14.35vw;
+    .wrapper {
+      width: 36.62vw;
+      height: 13.08vw;
+      .content {
+        width: 33.39vw;
+        height: 10.25vw;
+      }
+    }
     margin-top: 50px;
   }
 
   @media screen and (max-width: 426px) {
-    width: 159px;
-    height: 72px;
-    margin-top: 80px;
+    width: 40.79vw;
+    height: 17.35vw;
     border-radius: 12px;
+    .wrapper {
+      width: 39.62vw;
+      height: 16.08vw;
+      border-radius: 10px;
+      .content {
+        width: 36.39vw;
+        height: 13.25vw;
+        border-radius: 8px;
+      }
+    }
+    margin-top: 80px;
   }
 `
 
@@ -133,7 +179,7 @@ export const GrosstessImg = styled.div`
   height: 200px;
   background: url(/assets/images/home/grosstess.png);
   background-size: 100% 100%;
-  margin-top: 70px;
+  margin-top: 120px;
   z-index: 1;
 
   @media screen and (max-width: 1200px) {
@@ -144,12 +190,15 @@ export const GrosstessImg = styled.div`
   @media screen and (max-width: 1024px) {
     width: 95vw;
     height: 14vw;
-    margin-top: 30px;
+    margin-top: 80px;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 50px;
   }
 
   @media screen and (max-width: 426px) {
     width: 323px;
     height: 49px;
-    margin-top: 50px;
   }
 `

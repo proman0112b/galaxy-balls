@@ -172,11 +172,71 @@ export const WinnersList = styled.div`
   margin-top: 120px;
   position: relative;
   z-index: 0;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
 
   @media screen and (max-width: 1024px) {
     width: 76vw;
     height: 78vw;
     margin-top: 50px;
+    align-items: center;
+  }
+`
+
+export const WinnersListButton = styled.div`
+  margin-top: 300px;
+  width: 303.49px;
+  height: 95.74px;
+  background: linear-gradient(135deg, #222236 -29.19%, #181820 70.81%);
+  border: 1px solid rgba(225, 147, 4, 0.1);
+  box-shadow: 18.34859px 18.34859px 26.6972px rgba(7, 7, 9, 0.662234), -16.26144px -16.26144px 26.6972px rgba(44, 44, 64, 0.480059);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  :hover {
+    box-shadow: none;
+  }
+
+  @media screen and (max-width: 1024px) {
+    margin-top: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 39.51vw;
+    height: 12.46vw;
+  }
+
+  div {
+    width: 276.78px;
+    height: 75.02px;
+    background: linear-gradient(135deg, #2d2236 0%, #181820 100%);
+    border: 1px solid #e19304;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 768px) {
+      width: 36.03vw;
+      height: 9.76vw;
+    }
+
+    span {
+      font-family: ${theme.fontFamily.primary};
+      font-weight: 500;
+      font-size: 25px;
+      line-height: 38px;
+      color: #e19304;
+
+      @media screen and (max-width: 768px) {
+        font-size: 3.25vw;
+        line-height: 3.71vw;
+      }
+    }
   }
 `
 

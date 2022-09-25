@@ -55,12 +55,17 @@ const WinnersModal: React.FC<ModalProps> = ({ isShown, hide }) => {
     from: { opacity: 0 },
     enter: { opacity: 1 },
   })
-  const winnerTable = useTransition(isShown, {
+
+  const [tableAnim, setTableAnim] = useState<number>(-1)
+  const winnerTable = useTransition(tableAnim, {
     config: { duration: 500 },
-    delay: 1400,
+    delay: tableAnim == -1 ? 1400 : 0,
     from: { opacity: 0, transform: 'translateX(30px)' },
     enter: { opacity: 1, transform: 'translateX(0px)' },
   })
+  useEffect(() => {
+    setTableAnim(isShown ? -1 : 0)
+  }, [isShown])
 
   const countries: Array<string> = ['RU', 'BR', 'US', 'CN']
   const trail = useTrail(countries.length, {
@@ -72,11 +77,23 @@ const WinnersModal: React.FC<ModalProps> = ({ isShown, hide }) => {
     from: { opacity: 0, y: 20, height: 0 },
   })
 
+  const [windowSize, setWindowSize] = useState<number>(0)
+
+  useEffect(() => {
+    if (typeof window !== undefined) {
+      function handleResize() {
+        setWindowSize(window.innerWidth)
+      }
+      window.addEventListener('resize', handleResize)
+      handleResize()
+    }
+  }, [])
+
   const modal = (
     <>
       <Backdrop onClick={hide} />
       <Wrapper>
-        <StyledModal style={{ display: isShown ? 'block' : 'none' }}>
+        <StyledModal style={{ display: isShown ? 'block' : 'none', transform: `scale(${windowSize > 950 ? 1 : windowSize / 950})` }}>
           <Header>
             <HeaderText>List of winners around the world</HeaderText>
             <CloseButton onClick={hide}>&#10006;</CloseButton>
@@ -119,8 +136,8 @@ const WinnersModal: React.FC<ModalProps> = ({ isShown, hide }) => {
                     </animated.div>
                   ))}
                   <div>
-                    <FaChevronLeft />
-                    <FaChevronRight />
+                    <FaChevronLeft onClick={() => setTableAnim(Date.now())} />
+                    <FaChevronRight onClick={() => setTableAnim(Date.now())} />
                   </div>
                 </WinnersHead>
 

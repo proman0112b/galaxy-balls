@@ -186,12 +186,23 @@ const Locations: React.FC<{ open: boolean }> = ({ open }) => {
 
 const WorldMapModal: React.FC<ModalProps> = ({ isShown, hide }) => {
   const [currentAnimation, setCurrentAnimation] = useState<number>(-1)
+  const [windowSize, setWindowSize] = useState<number>(0)
+
+  useEffect(() => {
+    if (typeof window !== undefined) {
+      function handleResize() {
+        setWindowSize(window.innerWidth)
+      }
+      window.addEventListener('resize', handleResize)
+      handleResize()
+    }
+  }, [])
 
   const modal = (
     <>
       <Backdrop onClick={hide} />
       <Wrapper>
-        <StyledModal style={{ display: isShown ? 'block' : 'none' }}>
+        <StyledModal style={{ display: isShown ? 'block' : 'none', transform: `scale(${windowSize > 950 ? 1 : windowSize / 950})` }}>
           <Header>
             <HeaderText>World with Galaxy Balls</HeaderText>
             <CloseButton onClick={hide}>&#10006;</CloseButton>

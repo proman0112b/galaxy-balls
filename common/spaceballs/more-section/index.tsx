@@ -5,11 +5,14 @@ import { Navigation } from 'swiper'
 import { useMediaQuery } from 'react-responsive'
 import Wrapper from '../../../components/wrapper'
 import { MoreSectionContainer, SwiperWrapper, NavigationNext, NavigationPrev, ComingSoonImg } from './styled'
+import { useRouter } from 'next/router'
+import { trans } from '../../../utils/i18n'
 
 const MoreSection: React.FC = () => {
   const [perView, setPerView] = useState<number>(3)
   const isTablet = useMediaQuery({ query: '(max-width: 1024px)' })
   const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
+  const { locale } = useRouter()
 
   useEffect(() => {
     if (isTablet && isMobile) setPerView(1)
@@ -19,8 +22,8 @@ const MoreSection: React.FC = () => {
   return (
     <Wrapper>
       <MoreSectionContainer>
-        <h2>More about our SpaceBalls</h2>
-        <p>Look at all the different SpaceBalls note which are the most valuable ones</p>
+        <h2>{trans(locale, 'space-balls', 'more-about')}</h2>
+        <p>{trans(locale, 'space-balls', 'more-about-text')}</p>
         <SwiperWrapper>
           <NavigationPrev className="prev">
             <FiChevronLeft size={30} />

@@ -22,15 +22,18 @@ import {
 } from './styled'
 import 'swiper/css'
 import 'swiper/css/navigation'
+import { useRouter } from 'next/router'
+import { trans } from '../../../utils/i18n'
 
 const MainSection: React.FC = () => {
   const isTablet = useMediaQuery({ query: '(max-width: 768px)' })
+  const { locale } = useRouter()
 
   return (
     <Wrapper>
       <MainSectionContainer>
-        <Title>transporter</Title>
-        <Description>A difficult task can only be undertaken by someone with sufficient experience.</Description>
+        <Title>{trans(locale, 'transporter', 'page-title')}</Title>
+        <Description>{trans(locale, 'transporter', 'desc')}</Description>
         <Content>
           <PhotoWrapper>
             <Image src="/assets/images/transporter/transporter.png" alt="no img" width={isTablet ? 336 : 655} height={isTablet ? 301 : 585} />
@@ -43,19 +46,11 @@ const MainSection: React.FC = () => {
           </PhotoWrapper>
           <PersonalInfo>
             <ContactInfo>
-              <span>Galaxy-Transporter</span>
+              <span>{trans(locale, 'transporter', 'insta-link')}</span>
               <AiOutlineInstagram size={20} />
             </ContactInfo>
-            <h3>Our official Transporter of GalaxyBalls</h3>
-            <p>
-              He is a master of transportation.
-              <br />
-              <br /> His job is to move the GalaxyBalls from one country to another which he has done dozens of times.He knows exactly what he is
-              doing. He makes sure that the games will run safely and that the rules are followed.
-              <br />
-              <br /> For this reason we have hired a transporter as our agent for the distribution of the balls. He alone will make sure that the
-              GalaxyBalls come to you. If you find one of them, you will also meet the transporter.
-            </p>
+            <h3>{trans(locale, 'transporter', 'title')}</h3>
+            <p dangerouslySetInnerHTML={{ __html: trans(locale, 'transporter', 'details') }}></p>
           </PersonalInfo>
         </Content>
       </MainSectionContainer>

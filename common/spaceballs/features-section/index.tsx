@@ -4,9 +4,12 @@ import Wrapper from '../../../components/wrapper'
 import { FeaturesSectionContainer, Feature, BallImg1, BallImg2, Content, CardList, Card } from './styled'
 import type { FeatureStaticData } from '../../../types/feature-static-data'
 import { featureStaticData } from '../../../static/feature-static-data'
+import { useRouter } from 'next/router'
+import { trans } from '../../../utils/i18n'
 
 const FeaturesSection: React.FC = () => {
   const isTablet = useMediaQuery({ query: '(max-width: 1300px)' })
+  const { locale } = useRouter()
 
   return (
     <Wrapper>
@@ -14,8 +17,8 @@ const FeaturesSection: React.FC = () => {
         <Feature>
           <BallImg1 />
           <Content>
-            <h1>Something about SpaceBalls</h1>
-            <p>Three things you should know about the SpaceBalls</p>
+            <h1>{trans(locale, 'space-balls', 'about-space-balls')}</h1>
+            <p>{trans(locale, 'space-balls', 'about-text')}</p>
             <CardList>
               {featureStaticData.map((data: FeatureStaticData, index: number) => {
                 if (index < 3)
@@ -31,8 +34,8 @@ const FeaturesSection: React.FC = () => {
         </Feature>
         <Feature>
           <Content>
-            <h1>What happens when you find a SpaceBall?</h1>
-            <p>Three other important things you should know</p>
+            <h1>{trans(locale, 'space-balls', 'find-a-ball')}</h1>
+            <p>{trans(locale, 'space-balls', 'find-a-ball-text')}</p>
             <CardList>
               {featureStaticData.map((data: FeatureStaticData, index: number) => {
                 if (index > 2)

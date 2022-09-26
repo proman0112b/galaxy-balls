@@ -54,7 +54,7 @@ export const translations: StringByString = {
 
       // conditions-section
       'conditions-title': 'The condition for the start',
-      'conditions-text': `Download the GalaxyBalls app and register with your email address. Then all you have to do is find 5 Spaceballs (virtual balls) to fully activate your GalaxyRadar and you're ready to go.`,
+      'conditions-text': `Download the GalaxyBalls app and register with your email address. Then all you have to do is find 5 SpaceBalls (virtual balls) to fully activate your GalaxyRadar and you're ready to go.`,
 
       // prize-section
       'prize-title': 'Your prizes are waiting for you',
@@ -126,7 +126,7 @@ export const translations: StringByString = {
     },
     'space-balls': {
       // intro section
-      title: 'Spaceballs',
+      title: 'SpaceBalls',
       desc: 'The SpaceBalls are here and waiting for you. Experience unique moments in Augment Realty that you have never seen before!',
 
       // chance section
@@ -157,7 +157,7 @@ export const translations: StringByString = {
       SpaceBalls are waiting for you.
       <br />
       <br />
-      With some of these Spaceballs you can unlock more game options to increase your level, get ranked and win prizes. Besides, there is also a
+      With some of these SpaceBalls you can unlock more game options to increase your level, get ranked and win prizes. Besides, there is also a
       store to help you achieve your goals faster.`,
 
       // values-section
@@ -231,7 +231,7 @@ export const translations: StringByString = {
 
       // conditions-section
       'conditions-title': `Condition pour le départ`,
-      'conditions-text': `Téléchargez l'application GalaxyBalls et enregistrez-vous avec votre adresse e-mail. Il ne vous reste plus qu'à trouver 5 Spaceballs (boules virtuelles) pour activer complètement votre GalaxyRadar et vous êtes prêt à partir.`,
+      'conditions-text': `Téléchargez l'application GalaxyBalls et enregistrez-vous avec votre adresse e-mail. Il ne vous reste plus qu'à trouver 5 SpaceBalls (boules virtuelles) pour activer complètement votre GalaxyRadar et vous êtes prêt à partir.`,
 
       // prize-section
       'prize-title': 'Vos prix vous attendent',
@@ -299,7 +299,7 @@ export const translations: StringByString = {
     },
     'space-balls': {
       // intro section
-      title: 'Spaceballs',
+      title: 'SpaceBalls',
       desc: `Les SpaceBalls sont là et vous attendent. Vivez des moments uniques dans réalité augmentée que vous n'avez jamais vus auparavant !`,
 
       // chance section
@@ -329,7 +329,7 @@ export const translations: StringByString = {
       Le second est particulièrement intéressant pour les gamers et les explorateurs. Chaque jour, de nouvelles aventures, de nouveaux défis et de très précieuses SpaceBalls t'attendent.
       <br />
       <br />
-      Avec certaines de ces Spaceballs, tu peux débloquer d'autres options de jeu pour augmenter ton niveau, obtenir des entrées dans le classement et gagner des prix. Il y a également une boutique qui t'aidera à atteindre tes objectifs plus rapidement.`,
+      Avec certaines de ces SpaceBalls, tu peux débloquer d'autres options de jeu pour augmenter ton niveau, obtenir des entrées dans le classement et gagner des prix. Il y a également une boutique qui t'aidera à atteindre tes objectifs plus rapidement.`,
 
       // values-section
       rankinglist: 'Rankinglist',
@@ -347,8 +347,8 @@ export const translations: StringByString = {
       'search-and-enjoy': 'cherchez et amusez-vous!',
       'search-and-enjoy-desc': `Découvrez de nombreux trésors cachés dans chaque SpaceBall. De grandes surprises vous attendent que vous n'avez jamais vues auparavant. Pars seul ou avec tes amis à la chasse aux nombreuses boules galactiques et remplis ton coffre à trésor. Consultez l'application tous les jours pour ne jamais manqué une occasion.`,
       'you-can-also': 'Tu peut également...',
-      'extend-bag': 'Elargir ton sac pour collecter plus de Spaceballs',
-      'get-your-detector': 'Acheter un détecteur pour trouver les Spaceballs correspondantes',
+      'extend-bag': 'Elargir ton sac pour collecter plus de SpaceBalls',
+      'get-your-detector': 'Acheter un détecteur pour trouver les SpaceBalls correspondantes',
       'participate-events': 'Participer à des événements spéciaux pour trouver des SpaceBalls en édition limitée',
 
       // more-section
@@ -403,7 +403,7 @@ export const translations: StringByString = {
 
       // conditions-section
       'conditions-title': `El requisito para empezar`,
-      'conditions-text': `Descarga la App GalaxyBalls y regístrate con tu dirección de correo electrónico. Entonces, todo lo que tienes que hacer es encontrar 5 Spaceballs (bolas virtuales) para activar completamente tu GalaxyRadar y ya estarás listo para empezar.`,
+      'conditions-text': `Descarga la App GalaxyBalls y regístrate con tu dirección de correo electrónico. Entonces, todo lo que tienes que hacer es encontrar 5 SpaceBalls (bolas virtuales) para activar completamente tu GalaxyRadar y ya estarás listo para empezar.`,
 
       // prize-section
       'prize-title': 'Tus premios te esperan',
@@ -472,7 +472,7 @@ export const translations: StringByString = {
     },
     'space-balls': {
       // intro section
-      title: 'Spaceballs',
+      title: 'SpaceBalls',
       desc: 'Las SpaceBalls están aquí y te esperan. ¡Vive momentos únicos en Realidad aumentada que nunca antes habías visto!',
 
       // chance section
@@ -577,7 +577,7 @@ export const translations: StringByString = {
 
       // conditions-section
       'conditions-title': `Die Bedingung für den Start`,
-      'conditions-text': `Lade die GalaxyBalls-App herunter und registriere dich mit deiner E-Mail-Adresse. Dann musst du nur noch 5 Spaceballs (virtuelle Bälle) finden, um dein GalaxyRadar vollständig zu aktivieren, und schon kannst du loslegen.`,
+      'conditions-text': `Lade die GalaxyBalls-App herunter und registriere dich mit deiner E-Mail-Adresse. Dann musst du nur noch 5 SpaceBalls (virtuelle Bälle) finden, um dein GalaxyRadar vollständig zu aktivieren, und schon kannst du loslegen.`,
 
       // prize-section
       'prize-title': 'Deine Preise warten auf dich',
@@ -646,7 +646,7 @@ export const translations: StringByString = {
     },
     'space-balls': {
       // intro section
-      title: 'Spaceballs',
+      title: 'SpaceBalls',
       desc: 'Die SpaceBalls sind hier und warten auf dich. Erleben Sie in Augment Realty einzigartige Momente, die Sie noch nie gesehen haben!',
 
       // chance section
@@ -676,7 +676,7 @@ export const translations: StringByString = {
       Der zweite Teil des Spiels ist besonders für Gamer und Entdecker interessant. Jeden Tag warten neue Abenteuer, Herausforderungen und sehr wertvolle SpaceBalls auf dich.
       <br />
       <br />
-      Mit einigen dieser Spaceballs kannst du weitere Spieloptionen freischalten, um dein Level zu erhöhen, Ranglisteneinträge zu erhalten und Preise zu gewinnen. Außerdem gibt es einen Shop, der dir helfen wird, deine Ziele schneller zu erreichen.`,
+      Mit einigen dieser SpaceBalls kannst du weitere Spieloptionen freischalten, um dein Level zu erhöhen, Ranglisteneinträge zu erhalten und Preise zu gewinnen. Außerdem gibt es einen Shop, der dir helfen wird, deine Ziele schneller zu erreichen.`,
 
       // values-section
       rankinglist: 'Rangliste',
@@ -695,8 +695,8 @@ export const translations: StringByString = {
       'search-and-enjoy-desc':
         'Entdecke viele Schätze die in jedem SpaceBall versteckt sind. Es warten tolle Überraschungen auf dich, die du noch nie gesehen hast. Geh allein oder mit deinen Freunden auf die Jagd nach vielen galaktischen Bällen und fülle deine Schatztruhe. Schau täglich in die App, um keine Gelegenheit zu verpassen.',
       'you-can-also': 'Du kannst auch auch...',
-      'extend-bag': 'Deine Tasche erweitern um mehr Spaceballs zu sammeln',
-      'get-your-detector': 'Einen Detektor kaufen um die passenden Spaceballs zu finden.',
+      'extend-bag': 'Deine Tasche erweitern um mehr SpaceBalls zu sammeln',
+      'get-your-detector': 'Einen Detektor kaufen um die passenden SpaceBalls zu finden.',
       'participate-events': 'An speziellen Events teilnehmen, um limitierte SpaceBalls zu finden.',
 
       // more-section
@@ -820,7 +820,7 @@ export const translations: StringByString = {
     },
     'space-balls': {
       // intro section
-      title: 'Spaceballs',
+      title: 'SpaceBalls',
       desc: 'As SpaceBalls chegaram e estão esperando por você. Experimente momentos únicos em Argumented Realty nunca antes vistos!',
 
       // chance section
@@ -869,8 +869,8 @@ export const translations: StringByString = {
       'search-and-enjoy-desc':
         'Descubra muitos tesouros que estão escondidos em cada SpaceBall. Há grandes surpresas esperando por você, que você nunca viu antes. Saia para caçar as muitas bolas galácticas sozinho ou com seus amigos e encha seu baú de tesouros. Confira o aplicativo diariamente para ter certeza de nunca perder uma oportunidade.',
       'you-can-also': 'Você também pode...',
-      'extend-bag': 'Ampliar sua bolsa para coletar mais Spaceballs',
-      'get-your-detector': 'Comprar um detector para encontrar as Spaceballs adequadas.',
+      'extend-bag': 'Ampliar sua bolsa para coletar mais SpaceBalls',
+      'get-your-detector': 'Comprar um detector para encontrar as SpaceBalls adequadas.',
       'participate-events': 'Participar de eventos especiais a fim de encontrar as SpaceBalls de edição limitada.',
 
       // more-section
@@ -924,7 +924,7 @@ export const translations: StringByString = {
 
       // conditions-section
       'conditions-title': `La condizione per l'avvio`,
-      'conditions-text': `Scaricate l'app GalaxyBalls e registratevi con il vostro indirizzo e-mail. A questo punto basta trovare 5 Spaceballs (sfere virtuali) per attivare completamente il GalaxyRadar e si è pronti a partire.`,
+      'conditions-text': `Scaricate l'app GalaxyBalls e registratevi con il vostro indirizzo e-mail. A questo punto basta trovare 5 SpaceBalls (sfere virtuali) per attivare completamente il GalaxyRadar e si è pronti a partire.`,
 
       // prize-section
       'prize-title': 'I vostri premi vi aspettano',
@@ -993,7 +993,7 @@ export const translations: StringByString = {
     },
     'space-balls': {
       // intro section
-      title: 'Spaceballs',
+      title: 'SpaceBalls',
       desc: 'Le SpaceBalls sono qui e ti aspettano. Vivete momenti unici che non avete mai visto prima in Augment Realty!',
 
       // chance section
@@ -1041,8 +1041,8 @@ export const translations: StringByString = {
       'search-and-enjoy': 'cercate e divertitevi!',
       'search-and-enjoy-desc': `Scopri tanti tesori nascosti in ogni SpaceBall. Vi aspettano grandi sorprese che non avete mai visto prima. Vai a caccia di tante sfere galattiche da solo o con i tuoi amici e riempi il tuo forziere. Controllate l'app ogni giorno per essere sicuri di non perdere mai un'opportunità.`,
       'you-can-also': 'Potete anche...',
-      'extend-bag': 'Espandi la tua borsa per raccogliere altre Spaceballs spaziali',
-      'get-your-detector': 'Comprate un rilevatore per trovare le Spaceballs spaziali corrispondenti.',
+      'extend-bag': 'Espandi la tua borsa per raccogliere altre SpaceBalls spaziali',
+      'get-your-detector': 'Comprate un rilevatore per trovare le SpaceBalls spaziali corrispondenti.',
       'participate-events': 'Partecipate agli eventi speciali per trovare SpaceBalls in edizione limitata.',
 
       // more-section

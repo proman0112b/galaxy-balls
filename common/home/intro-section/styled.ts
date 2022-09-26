@@ -80,6 +80,7 @@ export const Title = styled.div`
   z-index: 1;
 
   p {
+    margin-top: -60px;
     font-family: ${theme.fontFamily.secondary};
     font-style: normal;
     font-weight: 700;
@@ -98,10 +99,12 @@ export const Title = styled.div`
 
     @media screen and (max-width: 768px) {
       letter-spacing: 8px;
+      margin-top: -30px;
     }
 
     @media screen and (max-width: 426px) {
       letter-spacing: 4px;
+      margin-top: -10px;
     }
 
     span {

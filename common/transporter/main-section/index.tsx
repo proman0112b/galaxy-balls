@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { AiOutlineInstagram } from 'react-icons/ai'
 import { FiChevronRight, FiChevronLeft } from 'react-icons/fi'
 import { useMediaQuery } from 'react-responsive'
@@ -47,7 +48,11 @@ const MainSection: React.FC = () => {
           <PersonalInfo>
             <ContactInfo>
               <span>{trans(locale, 'transporter', 'insta-link')}</span>
-              <AiOutlineInstagram size={20} />
+              <Link href="https://www.instagram.com/besnik_tafallari/?next=%2Fgalaxyballs_official%2F">
+                <a target="_blank" rel="noreferrer" style={{ paddingTop: '3px' }}>
+                  <AiOutlineInstagram size={20} />
+                </a>
+              </Link>
             </ContactInfo>
             <h3>{trans(locale, 'transporter', 'title')}</h3>
             <p dangerouslySetInnerHTML={{ __html: trans(locale, 'transporter', 'details') }}></p>

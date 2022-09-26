@@ -45,7 +45,7 @@ export const Title = styled.div`
   height: 80px;
   background: #222235;
   margin-top: 83px;
-  padding: 6px 57px 6px 244px;
+  padding: 6px 57px 6px 204px;
   font-family: ${theme.fontFamily.primary};
   font-weight: 700;
   font-size: 45px;

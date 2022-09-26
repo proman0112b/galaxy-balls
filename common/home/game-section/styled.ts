@@ -22,7 +22,7 @@ export const GameSectionContainer = styled(Container)`
   gap: 71px;
 
   div:nth-child(1) {
-    height: 332.79px;
+    height: 352.79px;
   }
 
   div:nth-child(2) {

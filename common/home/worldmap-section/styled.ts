@@ -45,7 +45,7 @@ export const WorldMapSectionContainer = styled(Container)`
 
   h1 {
     font-family: ${theme.fontFamily.secondary};
-    font-size: 168px;
+    font-size: 148px;
     line-height: 165px;
     background: linear-gradient(180deg, #baa2ed 0%, rgba(136, 102, 200, 0.06) 100%);
     -webkit-background-clip: text;
@@ -55,11 +55,11 @@ export const WorldMapSectionContainer = styled(Container)`
     z-index: 1;
 
     @media screen and (max-width: 1200px) {
-      font-size: 140px;
+      font-size: 120px;
     }
 
     @media screen and (max-width: 1024px) {
-      font-size: 11.66vw;
+      font-size: 10vw;
       line-height: 11.5vw;
     }
 

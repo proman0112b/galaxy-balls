@@ -14,8 +14,8 @@ const FaqSection: React.FC = () => {
   return (
     <Wrapper>
       <FaqSectionContainer>
-        <Title>FAQ</Title>
-        <Description>{trans(locale, 'home', 'faq-title')}</Description>
+        <Title>{trans(locale, 'home', 'faq-title')}</Title>
+        <Description>{trans(locale, 'home', 'faq-description')}</Description>
         <CardListWrapper>
           <CardList>
             {faqStaticData.map((data: FaqStaticData, index: number) => {
@@ -29,9 +29,9 @@ const FaqSection: React.FC = () => {
                       }}
                     >
                       {selectedIndex === index ? <FaChevronUp /> : <FaChevronDown />}
-                      <span>{data.title}</span>
+                      <span>{trans(locale, 'home', `question-description-${index + 1}`)}</span>
                     </div>
-                    <div>{data.description}</div>
+                    <div>{trans(locale, 'home', `answer-description-${index + 1}`)}</div>
                   </Card>
                 )
             })}
@@ -48,9 +48,9 @@ const FaqSection: React.FC = () => {
                       }}
                     >
                       {selectedIndex === index ? <FaChevronUp /> : <FaChevronDown />}
-                      <span>{data.title}</span>
+                      <span>{trans(locale, 'home', `question-description-${index + 1}`)}</span>
                     </div>
-                    <div>{data.description}</div>
+                    <div>{trans(locale, 'home', `answer-description-${index + 1}`)}</div>
                   </Card>
                 )
             })}

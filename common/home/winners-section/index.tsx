@@ -24,7 +24,7 @@ const WinnersSection: React.FC = () => {
       <WinnersSectionContainer>
         <MeteorImg />
         <section>
-          <Title>Winners</Title>
+          <Title>{trans(locale, 'home', 'winners-title')}</Title>
           <Description>
             <p>{trans(locale, 'home', 'winners-text')}</p>
             {isTablet && !isMobile && (

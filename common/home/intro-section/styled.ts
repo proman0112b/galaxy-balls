@@ -38,10 +38,14 @@ export const IntroSectionContainer = styled(Container)`
   }
 `
 
-export const IozvImg = styled.div`
-  width: 1164px;
-  height: 69px;
-  background: url(/assets/images/home/iozv.png) no-repeat;
+interface IozvImgProps {
+  src: string
+}
+
+export const IozvImg = styled.div<IozvImgProps>`
+  width: 1200px;
+  height: 70px;
+  background: ${({ src }) => `url(${src}) no-repeat`};
   background-size: 100% 100%;
   z-index: 1;
 

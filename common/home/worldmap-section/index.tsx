@@ -13,7 +13,7 @@ const WorldMapSection: React.FC = () => {
     <WorldMapSectionWrapper>
       <BGWrapper />
       <WorldMapSectionContainer>
-        <h1>WORLD MAP</h1>
+        <h1>{trans(locale, 'home', 'world-map-title')}</h1>
         <p>{trans(locale, 'home', 'world-map-text')}</p>
         <DiscoverButton onClick={toggle}>
           <div className="wrapper">

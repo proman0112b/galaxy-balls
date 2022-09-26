@@ -20,7 +20,7 @@ const WinnersSection: React.FC = () => {
   const { locale } = useRouter()
 
   return (
-    <Wrapper>
+    <Wrapper id="winner">
       <WinnersSectionContainer>
         <MeteorImg />
         <section>

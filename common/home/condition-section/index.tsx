@@ -9,10 +9,10 @@ import { trans } from '../../../utils/i18n'
 
 const ConditionSection: React.FC = () => {
   const images = [
-    { src: '/assets/images/home/banner 1.png' },
+    { src: '/assets/images/home/banner1.jpg' },
     { src: '/assets/images/home/banner2.png' },
-    { src: '/assets/images/home/banner3.png' },
-    { src: '/assets/images/home/banner4.png' },
+    { src: '/assets/images/home/banner3.jpg' },
+    { src: '/assets/images/home/banner4.jpg' },
   ]
   const isTablet = useMediaQuery({ query: '(max-width: 1024px)' })
   const carouselRef = useRef<CarouselRef | null>(null)

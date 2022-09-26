@@ -129,4 +129,5 @@ export const Instagram = styled.div`
   background: rgba(252, 194, 82, 0.1);
   border-radius: 12px;
   color: #fcc252;
+  cursor: pointer;
 `

@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import Image from 'next/image'
 import { AiOutlineInstagram } from 'react-icons/ai'
 import Wrapper from '../../../components/wrapper'
@@ -23,7 +24,11 @@ const MainSection: React.FC = () => {
             <OfficialSiteWrapper>
               <OfficialSite>{trans(locale, 'partners', 'officialsite')}</OfficialSite>
               <Instagram>
-                <AiOutlineInstagram />
+                <Link href="https://www.instagram.com/blend_berisha21/?next=%2Fgalaxyballs_official%2F">
+                  <a target="_blank" rel="noreferrer">
+                    <AiOutlineInstagram />
+                  </a>
+                </Link>
               </Instagram>
             </OfficialSiteWrapper>
           </Card>
@@ -35,7 +40,11 @@ const MainSection: React.FC = () => {
             <OfficialSiteWrapper>
               <OfficialSite>{trans(locale, 'partners', 'officialsite')}</OfficialSite>
               <Instagram>
-                <AiOutlineInstagram />
+                <Link href="https://www.instagram.com/aldinmax_agency/?next=%2Fgalaxyballs_official%2F">
+                  <a target="_blank" rel="noreferrer">
+                    <AiOutlineInstagram />
+                  </a>
+                </Link>
               </Instagram>
             </OfficialSiteWrapper>
           </Card>
@@ -47,7 +56,11 @@ const MainSection: React.FC = () => {
             <OfficialSiteWrapper>
               <OfficialSite>{trans(locale, 'partners', 'officialsite')}</OfficialSite>
               <Instagram>
-                <AiOutlineInstagram />
+                <Link href="https://www.instagram.com/besnik_tafallari/?next=%2Fgalaxyballs_official%2F">
+                  <a target="_blank" rel="noreferrer">
+                    <AiOutlineInstagram />
+                  </a>
+                </Link>
               </Instagram>
             </OfficialSiteWrapper>
           </Card>
@@ -59,7 +72,11 @@ const MainSection: React.FC = () => {
             <OfficialSiteWrapper>
               <OfficialSite>{trans(locale, 'partners', 'officialsite')}</OfficialSite>
               <Instagram>
-                <AiOutlineInstagram />
+                <Link href="https://www.instagram.com/samafro1/?next=%2Fgalaxyballs_official%2F">
+                  <a target="_blank" rel="noreferrer">
+                    <AiOutlineInstagram />
+                  </a>
+                </Link>
               </Instagram>
             </OfficialSiteWrapper>
           </Card>

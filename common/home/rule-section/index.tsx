@@ -11,7 +11,7 @@ const RuleSection: React.FC = () => {
   const { locale } = useRouter()
 
   return (
-    <Wrapper>
+    <Wrapper id="rules">
       <RuleSectionContainer>
         <MeteorImg1 />
         <MeteorImg2 />

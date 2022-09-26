@@ -177,8 +177,8 @@ export const translations: StringByString = {
       'search-and-enjoy-desc':
         'Discover many treasures hidden in each SpaceBall. Great surprises are waiting for you that you have never seen before. Go alone or with your friends on the hunt for many galactic balls and fill your treasure chest. Check the app daily to never miss an opportunity.',
       'you-can-also': 'You can also...',
-      'extend-bag': 'Extend your bag to collect more spaceballs',
-      'get-your-detector': 'Get your detector and find the rest of the spaceballs',
+      'extend-bag': 'Extend your bag to collect more SpaceBalls',
+      'get-your-detector': 'Get your detector and find the rest of the SpaceBalls',
       'participate-events': 'Participate in special events to find rare SpaceBalls',
 
       // more-section

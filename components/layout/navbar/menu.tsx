@@ -15,16 +15,16 @@ const MenuComponent: React.FC<MenuComponentProps> = ({ setShowSmallMenu }) => {
       <Link href="/">
         <a onClick={() => setShowSmallMenu(false)}>{trans(locale, 'menu', 'home')}</a>
       </Link>
-      <Link href="/">
+      <Link href="/#start">
         <a onClick={() => setShowSmallMenu(false)}>{trans(locale, 'menu', 'start')}</a>
       </Link>
-      <Link href="/">
+      <Link href="/#rules">
         <a onClick={() => setShowSmallMenu(false)}>{trans(locale, 'menu', 'rules')}</a>
       </Link>
-      <Link href="/">
+      <Link href="/#worldmap">
         <a onClick={() => setShowSmallMenu(false)}>{trans(locale, 'menu', 'world-map')}</a>
       </Link>
-      <Link href="/">
+      <Link href="/#winner">
         <a onClick={() => setShowSmallMenu(false)}>{trans(locale, 'menu', 'winner')}</a>
       </Link>
       <Link href="/spaceballs">

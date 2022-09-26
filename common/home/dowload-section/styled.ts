@@ -75,6 +75,7 @@ export const Card = styled.section`
     line-height: 22px;
     letter-spacing: 0.5em;
     opacity: 0.4;
+    cursor: pointer;
     @media screen and (max-width: 426px) {
       font-size: 6px;
       line-height: 9px;

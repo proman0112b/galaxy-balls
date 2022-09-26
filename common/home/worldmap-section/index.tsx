@@ -10,7 +10,7 @@ const WorldMapSection: React.FC = () => {
   const { locale } = useRouter()
 
   return (
-    <WorldMapSectionWrapper>
+    <WorldMapSectionWrapper id="worldmap">
       <BGWrapper />
       <WorldMapSectionContainer>
         <h1>{trans(locale, 'home', 'world-map-title')}</h1>

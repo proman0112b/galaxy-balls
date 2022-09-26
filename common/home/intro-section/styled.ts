@@ -7,7 +7,7 @@ export const BgImg = styled.div`
   top: 0;
   width: 100%;
   height: 1038px;
-  background: url(/assets/images/home/intro-bg1.png) no-repeat;
+  background: url(/assets/images/home/intro-bg.png) no-repeat;
   background-size: 100% 100%;
 
   @media screen and (max-width: 1200px) {

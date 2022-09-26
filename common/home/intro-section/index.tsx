@@ -7,7 +7,7 @@ const IntroSection: React.FC = () => {
   const { locale } = useRouter()
 
   return (
-    <Wrapper id="start">
+    <Wrapper>
       <BgImg />
       <IntroSectionContainer>
         <IozvImg src={`/assets/images/home/iozv-${locale}.png`} />

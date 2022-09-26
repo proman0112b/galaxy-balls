@@ -9,7 +9,7 @@ const GameSection: React.FC = () => {
   const { locale } = useRouter()
 
   return (
-    <Wrapper>
+    <Wrapper id="start">
       <Title>{trans(locale, 'home', 'for-players')}</Title>
       <GameSectionContainer>
         <Card>

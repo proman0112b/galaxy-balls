@@ -15,11 +15,16 @@ export const Title = styled.h1`
   font-size: 72px;
   line-height: 71px;
   text-align: center;
-  background: linear-gradient(180deg, #3c5462 0%, #a7a7a7 100%);
+  background-image: linear-gradient(180deg, #3c5462 0%, #a7a7a7 100%);
+  background-size: 100%;
+  background-repeat: repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
   background-clip: text;
-  text-shadow: 0px 2px 12px #0063f8;
+  filter: drop-shadow(0px 2px 8px rgb(0 99 248 / 80%));
+  -webkit-text-stroke: 1px #ffffff;
 
   @media screen and (max-width: 768px) {
     font-size: 36px;

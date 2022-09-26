@@ -122,6 +122,7 @@ export const translations: StringByString = {
       'card-8-title': 'Do you want to join us?',
       'card-8-desc': 'Contact us!',
       'card-8-detail': `We are always ready to collaborate with other talents. Whether you're a designer, artist, influencer, etc., just drop us a line so we can get you involved in the Galaxyballs project!`,
+      officialsite: 'Official site',
     },
     'space-balls': {
       // intro section
@@ -177,6 +178,9 @@ export const translations: StringByString = {
       // more-section
       'more-about': 'More about our SpaceBalls',
       'more-about-text': 'Look at all the different SpaceBalls note which are the most valuable ones',
+    },
+    footer: {
+      'footer-text': 'available soon',
     },
   },
 
@@ -244,6 +248,51 @@ export const translations: StringByString = {
         'Cette tâche a été confiée à notre transporteur officiel. Il emmène les GalaxyBalls dans 7 endroits différents. Leur emplacement est généré aléatoirement par un système.',
       'question-description-6': 'Comment puis-je obtenir mon prix?',
       'answer-description-6': 'Les vainqueurs doivent apporter les GalaxyBalls intactes à un endroit précis du pays pour recevoir leur prix.',
+    },
+    transporter: {
+      'page-title': 'TRANSPORTEUR',
+      desc: `Une tâche difficile ne peut être entreprise que par une personne ayant suffisamment d'expérience.`,
+      'insta-link': `Galaxy-Transporter`,
+      title: `Notre transporteur officiel de GalaxyBalls`,
+      details: `C'est un maître du transport.
+      <br />
+      <br />
+      Son travail consiste à déplacer les GalaxyBalls d'un pays à l'autre, ce qu'il a fait des dizaines de fois. Il s'assure que les jeux se déroulent en toute sécurité et que les règles sont respectées.
+      <br />
+      <br />
+      C'est pourquoi nous avons engagé un transporteur comme agent pour la distribution des GalaxyBalls. Lui seul s'assurera que les boules de cristal arrivent jusqu'à vous. Si vous trouvez l'une d'entre elles, vous rencontrerez également le transporteur.`,
+    },
+    partners: {
+      title: 'Partenaires',
+      desc: `Vous trouverez ici quelques-uns des partenaires qui ont travaillé sur le projet GalaxyBalls et nous ont apporté leur soutien. Chacun d'entre eux a apporté une contribution qui a rendu ce projet unique et c'est ainsi que nous sommes arrivés à ce résultat.`,
+      'card-1-title': 'Blend',
+      'card-1-desc': 'Consulting',
+      'card-1-detail': `Blend nous a aidé dans les domaines du conseil et des idées. Il a été l'un des premiers partenaires de ce projet et a conduit à d'autres contacts comme avec aldin puis aussi avec Le Transporteur.`,
+      'card-2-title': 'Aldin',
+      'card-2-desc': 'Multitâche',
+      'card-2-detail': `Aldin nous a soutenu dans le domaine du conseil, des idées et de la photographie. Nous lui devons également la collaboration avec notre transporteur actuel. Aldin est très polyvalent et un partenaire très fiable.`,
+      'card-3-title': 'Besnik',
+      'card-3-desc': 'Transporteur',
+      'card-3-detail': `Besnik tafallari n'est pas seulement notre transporteur officiel de GalaxyBalls mais aussi le meilleur sosie de Jason Statham au monde. Nous l'avons trouvé si intéressant qu'une collaboration était inévitable.`,
+      'card-4-title': 'Samafro',
+      'card-4-desc': 'Videomaker',
+      'card-4-detail': `Samafaro nous a fait de très belles séquences vidéo du monde entier. Ses enregistrements sont de la plus haute qualité, tout comme son travail.`,
+      'card-5-title': 'John',
+      'card-5-desc': 'Designer',
+      'card-5-detail': `John est un maître du design, nous lui devons le site web, l'application et bien plus encore. Son travail est formidable et ce fut un plaisir de travailler avec lui et d'avoir passé de nombreuses nuits blanches.`,
+      'card-6-title': 'Alicia',
+      'card-6-desc': 'Conseil en logiciels',
+      'card-6-detail': `Alicia est une développeuse en Allemagne. Elle était responsable de la consultation du projet et nous a apporté un grand soutien.`,
+      'card-7-title': 'Crowdfunding',
+      'card-7-desc': 'Liste de tous les superhéros',
+      'card-7-detail': `Vous trouverez bientôt ici tous les super-héros qui nous ont soutenus sur ulule.com et Kickstarter. Rejoignez-nous!`,
+      'card-8-title': 'Voulez-vous vous joindre à nous?',
+      'card-8-desc': 'Contactez nous!',
+      'card-8-detail': `Nous sommes toujours prêts à collaborer avec d'autres talents. Que vous soyez un designer, un artiste, un influenceur, etc., écrivez-nous pour que nous puissions vous impliquer dans le projet Galaxyballs!`,
+      officialsite: 'Site officiel inst',
+    },
+    footer: {
+      'footer-text': 'disponible soon',
     },
   },
 
@@ -314,6 +363,51 @@ export const translations: StringByString = {
       'question-description-6': '¿Cómo recibo el dinero del premio?',
       'answer-description-6':
         'Los que encuentren las GalaxyBalls tienen que llevar las bolas sin daños a un lugar determinado del país respectivo para recibir el dinero del premio.',
+    },
+    transporter: {
+      'page-title': 'TRANSPORTISTAS',
+      desc: `Una tarea difícil sólo puede ser emprendida por alguien que tenga suficiente experiencia.`,
+      'insta-link': `Transportista de la Galaxy`,
+      title: `Nuestro transportista oficial de las GalaxyBalls`,
+      details: `Es un maestro del transporte. 
+      <br />
+      <br />
+      Su trabajo consiste en transportar las GalaxyBalls de un país a otro, algo que ha hecho decenas de veces, y sabe perfectamente lo que hace. Se encarga de que los juegos se desarrollen con seguridad y de que se cumplan las normas.
+      <br />
+      <br />
+      Por ello, hemos contratado a un transportista como agente para la distribución de las GalaxyBalls. Sólo él se encargará de que las GalaxyBalls te lleguen a ti. Si encuentras una de ellas, también te encontrarás con el transportista.`,
+    },
+    partners: {
+      title: 'Colaboradores',
+      desc: `Aquí puede encontrar algunos de los socios que han trabajado en el proyecto GalaxyBalls y nos han apoyado con sus conocimientos. Cada uno de ellos ha aportado algo que ha hecho único este proyecto y así es como hemos llegado a este resultado.`,
+      'card-1-title': 'Blend',
+      'card-1-desc': 'Asesor',
+      'card-1-detail': `Blend nos ayudó en las áreas de asesoramiento e ideas. Fue uno de los primeros colaboradores de este proyecto y nos dio a conocer otros contactos como Aldin y luego también el transportista.`,
+      'card-2-title': 'Aldin',
+      'card-2-desc': 'Multitasking',
+      'card-2-detail': `Aldin nos ha apoyado en materia de asesoramiento, ideas y fotografía. También le debemos la colaboración con nuestro actual transportista. Aldin es muy polivalente y un colaborador muy fiable.`,
+      'card-3-title': 'Besnik',
+      'card-3-desc': 'Transportista',
+      'card-3-detail': `Besnik Tafallari no sólo es nuestro transportista oficial de GalaxyBalls, sino también el mejor doble de Jason Statham del mundo. Nos pareció tan interesante que la colaboración fue inevitable.`,
+      'card-4-title': 'Samafro',
+      'card-4-desc': 'Creador de vídeos',
+      'card-4-detail': `Samafaro nos ha hecho vídeos muy bonitos de todo el mundo. Sus grabaciones son de la más alta calidad, al igual que su trabajo.`,
+      'card-5-title': 'John',
+      'card-5-desc': 'Diseñador',
+      'card-5-detail': `John es un maestro del diseño, le debemos la web, la app y mucho más. Su trabajo es estupendo y fue un placer trabajar con él y pasar muchas noches sin dormir.`,
+      'card-6-title': 'Alicia',
+      'card-6-desc': 'Asesora de software',
+      'card-6-detail': `Alicia es desarrolladora en Alemania. Se encargó de asesorar el proyecto y fue un gran apoyo para nosotros.`,
+      'card-7-title': 'Crowdfunding',
+      'card-7-desc': 'Lista de todos los superhéroes',
+      'card-7-detail': `Aquí encontrarás pronto a todos los superhéroes que nos han apoyado en ulule.com y en Kickstarter. ¡Participa!`,
+      'card-8-title': '¿Le gustaría unirse a nosotros?',
+      'card-8-desc': 'Póngase en contacto con nosotros.',
+      'card-8-detail': `Siempre estamos dispuestos a colaborar con otros talentos. Si eres diseñador, artista, influencer, etc., ponte en contacto con nosotros para que te involucremos en el proyecto Galaxyballs.`,
+      officialsite: 'Página web oficial inst',
+    },
+    footer: {
+      'footer-text': 'disponible pronto',
     },
   },
 
@@ -386,46 +480,46 @@ export const translations: StringByString = {
         'Die Finder der GalaxyBalls müssen die gefundenen Kugeln unbeschädigt an einen bestimmten Ort im jeweiligen Land bringen, um ihr Preisgeld zu erhalten.',
     },
     transporter: {
-      'page-title': 'Transporter',
-      desc: `A difficult task can only be undertaken by someone with sufficient experience.`,
+      'page-title': 'TRANSPORTER',
+      desc: `Eine schwierige Aufgabe kann nur von jemandem übernommen werden, der über ausreichende Erfahrung verfügt.`,
       'insta-link': `Galaxy-Transporter`,
-      title: `Our official Transporter of GalaxyBalls`,
-      details: `He is a master of transportation. 
+      title: `Unser offizieller Transporter der GalaxyBalls`,
+      details: `Er ist ein Meister des Transports. 
       <br />
       <br />
-      His job is to move the GalaxyBalls from one country to another which he has done dozens of times.He knows exactly what he is doing. He makes sure that the games will run safely and that the rules are followed.
+      Seine Aufgabe ist es, die GalaxyBalls von einem Land in ein anderes zu transportieren, was er schon dutzende Male getan hat, und er weiß genau, was er tut. Er sorgt dafür, dass die Spiele sicher laufen und dass die Regeln eingehalten werden.
       <br />
       <br />
-      For this reason we have hired a transporter as our agent for the distribution of the balls. He alone will make sure that the GalaxyBalls come to you. If you find one of them, you will also meet the transporter.`,
+      Aus diesem Grund haben wir einen Transporter als unseren Agenten für die Verteilung der GalaxyBalls eingestellt. Er allein wird dafür sorgen, dass die GalaxyBalls zu dir kommen. Wenn du einen von ihnen findest, wirst du auch den Transporter treffen.`,
     },
     partners: {
-      title: 'partners',
-      desc: `Here you can find all the partners who worked on the GalaxyBalls project and supported us with their know-how. Each of them has contributed
-      something that made this project unique, and that's how we got to this result.`,
+      title: 'Partners',
+      desc: `Hier finden Sie einige Partner, die am GalaxyBalls-Projekt mitgearbeitet und uns mit ihrem Know-how unterstützt haben. Jeder von ihnen hat etwas beigetragen, dass dieses Projekt einzigartig gemacht hat und so sind wir zu diesem Ergebnis gekommen.`,
       'card-1-title': 'Blend',
-      'card-1-desc': 'Consulting',
-      'card-1-detail': `Blend has helped us in the areas of consulting and ideas. He was one of the first partners in this project and has led to further contacts as with aldin then also with the Transporter.`,
+      'card-1-desc': 'Berater',
+      'card-1-detail': `Blend hat uns in den Bereichen Beratung und Ideen geholfen. Er war einer der ersten Partner in diesem Projekt und hat zu weiteren Kontakten wie mit aldin und dann auch mit dem Transporter geführt.`,
       'card-2-title': 'Aldin',
       'card-2-desc': 'Multitasking',
-      'card-2-detail': `Aldin has supported us in the area of consulting, ideas and photography. We also owe him the cooperation with our current transporter. Aldin is very multitasking and a very reliable partner.`,
+      'card-2-detail': `Aldin hat uns in den Bereichen Beratung, Ideen und Fotografie unterstützt. Auch die Zusammenarbeit mit unserem jetzigen Transporter verdanken wir ihm. Aldin ist sehr multitaskingfähig und ein sehr zuverlässiger Partner.`,
       'card-3-title': 'Besnik',
       'card-3-desc': 'Transporter',
-      'card-3-detail': `Besnik tafallari is not only our official GalaxyBalls transporter but also the best jason statham double in the world. We found him so interesting that a collaboration was inevitable.`,
+      'card-3-detail': `Besnik Tafallari ist nicht nur unser offizieller GalaxyBalls-Transporter, sondern auch das beste Jason Statham-Double der Welt. Wir fanden ihn so interessant, dass eine Zusammenarbeit unausweichlich war.`,
       'card-4-title': 'Samafro',
-      'card-4-desc': 'Videomaker',
-      'card-4-detail': `Samafaro has made us some very nice video footage from around the world. His recordings are of the highest quality, as is his work.`,
+      'card-4-desc': 'Videomacher',
+      'card-4-detail': `Samafaro hat uns einige sehr schöne Videoaufnahmen aus der ganzen Welt gemacht. Seine Aufnahmen sind von höchster Qualität, ebenso wie seine Arbeit.`,
       'card-5-title': 'John',
       'card-5-desc': 'Designer',
-      'card-5-detail': `John is a master of design, we owe him the website, the app and much more. His work is great and it was a pleasure to work with him and have many sleepless nights.`,
+      'card-5-detail': `John ist ein Meister des Designs, wir verdanken ihm die Website, die App und vieles mehr. Seine Arbeit ist großartig und es war ein Vergnügen, mit ihm zu arbeiten und viele schlaflose Nächte zu haben.`,
       'card-6-title': 'Alicia',
-      'card-6-desc': 'Soft Consulting',
-      'card-6-detail': `Alicia is a developer in Germany. She was responsible for consulting the project and was a great support for us.`,
+      'card-6-desc': 'Software Beratung',
+      'card-6-detail': `Alicia ist eine Entwicklerin in Deutschland. Sie war für die Beratung des Projekts verantwortlich und war eine große Unterstützung für uns.`,
       'card-7-title': 'Crowdfunding',
-      'card-7-desc': 'List of all Superheroes',
-      'card-7-detail': `Here you will soon find all the superheroes who supported us on ulule.com and Kickstarter. Join us!`,
-      'card-8-title': 'Do you want to join us?',
-      'card-8-desc': 'Contact us!',
-      'card-8-detail': `We are always ready to collaborate with other talents. Whether you're a designer, artist, influencer, etc., just drop us a line so we can get you involved in the Galaxyballs project!`,
+      'card-7-desc': 'Liste aller Superhelden',
+      'card-7-detail': `Hier wirst du bald alle Superhelden finden, die uns auf ulule.com und Kickstarter unterstützt haben. Mach mit!`,
+      'card-8-title': 'Möchten Sie sich uns anschließen?',
+      'card-8-desc': 'Kontaktieren Sie uns!',
+      'card-8-detail': `Wir sind immer bereit, mit anderen Talenten zusammenzuarbeiten. Egal, ob du ein Designer, Künstler, Influencer, etc. bist, melde dich einfach bei uns, damit wir dich in das Galaxyballs-Projekt einbinden können!`,
+      officialsite: 'Offizielle Website inst',
     },
     'space-balls': {
       // intro section
@@ -481,6 +575,9 @@ export const translations: StringByString = {
       // more-section
       'more-about': 'More about our SpaceBalls',
       'more-about-text': 'Look at all the different SpaceBalls note which are the most valuable ones',
+    },
+    footer: {
+      'footer-text': 'bald verfügbar',
     },
   },
 
@@ -551,6 +648,51 @@ export const translations: StringByString = {
       'question-description-6': 'Como é que recebo o meu prémio monetário?',
       'answer-description-6':
         'Os achadores das GalaxyBalls têm que levar as bolas encontradas sem danos a um determinado lugar no respectivo país para receber seu prêmio em dinheiro.',
+    },
+    transporter: {
+      'page-title': 'TRANSPORTADOR',
+      desc: `Uma tarefa difícil somente pode ser realizada por alguém que tenha bastante experiência.`,
+      'insta-link': `Transportador Galaxy`,
+      title: `Nosso Transportador oficial das GalaxyBalls.`,
+      details: `Ele é um mestre do transporte. 
+      <br />
+      <br />
+      Seu trabalho é transportar as GalaxyBalls de um país para outro, algo que ele já fez dezenas de vezes, e ele sabe exatamente o que faz. Ele se assegura de que os jogos funcionem com segurança e que as regras sejam seguidas.
+      <br />
+      <br />
+      Por esta razão, contratamos um Transportador como nosso agente para a distribuição das GalaxyBalls. Só ele garantirá que as GalaxyBalls cheguem até você. Quando você encontrar uma delas, você também encontrará o transportador.`,
+    },
+    partners: {
+      title: 'Parceiros',
+      desc: `Aqui você encontra alguns dos parceiros que trabalharam no projeto GalaxyBalls e nos apoiaram com seu conhecimento. Cada um deles contribuiu com algo que tornou este projeto único e é assim que chegamos a este resultado.`,
+      'card-1-title': 'Blend',
+      'card-1-desc': 'Conselheiro',
+      'card-1-detail': `Blend nos ajudou nas áreas de conselhos e idéias. Ele foi um dos primeiros parceiros neste projeto e possibilitou outros contatos como com o Aldin e depois também com o Transportador.`,
+      'card-2-title': 'Aldin',
+      'card-2-desc': 'Multitarefa',
+      'card-2-detail': `Aldin tem nos apoiado nas áreas de conselhos, idéias e fotografia. Também devemos a ele a cooperação com nosso atual transportador. O Aldin é muito multifunção e um parceiro muito confiável.`,
+      'card-3-title': 'Besnik',
+      'card-3-desc': 'Transportador',
+      'card-3-detail': `Besnik Tafallari não é apenas nosso transportador oficial das GalaxyBalls, mas também o melhor dublê de Jason Statham do mundo. Achamos ele tão interessante que uma cooperação era inevitável.`,
+      'card-4-title': 'Samafro',
+      'card-4-desc': 'Criador de vídeo',
+      'card-4-detail': `Samafaro produziu algumas filmagens de vídeo muito belas de todo o mundo. Suas filmagens são da mais alta qualidade, assim como seu trabalho.`,
+      'card-5-title': 'John',
+      'card-5-desc': 'Designer',
+      'card-5-detail': `John é um mestre do design, devemos a ele o site, o aplicativo e muito mais. Seu trabalho é ótimo e foi um prazer trabalhar com ele e passar por muitas noites sem dormir.`,
+      'card-6-title': 'Alicia',
+      'card-6-desc': 'Consultoria de software',
+      'card-6-detail': `Alicia é uma desenvolvedora na Alemanha. Ela foi responsável por aconselhar o projeto e foi um grande apoio para nós.`,
+      'card-7-title': 'Crowdfunding',
+      'card-7-desc': 'Lista de todos os super-heróis',
+      'card-7-detail': `Em breve você encontrará aqui todos os super-heróis que nos apoiaram no ulule.com e no Kickstarter. Junte-se a nós!`,
+      'card-8-title': 'Gostaria de se juntar a nós?',
+      'card-8-desc': 'Entre em contato conosco!',
+      'card-8-detail': `Estamos sempre dispostos a trabalhar em conjunto com outros talentos. Se você é designer, artista, influenciador, etc., basta entrar em contato para que possamos envolver você no projeto Galaxyballs!`,
+      officialsite: 'Site oficial',
+    },
+    footer: {
+      'footer-text': 'disponível em breve',
     },
   },
 
@@ -635,7 +777,7 @@ export const translations: StringByString = {
       Per questo motivo, abbiamo assunto un trasportatore come nostro agente per la distribuzione delle GalaxyBall. Solo lui farà in modo che le GalaxyBall arrivino a voi. Quando troverete uno di loro, incontrerete anche il trasportatore.`,
     },
     partners: {
-      title: 'Partner',
+      title: 'Partners',
       desc: `Qui troverete alcuni dei partner che hanno lavorato al progetto GalaxyBalls e che ci hanno messo a disposizione la loro esperienza. Ognuno di loro ha dato un contributo che ha reso questo progetto unico ed è così che siamo arrivati a questo risultato.`,
       'card-1-title': 'Blend',
       'card-1-desc': 'Consultazione',
@@ -661,6 +803,7 @@ export const translations: StringByString = {
       'card-8-title': 'Volete unirvi a noi?',
       'card-8-desc': 'Contattateci!',
       'card-8-detail': `Siamo sempre disposti a collaborare con altri talenti. Se sei un designer, un artista, un influencer, ecc. contattaci per farti coinvolgere nel progetto Galaxyballs!`,
+      officialsite: 'Sito ufficiale ist',
     },
     'space-balls': {
       // intro section
@@ -713,6 +856,9 @@ export const translations: StringByString = {
       // more-section
       'more-about': 'Per saperne di più sulle nostre SpaceBalls',
       'more-about-text': 'Osservate le diverse SpaceBalls e notate quali sono le più preziose.',
+    },
+    footer: {
+      'footer-text': 'presto disponibile',
     },
   },
 }

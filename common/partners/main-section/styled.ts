@@ -104,10 +104,13 @@ export const OfficialSiteWrapper = styled.div`
   margin-top: 16px;
   display: flex;
   gap: 8px;
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+  }
 `
 
 export const OfficialSite = styled.div`
-  width: 81px;
+  width: 150px;
   height: 32px;
   padding: 8px;
   background: rgba(230, 230, 230, 0.1);

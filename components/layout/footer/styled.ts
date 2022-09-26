@@ -36,9 +36,9 @@ export const MeteorImg = styled.div`
 
 export const Title = styled.div`
   width: 500px;
-  height: 80px;
+  height: 70px;
   background: #222235;
-  padding: 6px 57px 6px 0;
+  padding: 6px 27px 6px 0;
   font-family: 'Inter';
   font-weight: 700;
   font-size: 45px;
@@ -52,7 +52,7 @@ export const Title = styled.div`
   @media screen and (max-width: 768px) {
     font-size: 35px;
     line-height: 48px;
-    width: 300px;
+    width: 400px;
     height: 60px;
     padding: 6px 25px;
     margin-left: 0;
@@ -64,7 +64,7 @@ export const Title = styled.div`
   }
 
   @media screen and (max-width: 426px) {
-    width: 216px;
+    width: 256px;
     height: 53px;
     padding: 12px 33.9px 11px 21.19px;
     font-size: 20px;

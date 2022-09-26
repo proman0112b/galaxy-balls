@@ -21,7 +21,7 @@ const MainSection: React.FC = () => {
             <span>{trans(locale, 'partners', 'card-1-desc')}</span>
             <p>{trans(locale, 'partners', 'card-1-detail')}</p>
             <OfficialSiteWrapper>
-              <OfficialSite>Official site</OfficialSite>
+              <OfficialSite>{trans(locale, 'partners', 'officialsite')}</OfficialSite>
               <Instagram>
                 <AiOutlineInstagram />
               </Instagram>
@@ -33,7 +33,7 @@ const MainSection: React.FC = () => {
             <span>{trans(locale, 'partners', 'card-2-desc')}</span>
             <p>{trans(locale, 'partners', 'card-2-detail')}</p>
             <OfficialSiteWrapper>
-              <OfficialSite>Official site</OfficialSite>
+              <OfficialSite>{trans(locale, 'partners', 'officialsite')}</OfficialSite>
               <Instagram>
                 <AiOutlineInstagram />
               </Instagram>
@@ -45,7 +45,7 @@ const MainSection: React.FC = () => {
             <span>{trans(locale, 'partners', 'card-3-desc')}</span>
             <p>{trans(locale, 'partners', 'card-3-detail')}</p>
             <OfficialSiteWrapper>
-              <OfficialSite>Official site</OfficialSite>
+              <OfficialSite>{trans(locale, 'partners', 'officialsite')}</OfficialSite>
               <Instagram>
                 <AiOutlineInstagram />
               </Instagram>
@@ -57,7 +57,7 @@ const MainSection: React.FC = () => {
             <span>{trans(locale, 'partners', 'card-4-desc')}</span>
             <p>{trans(locale, 'partners', 'card-4-detail')}</p>
             <OfficialSiteWrapper>
-              <OfficialSite>Official site</OfficialSite>
+              <OfficialSite>{trans(locale, 'partners', 'officialsite')}</OfficialSite>
               <Instagram>
                 <AiOutlineInstagram />
               </Instagram>
@@ -77,7 +77,7 @@ const MainSection: React.FC = () => {
             <span>{trans(locale, 'partners', 'card-6-desc')}</span>
             <p>{trans(locale, 'partners', 'card-6-detail')}</p>
             <OfficialSiteWrapper>
-              <OfficialSite>Official site</OfficialSite>
+              <OfficialSite>{trans(locale, 'partners', 'officialsite')}</OfficialSite>
               <Instagram>
                 <AiOutlineInstagram />
               </Instagram>

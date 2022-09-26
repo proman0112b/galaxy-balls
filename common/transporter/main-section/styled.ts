@@ -119,7 +119,7 @@ export const PersonalInfo = styled.div`
 `
 
 export const ContactInfo = styled.div`
-  width: 215px;
+  width: 255px;
   height: 48px;
   background: rgba(255, 215, 73, 0.1);
   border-radius: 12px;
@@ -143,7 +143,7 @@ export const ContactInfo = styled.div`
   }
 
   @media screen and (max-width: 768px) {
-    width: 199px;
+    width: 239px;
     height: 40px;
   }
 `

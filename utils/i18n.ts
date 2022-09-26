@@ -139,8 +139,14 @@ export const translations: StringByString = {
       // feature-section
       'about-space-balls': 'Something about SpaceBalls',
       'about-text': 'Three things you should know about the SpaceBalls',
+      'about-desc-1': 'Your level increases and you are entered in a rank',
+      'about-desc-2': 'They are scattered all over the world',
+      'about-desc-3': 'They come in different colors, sizes and some are rare',
       'find-a-ball': 'What happens when you find a SpaceBall?',
       'find-a-ball-text': 'Three other important things you should know',
+      'find-desc-4': 'You get experience points every time',
+      'find-desc-5': 'All SpaceBalls land in your bag and many have different functions that help you advance in the game',
+      'find-desc-6': 'You will get 3 different things that will bring you further',
 
       // adventure-section
       'what-else': 'What else',
@@ -167,7 +173,7 @@ export const translations: StringByString = {
 
       // final-section
       finally: 'Finally',
-      'search-and-enjoy': 'Search and enjoy !',
+      'search-and-enjoy': 'Search and enjoy!',
       'search-and-enjoy-desc':
         'Discover many treasures hidden in each SpaceBall. Great surprises are waiting for you that you have never seen before. Go alone or with your friends on the hunt for many galactic balls and fill your treasure chest. Check the app daily to never miss an opportunity.',
       'you-can-also': 'You can also...',
@@ -291,6 +297,64 @@ export const translations: StringByString = {
       'card-8-detail': `Nous sommes toujours prêts à collaborer avec d'autres talents. Que vous soyez un designer, un artiste, un influenceur, etc., écrivez-nous pour que nous puissions vous impliquer dans le projet Galaxyballs!`,
       officialsite: 'Site officiel inst',
     },
+    'space-balls': {
+      // intro section
+      title: 'Spaceballs',
+      desc: `Les SpaceBalls sont là et vous attendent. Vivez des moments uniques dans réalité augmentée que vous n'avez jamais vus auparavant !`,
+
+      // chance section
+      'chance-to-win': 'Votre chance de gagner!',
+      steps: 'Étapes',
+      'find-balls': 'Trouver',
+      scan: 'Scanner',
+      win: 'Gagner',
+
+      // feature-section
+      'about-space-balls': 'Quelque chose à propos des SpaceBalls',
+      'about-text': 'Trois choses à savoir sur les SpaceBalls',
+      'about-desc-1': 'Ton niveau augmente et tu es inscrit dans un classement',
+      'about-desc-2': 'Ils sont dispersés dans le monde entier',
+      'about-desc-3': 'Il y en a de différentes couleurs, tailles et certains sont rares',
+      'find-a-ball': 'Que se passe-t-il lorsque tu trouves une SpaceBall?',
+      'find-a-ball-text': 'Trois autres choses importantes que tu dois savoir',
+      'find-desc-4': `Tu gagnes des points d'expérience à chaque fois.`,
+      'find-desc-5': `Toutes les SpaceBalls atterrissent dans ton sac et beaucoup ont différentes fonctions qui t'aident à progresser dans le jeu.`,
+      'find-desc-6': 'Tu obtiendras 3 choses différentes qui te permettront de progresser',
+
+      // adventure-section
+      'what-else': `Quoi d'autre`,
+      'adventure-coming-soon': 'La plus grande aventure arrive bientôt...',
+      'adventure-text': `Deux jeux sont disponibles dans l'application pour encore plus de plaisir et d'aventure. <br />
+      <br />
+      Le second est particulièrement intéressant pour les gamers et les explorateurs. Chaque jour, de nouvelles aventures, de nouveaux défis et de très précieuses SpaceBalls t'attendent.
+      <br />
+      <br />
+      Avec certaines de ces Spaceballs, tu peux débloquer d'autres options de jeu pour augmenter ton niveau, obtenir des entrées dans le classement et gagner des prix. Il y a également une boutique qui t'aidera à atteindre tes objectifs plus rapidement.`,
+
+      // values-section
+      rankinglist: 'Rankinglist',
+      'rankinglist-desc': 'Soyez inscrit dans le rankingliste pour que tout le monde puisse vous voir.',
+      chat: 'Chat',
+      'chat-desc': `Chattez avec votre équipe et avec d'autres utilisateurs dans le monde entier`,
+      team: 'Équipe',
+      'team-desc':
+        'Formez une équipe pour chercher les SpaceBalls et GalaxyBalls. Cela augmentera vos chances de trouver toutes les boules encore plus rapidement et plus efficacement.',
+      winners: 'Gagnants',
+      'winners-desc': 'Gagnez de superbes prix. Plus vous trouvez de boules, plus vos cadeaux seront importants.',
+
+      // final-section
+      finally: 'Enfin',
+      'search-and-enjoy': 'cherchez et amusez-vous!',
+      'search-and-enjoy-desc': `Découvrez de nombreux trésors cachés dans chaque SpaceBall. De grandes surprises vous attendent que vous n'avez jamais vues auparavant. Pars seul ou avec tes amis à la chasse aux nombreuses boules galactiques et remplis ton coffre à trésor. Consultez l'application tous les jours pour ne jamais manqué une occasion.`,
+      'you-can-also': 'Tu peut également...',
+      'extend-bag': 'Elargir ton sac pour collecter plus de Spaceballs',
+      'get-your-detector': 'Acheter un détecteur pour trouver les Spaceballs correspondantes',
+      'participate-events': 'Participer à des événements spéciaux pour trouver des SpaceBalls en édition limitée',
+
+      // more-section
+      'more-about': 'En savoir plus sur nos SpaceBalls',
+      'more-about-text': 'Regarde les différentes SpaceBalls et retiens celles qui ont le plus de valeur.',
+    },
     footer: {
       'footer-text': 'disponible soon',
     },
@@ -405,6 +469,65 @@ export const translations: StringByString = {
       'card-8-desc': 'Póngase en contacto con nosotros.',
       'card-8-detail': `Siempre estamos dispuestos a colaborar con otros talentos. Si eres diseñador, artista, influencer, etc., ponte en contacto con nosotros para que te involucremos en el proyecto Galaxyballs.`,
       officialsite: 'Página web oficial inst',
+    },
+    'space-balls': {
+      // intro section
+      title: 'Spaceballs',
+      desc: 'Las SpaceBalls están aquí y te esperan. ¡Vive momentos únicos en Realidad aumentada que nunca antes habías visto!',
+
+      // chance section
+      'chance-to-win': '¡Su oportunidad de ganar!',
+      steps: 'Pasos',
+      'find-balls': 'Encuentre',
+      scan: 'Escanee',
+      win: 'Gane',
+
+      // feature-section
+      'about-space-balls': 'Más información sobre SpaceBalls',
+      'about-text': 'Tres cosas que debe saber  sobre SpaceBalls',
+      'about-desc-1': 'Tu nivel aumenta y entras en una lista de clasificación',
+      'about-desc-2': 'Están dispersas por todo el mundo',
+      'about-desc-3': 'Vienen en diferentes colores, tamaños y algunas son raras',
+      'find-a-ball': '¿Qué pasa cuando encuentras una SpaceBall?',
+      'find-a-ball-text': 'Otras tres cosas importantes que debes saber',
+      'find-desc-4': 'Obtienes puntos de experiencia',
+      'find-desc-5': 'Todas las SpaceBalls acaban en tu bolsillo y muchas tienen diferentes funciones que te ayudan a progresar en el juego.',
+      'find-desc-6': 'Obtienes 3 cosas diferentes que te ayudarán a avanzar',
+
+      // adventure-section
+      'what-else': 'Qué más',
+      'adventure-coming-soon': 'La mayor aventura está por llegar...',
+      'adventure-text': `Hay dos juegos disponibles en la App que proporcionan aún más diversión y aventura. <br />
+      <br />
+      La segunda parte del juego es especialmente interesante para los jugadores y exploradores. Cada día te esperan nuevas aventuras, retos y valiosísimas SpaceBalls.
+      <br />
+      <br />
+      Con algunas de estas SpaceBalls puedes desbloquear más opciones de juego para aumentar tu nivel, conseguir puestos en el ranking y ganar premios. También hay una tienda que te ayudará a alcanzar tus objetivos más rápidamente.`,
+
+      // values-section
+      rankinglist: 'Lista de clasificación ',
+      'rankinglist-desc': 'Ingresa en la lista de clasificación para que todos puedan verte.	',
+      chat: 'Chat',
+      'chat-desc': 'Chatea con tu equipo y con otros usuarios de todo el mundo',
+      team: 'Equipo',
+      'team-desc':
+        'Forma un equipo para buscar las SpaceBalls y GalaxyBalls. Esto aumenta las posibilidades de encontrar todas las bolas de forma más rápida y eficiente.',
+      winners: 'Ganadores',
+      'winners-desc': 'Gana grandes premios. Cuantas más bolas encuentres, más grandes serán tus regalos.',
+
+      // final-section
+      finally: 'En conclusión',
+      'search-and-enjoy': '¡busque y disfrute!',
+      'search-and-enjoy-desc':
+        'Descubre muchos tesoros escondidos en cada SpaceBall. Te esperan grandes sorpresas que nunca has visto antes. Ve a la caza de muchas bolas galácticas solo o con tus amigos y llena tu cofre del tesoro. Consulta la App a diario para asegurarte de no perder ninguna oportunidad.',
+      'you-can-also': 'También puedes...',
+      'extend-bag': 'Ampliar tu bolsa para recoger más SpaceBalls',
+      'get-your-detector': 'Comprar un detector para encontrar las SpaceBalls correctas.',
+      'participate-events': 'Participar en eventos especiales para encontrar ediciones limitadas de SpaceBalls.',
+
+      // more-section
+      'more-about': 'Más información sobre nuestras SpaceBalls',
+      'more-about-text': 'Observa las diferentes SpaceBalls y acuérdate de cuáles son las más valiosas',
     },
     footer: {
       'footer-text': 'disponible pronto',
@@ -524,57 +647,61 @@ export const translations: StringByString = {
     'space-balls': {
       // intro section
       title: 'Spaceballs',
-      desc: 'The SpaceBalls are here and waiting for you. Experience unique moments in Augment Realty that you have never seen before!',
+      desc: 'Die SpaceBalls sind hier und warten auf dich. Erleben Sie in Augment Realty einzigartige Momente, die Sie noch nie gesehen haben!',
 
       // chance section
-      'chance-to-win': 'Your chance to win!',
-      steps: 'Steps',
-      'find-balls': 'Find Balls',
-      scan: 'Scan',
-      win: 'Win',
+      'chance-to-win': 'Ihre Chance zu gewinnen!',
+      steps: 'Schritte',
+      'find-balls': 'Finden',
+      scan: 'Scannen',
+      win: 'Gewinnen',
 
       // feature-section
-      'about-space-balls': 'Something about SpaceBalls',
-      'about-text': 'Three things you should know about the SpaceBalls',
-      'find-a-ball': 'What happens when you find a SpaceBall?',
-      'find-a-ball-text': 'Three other important things you should know',
+      'about-space-balls': 'Mehr über SpaceBalls',
+      'about-text': 'Drei Dinge, die Sie über die SpaceBalls wissen sollten',
+      'about-desc-1': 'Dein Level steigt und du wirst in eine Rangliste eingetragen',
+      'about-desc-2': 'Sie sind über die ganze Welt verstreut',
+      'about-desc-3': 'Es gibt sie in verschiedenen Farben, Größen und einige sind selten',
+      'find-a-ball': 'Was passiert, wenn du einen SpaceBall findest?',
+      'find-a-ball-text': 'Drei weitere wichtige Dinge, die du wissen solltest',
+      'find-desc-4': 'Du erhälst jedes Mal Erfahrungspunkte',
+      'find-desc-5': 'Alle SpaceBalls landen in deiner Tasche und viele haben verschiedene Funktionen, die dir helfen, im Spiel voranzukommen.',
+      'find-desc-6': 'Du bekommst 3 verschiedene Dinge, die dich weiterbringen werden',
 
       // adventure-section
-      'what-else': 'What else',
-      'adventure-coming-soon': 'The greatest adventure is coming soon...',
-      'adventure-text': `Two games are available in the app and provide more fun and adventure. <br />
+      'what-else': 'Was noch',
+      'adventure-coming-soon': 'Das größte Abenteuer kommt bald...',
+      'adventure-text': ` Zwei Spiele sind in der App verfügbar und sorgen für noch mehr Spaß und Abenteuer. <br />
       <br />
-      The second part of the game is especially interesting for gamers and explorers. Every day new adventures, challenges and very valuable
-      SpaceBalls are waiting for you.
+      Der zweite Teil des Spiels ist besonders für Gamer und Entdecker interessant. Jeden Tag warten neue Abenteuer, Herausforderungen und sehr wertvolle SpaceBalls auf dich.
       <br />
       <br />
-      With some of these Spaceballs you can unlock more game options to increase your level, get ranked and win prizes. Besides, there is also a
-      store to help you achieve your goals faster.`,
+      Mit einigen dieser Spaceballs kannst du weitere Spieloptionen freischalten, um dein Level zu erhöhen, Ranglisteneinträge zu erhalten und Preise zu gewinnen. Außerdem gibt es einen Shop, der dir helfen wird, deine Ziele schneller zu erreichen.`,
 
       // values-section
-      rankinglist: 'Rankinglist',
-      'rankinglist-desc': 'Be entered in the rankinglist so that everyone can see you.',
-      chat: 'Chat',
-      'chat-desc': 'Chat with your team and with other users worldwide',
+      rankinglist: 'Rangliste',
+      'rankinglist-desc': 'Tragen Sie sich in die Rangliste ein, damit jeder Sie sehen kann.',
+      chat: 'Chatten',
+      'chat-desc': 'Chatten Sie mit Ihrem Team und mit anderen Benutzern weltweit',
       team: 'Team',
       'team-desc':
-        'Form a team to search for the SpaceBalls and GalaxyBalls. This will increase your chance to find all the balls even faster and more efficiently.',
-      winners: 'Winners',
-      'winners-desc': 'Win great prizes. The more balls you find, the bigger your gifts will be.',
+        'Bilde ein Team für die Suche nach den SpaceBalls und GalaxyBalls. Das erhöht deine Chance, alle Bälle noch schneller und effizienter zu finden.',
+      winners: 'Gewinner',
+      'winners-desc': 'Gewinne tolle Preise. Je mehr Kugel du findest, desto größer werden deine Geschenke sein.',
 
       // final-section
-      finally: 'Finally',
-      'search-and-enjoy': 'Search and enjoy !',
+      finally: 'FinallyZum Schluss',
+      'search-and-enjoy': 'Suchen und genießen!',
       'search-and-enjoy-desc':
-        'Discover many treasures hidden in each SpaceBall. Great surprises are waiting for you that you have never seen before. Go alone or with your friends on the hunt for many galactic balls and fill your treasure chest. Check the app daily to never miss an opportunity.',
-      'you-can-also': 'You can also...',
-      'extend-bag': 'Extend your bag to collect more spaceballs',
-      'get-your-detector': 'Get your detector and find the rest of the spaceballs',
-      'participate-events': 'Participate in special events to find rare SpaceBalls',
+        'Entdecke viele Schätze die in jedem SpaceBall versteckt sind. Es warten tolle Überraschungen auf dich, die du noch nie gesehen hast. Geh allein oder mit deinen Freunden auf die Jagd nach vielen galaktischen Bällen und fülle deine Schatztruhe. Schau täglich in die App, um keine Gelegenheit zu verpassen.',
+      'you-can-also': 'Du kannst auch auch...',
+      'extend-bag': 'Deine Tasche erweitern um mehr Spaceballs zu sammeln',
+      'get-your-detector': 'Einen Detektor kaufen um die passenden Spaceballs zu finden.',
+      'participate-events': 'An speziellen Events teilnehmen, um limitierte SpaceBalls zu finden.',
 
       // more-section
-      'more-about': 'More about our SpaceBalls',
-      'more-about-text': 'Look at all the different SpaceBalls note which are the most valuable ones',
+      'more-about': 'Mehr über unsere SpaceBalls',
+      'more-about-text': 'Sieh dir die verschiedenen SpaceBalls an und merke dir, welche die wertvollsten sind',
     },
     footer: {
       'footer-text': 'bald verfügbar',
@@ -690,6 +817,65 @@ export const translations: StringByString = {
       'card-8-desc': 'Entre em contato conosco!',
       'card-8-detail': `Estamos sempre dispostos a trabalhar em conjunto com outros talentos. Se você é designer, artista, influenciador, etc., basta entrar em contato para que possamos envolver você no projeto Galaxyballs!`,
       officialsite: 'Site oficial',
+    },
+    'space-balls': {
+      // intro section
+      title: 'Spaceballs',
+      desc: 'As SpaceBalls chegaram e estão esperando por você. Experimente momentos únicos em Argumented Realty nunca antes vistos!',
+
+      // chance section
+      'chance-to-win': 'Sua chance de vencer!',
+      steps: 'Passos',
+      'find-balls': 'Encontrar',
+      scan: 'Escanear',
+      win: 'Ganhar',
+
+      // feature-section
+      'about-space-balls': 'Mais sobre SpaceBalls',
+      'about-text': 'Três coisas que você deve saber sobre as SpaceBalls',
+      'about-desc-1': 'Seu nível sobe e você é incluído em uma lista de classificação',
+      'about-desc-2': 'Estão espalhados pelo mundo inteiro',
+      'about-desc-3': 'Existem em diferentes cores, tamanhos e alguns são raros.',
+      'find-a-ball': 'O que acontece quando você encontra uma SpaceBall?',
+      'find-a-ball-text': 'Três outras coisas importantes que você deve saber',
+      'find-desc-4': 'Todas as vezes você ganha pontos de experiência',
+      'find-desc-5': 'As SpaceBalls acabam ficando em seu bolso e muitas têm funções diferentes que te ajudam a progredir no jogo.',
+      'find-desc-6': 'Você recebe 3 coisas diferentes que o ajudarão no seu progresso',
+
+      // adventure-section
+      'what-else': 'O que mais',
+      'adventure-coming-soon': 'A maior aventura está por vir...',
+      'adventure-text': `Dois jogos estão disponíveis no aplicativo e oferecem ainda mais diversão e aventura. <br />
+      <br />
+      A segunda parte do jogo é particularmente interessante para os gamers e exploradores. Todos os dias, novas aventuras, desafios e SpaceBalls muito valiosas esperam por você.
+      <br />
+      <br />
+      Com algumas dessas bolas espaciais você pode desbloquear mais opções de jogo para subir de nível, entrar no ranking e ganhar prêmios. Há também uma loja que o ajudará a atingir seus objetivos com mais rapidez.`,
+
+      // values-section
+      rankinglist: 'Lista de ranking ',
+      'rankinglist-desc': 'Inscreva-se na lista de classificação para que todos possam vê-lo.',
+      chat: 'Bate-papo',
+      'chat-desc': 'Converse com sua equipe e com outros usuários em todo o mundo',
+      team: 'Equipe',
+      'team-desc':
+        'Forme uma equipe para procurar as SpaceBalls e GalaxyBalls. Isto aumenta suas chances de encontrar todas as bolas ainda mais rápido e mais eficáz.',
+      winners: 'Vencedores',
+      'winners-desc': 'Ganhe ótimos prêmios. Quanto mais bolas você encontrar, maiores serão seus presentes.',
+
+      // final-section
+      finally: 'Em conclusão',
+      'search-and-enjoy': 'Procurar e aproveitar!',
+      'search-and-enjoy-desc':
+        'Descubra muitos tesouros que estão escondidos em cada SpaceBall. Há grandes surpresas esperando por você, que você nunca viu antes. Saia para caçar as muitas bolas galácticas sozinho ou com seus amigos e encha seu baú de tesouros. Confira o aplicativo diariamente para ter certeza de nunca perder uma oportunidade.',
+      'you-can-also': 'Você também pode...',
+      'extend-bag': 'Ampliar sua bolsa para coletar mais Spaceballs',
+      'get-your-detector': 'Comprar um detector para encontrar as Spaceballs adequadas.',
+      'participate-events': 'Participar de eventos especiais a fim de encontrar as SpaceBalls de edição limitada.',
+
+      // more-section
+      'more-about': 'Mais sobre as nossas SpaceBalls',
+      'more-about-text': 'Observe as diferentes SpaceBalls e repare quais são as mais valiosas',
     },
     footer: {
       'footer-text': 'disponível em breve',
@@ -822,6 +1008,12 @@ export const translations: StringByString = {
       'about-text': 'Tre cose da sapere sulle SpaceBalls',
       'find-a-ball': 'Cosa succede quando si trova una SpaceBall',
       'find-a-ball-text': 'Altre tre cose importanti da sapere',
+      'about-desc-1': 'Il vostro livello aumenta e venite inseriti in una classifica',
+      'about-desc-2': 'Sono sparsi in tutto il mondo',
+      'about-desc-3': 'Sono disponibili in diversi colori e dimensioni e alcuni sono rari.',
+      'find-desc-4': 'Si ottengono punti esperienza ogni volta',
+      'find-desc-5': 'Tutte le SpaceBall finiscono in tasca e molte hanno diverse funzioni che aiutano a progredire nel gioco.',
+      'find-desc-6': 'Ottenete 3 cose diverse che vi aiuteranno ad andare avanti',
 
       // adventure-section
       'what-else': `Cos'altro`,

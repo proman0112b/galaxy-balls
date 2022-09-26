@@ -92,7 +92,7 @@ export const Card = styled.div`
 `
 
 export const Badge = styled.div`
-  width: 100px;
+  width: 120px;
   height: 48px;
   margin-top: 80px;
   padding: 8px 12px;
@@ -103,9 +103,11 @@ export const Badge = styled.div`
   font-weight: 500;
   font-size: 16px;
   line-height: 32px;
+  display: flex;
+  justify-content: center;
 
   @media screen and (max-width: 768px) {
-    width: 91px;
+    width: 110px;
     font-size: 14px;
   }
 

@@ -25,7 +25,7 @@ const FeaturesSection: React.FC = () => {
                   return (
                     <Card key={index} selected={index % 3 === 0 ? true : false}>
                       <data.icon size={data.iconSize} />
-                      <span>{data.description}</span>
+                      <span>{trans(locale, 'space-balls', `about-desc-${index + 1}`)}</span>
                     </Card>
                   )
               })}
@@ -42,7 +42,7 @@ const FeaturesSection: React.FC = () => {
                   return (
                     <Card key={index} selected={index % 3 === 0 ? true : false}>
                       <data.icon size={data.iconSize} />
-                      <span>{data.description}</span>
+                      <span>{trans(locale, 'space-balls', `find-desc-${index + 1}`)}</span>
                     </Card>
                   )
               })}

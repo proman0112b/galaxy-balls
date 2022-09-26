@@ -86,7 +86,7 @@ export const Card = styled.div`
   }
 
   h4 {
-    width: 224px;
+    width: 100%;
     font-family: ${theme.fontFamily.primary};
     font-weight: 600;
     font-size: 24px;
@@ -168,32 +168,22 @@ export const Card = styled.div`
     div {
       width: 320px;
       height: 192px;
-      padding: 48px;
+      padding: 20px;
       background: radial-gradient(96.25% 96.25% at 0% 3.75%, rgba(58, 58, 155, 0.49) 0%, rgba(0, 0, 0, 0) 100%), rgba(51, 51, 68, 0.06);
       border: 1px solid #3e3e62;
       border-radius: 32px;
+      display: flex;
+      align-items: center;
 
       @media screen and (max-width: 1200px) {
-        padding: 30px;
         height: 124px;
-      }
-    }
-
-    div:nth-child(3) {
-      padding: 48px 19px 48px 48px;
-      h4 {
-        width: 253px;
-      }
-
-      @media screen and (max-width: 1200px) {
-        padding: 30px 19px 30px 30px;
       }
     }
   }
 `
 
 export const Badge = styled.span`
-  width: 74px;
+  width: 180px;
   height: 48px;
   background: rgba(255, 215, 73, 0.1);
   border-radius: 12px;
@@ -203,6 +193,8 @@ export const Badge = styled.span`
   font-weight: 500;
   font-size: 16px;
   line-height: 32px;
+  display: flex;
+  justify-content: center;
 
   @media screen and (max-width: 426px) {
     align-self: flex-start;

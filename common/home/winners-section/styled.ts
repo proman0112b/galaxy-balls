@@ -167,7 +167,7 @@ export const ListButton = styled.button`
 export const WinnersList = styled.div`
   width: 784px;
   height: 806px;
-  background: url(/assets/images/home/list.png);
+  background: url(/assets/images/home/list-blur.png);
   background-size: 100% 100%;
   margin-top: 120px;
   position: relative;

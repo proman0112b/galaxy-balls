@@ -35,17 +35,17 @@ const MainSection: React.FC = () => {
           <DescriptionWrapper>
             <Description>
               <Number selected={true}>1</Number>
-              <p>Why chooses the Galaxy Balls?</p>
+              {/* <p>Why chooses the Galaxy Balls?</p> */}
             </Description>
             <VerticalDivider />
             <Description>
               <Number>2</Number>
-              <p>why love this App?</p>
+              {/* <p>why love this App?</p> */}
             </Description>
             <VerticalDivider />
             <Description>
               <Number>3</Number>
-              <p> created own team:)</p>
+              {/* <p> created own team:)</p> */}
             </Description>
           </DescriptionWrapper>
         )}

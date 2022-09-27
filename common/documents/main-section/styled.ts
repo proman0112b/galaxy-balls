@@ -106,10 +106,38 @@ export const DescriptionWrapper = styled(Wrapper)`
     margin-top: 76px;
   }
 `
+export const ImprintDescriptionWrapper = styled.div`
+  width: 100%;
+  margin-top: 129px;
+  padding-left: 87px;
+  display: flex;
+  gap: 33px;
+
+  @media screen and (max-width: 1024px) {
+    padding-left: 50px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding-left: 22px;
+  }
+
+  @media screen and (max-width: 426px) {
+    margin-top: 76px;
+  }
+`
+
+export const ImprintDescription = styled.div`
+  margin-top: 100px;
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 34px;
+  color: #8a8ac4;
+`
 
 export const Description = styled.div`
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   gap: 33px;
 
   p {

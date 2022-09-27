@@ -1,6 +1,17 @@
 import React, { useState } from 'react'
 import Wrapper from '../../../components/wrapper'
-import { MainSectionContainer, Title, Switch, SwitchItem, DescriptionWrapper, Description, Number, VerticalDivider } from './styled'
+import {
+  MainSectionContainer,
+  Title,
+  Switch,
+  SwitchItem,
+  DescriptionWrapper,
+  Description,
+  Number,
+  VerticalDivider,
+  ImprintDescription,
+  ImprintDescriptionWrapper,
+} from './styled'
 
 const MainSection: React.FC = () => {
   const [selectedIndex, setSelectedIndex] = useState<number>(1)
@@ -20,8 +31,7 @@ const MainSection: React.FC = () => {
             Imprint
           </SwitchItem>
         </Switch>
-
-        {selectedIndex !== 2 && (
+        {selectedIndex !== 3 && (
           <DescriptionWrapper>
             <Description>
               <Number selected={true}>1</Number>
@@ -39,21 +49,23 @@ const MainSection: React.FC = () => {
             </Description>
           </DescriptionWrapper>
         )}
-        {selectedIndex === 2 && (
-          <div style={{ marginTop: '129px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '30px', textAlign: 'center' }}>
-            <Description>
-              <p>P-TRON TECH </p>
-            </Description>
-            <Description>
-              <p>Baarerstrasse 112</p>
-            </Description>
-            <Description>
-              <p>6300 Zug - Swiss</p>
-            </Description>
-            <Description>
-              <p>contact@ptrontech.com</p>
-            </Description>
-          </div>
+        {selectedIndex === 3 && (
+          <ImprintDescriptionWrapper>
+            <div>
+              <Number selected={true}></Number>
+              <VerticalDivider />
+            </div>
+            <ImprintDescription>
+              P-TRON TECH
+              <br /> Baarerstrasse 112
+              <br /> 6300 Zug - Swiss
+              <br />
+              <br /> contact@ptrontech.com
+              <br />
+              <br /> Handelsregister: CH-242.634.861
+              <br /> CH-ID: CH-170-1010871-6
+            </ImprintDescription>
+          </ImprintDescriptionWrapper>
         )}
       </MainSectionContainer>
     </Wrapper>

@@ -70,6 +70,11 @@ export const PhotoWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 41px;
+
+  span {
+    border-radius: 30px;
+    cursor: pointer;
+  }
 `
 
 export const Photos = styled.div`
@@ -78,6 +83,10 @@ export const Photos = styled.div`
 
   @media screen and (max-width: 768px) {
     gap: 17px;
+  }
+
+  span {
+    border-radius: 10px;
   }
 `
 

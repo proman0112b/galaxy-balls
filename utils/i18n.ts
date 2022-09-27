@@ -26,19 +26,19 @@ export const translations: StringByString = {
       // game-section
       'for-players': 'For players',
       'winner-prize': 'Winner prize',
-      'winner-prize-text': 'Find all 7 Galaxy Balls in your country and win 10.000 €/$',
+      'winner-prize-text': 'Find all 7 GalaxyBalls in your country and win 10.000 €/$',
       'form-team': 'Form team',
       'form-team-text':
-        'The Galaxy Balls are scattered all over the country. Form a team and go on an adventurous quest with friends to increase your chances of finding multiple Galaxy Balls and win the top prize of 10,000 € /$',
+        'The GalaxyBalls are scattered all over the country. Form a team and go on an adventurous quest with friends to increase your chances of finding multiple GalaxyBalls and win the top prize of 10,000 € /$',
       price: 'Price for each ball',
       'price-text': 'For every Galaxy Ball you find you will receive 1.000 € /$',
 
       // rule-section
       rules: 'Rules',
-      'rules-text': `At the beginning of the game, 7 Galaxy Balls will be distributed in a country and the approximate location will be published here on the website under "WORLD MAP" as well as in the GalaxyBalls app under "WORLD MAP". 
+      'rules-text': `At the beginning of the game, 7 GalaxyBalls will be distributed in a country and the approximate location will be published here on the website under "WORLD MAP" as well as in the GalaxyBalls app under "WORLD MAP". 
       With the GalaxyBalls app under "RADAR", the balls can be located and found in the immediate vicinity. Once a GalaxyBalls has been found, the QR code on the ball must be scanned to be registered as an official finder. After all GalaxyBalls have been found, you must return them undamaged to one of our locations to receive your prize money.`,
       'rules-text-1': 'If you find a Galaxy Ball, you will receive 1,000 € /$ /Crypto',
-      'rules-text-2': 'If you find all 7 Galaxy Balls you will get even € /$ /Crypto',
+      'rules-text-2': 'If you find all 7 GalaxyBalls you will get even € /$ /Crypto',
 
       // world-map-section
       'world-map-title': 'World Map',
@@ -67,7 +67,7 @@ export const translations: StringByString = {
       'answer-description-1': 'Anyone can participate, no matter where they are from. The only requirement is to install the GalaxyBalls app.',
       'question-description-2': 'Where can I find the balls?',
       'answer-description-2':
-        'At the beginning of the game, seven balls are distributed to the selected country. The approximate locations can be found under World Map on the website and in the Galaxy Balls app. Turn on the radar and find them.',
+        'At the beginning of the game, seven balls are distributed to the selected country. The approximate locations can be found under World Map on the website and in the GalaxyBalls app. Turn on the radar and find them.',
       'question-description-3': 'What do I do when I find a bullet?',
       'answer-description-3':
         'When you find a ball, you need to scan the QR code on it. In the menu you will find the scanner icon, click on it. Once you do this, you will be registered in our server as an official finder and the orb will be deactivated.',
@@ -385,7 +385,7 @@ export const translations: StringByString = {
 
       // rule-section
       rules: 'Reglas',
-      'rules-text': `Al principio del juego, se distribuyen 7 Galaxy Balls en un país y la ubicación aproximada se publica aquí en la página web en "MAPA DEL MUNDO", así como en la App GalaxyBalls en "MAPA DEL MUNDO". Con la App GalaxyBalls en "RADAR", se pueden localizar las bolas y encontrarlas en las inmediaciones. Una vez que se ha encontrado una GalaxyBall, hay que escanear el código QR de la bola para registrarse como buscador oficial. Una vez encontradas todas las GalaxyBalls, deberás devolverlas sin daños a uno de nuestros puntos para recibir el dinero del premio.`,
+      'rules-text': `Al principio del juego, se distribuyen 7 GalaxyBalls en un país y la ubicación aproximada se publica aquí en la página web en "MAPA DEL MUNDO", así como en la App GalaxyBalls en "MAPA DEL MUNDO". Con la App GalaxyBalls en "RADAR", se pueden localizar las bolas y encontrarlas en las inmediaciones. Una vez que se ha encontrado una GalaxyBall, hay que escanear el código QR de la bola para registrarse como buscador oficial. Una vez encontradas todas las GalaxyBalls, deberás devolverlas sin daños a uno de nuestros puntos para recibir el dinero del premio.`,
       'rules-text-1': 'Si encuentras una GalaxyBalls, recibirás 1.000 €/$/ criptomonedas',
       'rules-text-2': 'Si encuentras las 7 GalaxyBalls, recibirás nada menos que 10.000 €/$/ criptomonedas',
 
@@ -415,7 +415,7 @@ export const translations: StringByString = {
       'question-description-1': '¿Quién puede participar?',
       'answer-description-1': `Cualquiera puede participar, no importa de dónde sea. El único requisito es instalar la App GalaxyBalls.`,
       'question-description-2': '¿Dónde puedo encontrar las bolas?',
-      'answer-description-2': `Al principio del juego, se distribuyen siete bolas en el país seleccionado. Las ubicaciones aproximadas se pueden encontrar en el Mapa del Mundo en la página web y en la App Galaxy Balls. Enciende el radar y encuéntralos.`,
+      'answer-description-2': `Al principio del juego, se distribuyen siete bolas en el país seleccionado. Las ubicaciones aproximadas se pueden encontrar en el Mapa del Mundo en la página web y en la App GalaxyBalls. Enciende el radar y encuéntralos.`,
       'question-description-3': '¿Qué hago si encuentro una bola?',
       'answer-description-3': `Si encuentras una bola, tienes que escanear el código QR que hay en ella. En el menú encontrarás el icono de escaneado, haz clic en él. Una vez hecho esto, quedarás registrado en nuestro servidor como buscador oficial y la bola se desactivará.`,
       'question-description-4': '¿Cuánto puedo ganar?',
@@ -550,7 +550,7 @@ export const translations: StringByString = {
       // game-section
       'for-players': 'Für Spieler',
       'winner-prize': 'Preis des Gewinners',
-      'winner-prize-text': 'Finde alle 7 Galaxy Balls in deinem Land und gewinne 10.000 € /$',
+      'winner-prize-text': 'Finde alle 7 GalaxyBalls in deinem Land und gewinne 10.000 € /$',
       'form-team': 'Team bilden',
       'form-team-text':
         'Die GalaxyBalls sind über das ganze Land verstreut. Bilde ein Team und gehe mit Freunden auf eine abenteuerliche Suche, um eure Chancen zu erhöhen, mehrere GalaxyBalls zu finden und den Hauptpreis von 10.000 € /$ zu gewinnen.',
@@ -559,9 +559,9 @@ export const translations: StringByString = {
 
       // rule-section
       rules: 'Regeln',
-      'rules-text': `Zu Beginn des Spiels werden 7 Galaxy Balls in einem Land verteilt und der ungefähre Standort wird hier auf der Website unter “WORLD MAP” sowie in der GalaxyBalls-App unter “WORLD MAP” veröffentlicht. Mit der GalaxyBalls-App unter "RADAR" können die Kugeln geortet und in der näheren Umgebung gefunden werden. Hat man einen GalaxyBalls gefunden, muss der QR-Code auf der Kugel gescannt werden, um als offizieller Finder registriert zu werden. Nachdem alle GalaxyBalls gefunden wurden, musst du sie unbeschädigt an einem unserer Standorte abgeben, um dein Preisgeld zu erhalten.`,
+      'rules-text': `Zu Beginn des Spiels werden 7 GalaxyBalls in einem Land verteilt und der ungefähre Standort wird hier auf der Website unter “WORLD MAP” sowie in der GalaxyBalls-App unter “WORLD MAP” veröffentlicht. Mit der GalaxyBalls-App unter "RADAR" können die Kugeln geortet und in der näheren Umgebung gefunden werden. Hat man einen GalaxyBalls gefunden, muss der QR-Code auf der Kugel gescannt werden, um als offizieller Finder registriert zu werden. Nachdem alle GalaxyBalls gefunden wurden, musst du sie unbeschädigt an einem unserer Standorte abgeben, um dein Preisgeld zu erhalten.`,
       'rules-text-1': 'Wenn du einen Galaxy Ball findest, erhältst du 1.000 €/$/ crypto',
-      'rules-text-2': 'Wenn du alle 7 Galaxy Balls findest, erhältst du sogar 10.000 €/$/ crypto',
+      'rules-text-2': 'Wenn du alle 7 GalaxyBalls findest, erhältst du sogar 10.000 €/$/ crypto',
 
       // world-map-section
       'world-map-title': 'World Map',
@@ -589,9 +589,9 @@ export const translations: StringByString = {
       'question-description-1': 'Wer kann teilnehmen?',
       'answer-description-1': `Jeder kann mitmachen, egal woher er kommt. Die einzige Voraussetzung ist die GalaxyBalls-App zu installieren.`,
       'question-description-2': 'Wo kann ich die Kugeln finden?',
-      'answer-description-2': `Zu Beginn des Spiels werden sieben Kugeln in das ausgewählte Land verteilt. Die ungefähren Standorte können unter World Map auf der Website und in der Galaxy Balls-App ermittelt werden. Schalte den Radar ein und finde sie.`,
+      'answer-description-2': `Zu Beginn des Spiels werden 7 Kugeln in das ausgewählte Land verteilt. Die ungefähren Standorte können unter World Map auf der Website und in der GalaxyBalls-App ermittelt werden. Schalte den Radar ein und finde sie.`,
       'question-description-3': 'Was tue ich, wenn ich eine Kugel finde?',
-      'answer-description-3': `Wenn du eine Kugel findest, musst du den QR-Code darauf scannen. Im Menü findest du das Scanner-Icon, klicke es an. Sobald Sie dies getan haben, wirst du in unserem Server als offizieller Finder registriert und die Kugel wird deaktiviert.`,
+      'answer-description-3': `Wenn du eine Kugel findest, musst du den QR-Code darauf scannen. Im Menü findest du das Scanner-Symbol, klicke es an. Danach wirst du auf unserem Server als offizieller Finder registriert und die Kugel wird deaktiviert.`,
       'question-description-4': 'Wie viel kann ich gewinnen?',
       'answer-description-4':
         'Wenn du alleine oder im Team eine Kugel findest, gewinnst du 1000 €/$ oder Krypto in nationaler Währung. Wenn du alle 7 Kugeln findest, beträgt der Jackpot 10.000 €/$ oder Krypto.',
@@ -694,7 +694,7 @@ export const translations: StringByString = {
       'search-and-enjoy': 'Suchen und genießen!',
       'search-and-enjoy-desc':
         'Entdecke viele Schätze die in jedem SpaceBall versteckt sind. Es warten tolle Überraschungen auf dich, die du noch nie gesehen hast. Geh allein oder mit deinen Freunden auf die Jagd nach vielen galaktischen Bällen und fülle deine Schatztruhe. Schau täglich in die App, um keine Gelegenheit zu verpassen.',
-      'you-can-also': 'Du kannst auch auch...',
+      'you-can-also': 'Du kannst auch...',
       'extend-bag': 'Deine Tasche erweitern um mehr SpaceBalls zu sammeln',
       'get-your-detector': 'Einen Detektor kaufen um die passenden SpaceBalls zu finden.',
       'participate-events': 'An speziellen Events teilnehmen, um limitierte SpaceBalls zu finden.',
@@ -724,7 +724,7 @@ export const translations: StringByString = {
       // game-section
       'for-players': 'Para jogadores',
       'winner-prize': 'Prêmio do vencedor',
-      'winner-prize-text': 'Encontre todas as 7 Galaxy Balls em seu país e ganhe 10.000 €/$',
+      'winner-prize-text': 'Encontre todas as 7 GalaxyBalls em seu país e ganhe 10.000 €/$',
       'form-team': 'Forme uma equipe',
       'form-team-text':
         'As GalaxyBalls estão espalhadas por todo o país. Forme uma equipe e faça uma busca aventureira com amigos para aumentar suas chances de encontrar várias GalaxyBalls e ganhar o prêmio máximo de 10.000€/$',
@@ -908,7 +908,7 @@ export const translations: StringByString = {
       rules: 'Regole',
       'rules-text': `All'inizio del gioco, 7 Galaxy Ball sono distribuite in un paese e la posizione approssimativa è pubblicata qui sul sito web alla sotto "MAPPA DEL MONDO" e nell'app GalaxyBalls alla sotto "MAPPA DEL MONDO". Con l'app GalaxyBalls alla sotto "RADAR", le palline possono essere localizzate e trovate nelle immediate vicinanze. Una volta trovata una GalaxyBall, il codice QR sulla palla deve essere scansionato per essere registrato come cercatore ufficiale. Dopo aver trovato tutte le GalaxyBall, è necessario restituirle integre a una delle nostre sedi per ricevere il premio.`,
       'rules-text-1': 'Se trovate una Galaxy Ball, riceverete 1.000 €/$/ cripto.',
-      'rules-text-2': 'Se trovate tutte e 7 le Galaxy Balls, riceverete anche 10.000 €/$/ cripto.',
+      'rules-text-2': 'Se trovate tutte e 7 le GalaxyBalls, riceverete anche 10.000 €/$/ cripto.',
 
       // world-map-section
       'world-map-title': 'World Map',
@@ -936,7 +936,7 @@ export const translations: StringByString = {
       'question-description-1': 'Chi può partecipare?',
       'answer-description-1': `Chiunque può partecipare, indipendentemente dalla sua provenienza. L'unico requisito è installare l'applicazione GalaxyBalls.`,
       'question-description-2': 'Dove posso trovare le sfera?',
-      'answer-description-2': `All'inizio della partita, vengono distribuite sette sfera al Paese selezionato. Le posizioni approssimative si trovano alla sotto Mappa del mondo sul sito web e nell'app Galaxy Balls. Accendete il radar e trovateli.`,
+      'answer-description-2': `All'inizio della partita, vengono distribuite sette sfera al Paese selezionato. Le posizioni approssimative si trovano alla sotto Mappa del mondo sul sito web e nell'app GalaxyBalls. Accendete il radar e trovateli.`,
       'question-description-3': 'Cosa devo fare quando trovo un GalaxyBalls?',
       'answer-description-3': `Quando si trova una sfera, bisogna scansionare il codice QR su di essa. Nel menu si trova l'icona dello scanner, fare clic su di essa. Una volta fatto questo, sarete registrati nel nostro server come cercatore ufficiale e la sfera sarà disattivata.`,
       'question-description-4': 'Quanto posso vincere?',

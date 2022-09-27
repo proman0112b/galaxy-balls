@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { AiOutlineInstagram } from 'react-icons/ai'
@@ -29,6 +29,7 @@ import { trans } from '../../../utils/i18n'
 const MainSection: React.FC = () => {
   const isTablet = useMediaQuery({ query: '(max-width: 768px)' })
   const { locale } = useRouter()
+  const [selectedPhoto, setSelectedPhoto] = useState<number>(0)
 
   return (
     <Wrapper>
@@ -37,12 +38,42 @@ const MainSection: React.FC = () => {
         <Description>{trans(locale, 'transporter', 'desc')}</Description>
         <Content>
           <PhotoWrapper>
-            <Image src="/assets/images/transporter/transporter.png" alt="no img" width={isTablet ? 336 : 655} height={isTablet ? 301 : 585} />
+            <Image
+              src={`/assets/images/transporter/transporter${selectedPhoto}.jpg`}
+              alt="no img"
+              width={isTablet ? 336 : 655}
+              height={isTablet ? 301 : 585}
+              priority
+            />
             <Photos>
-              <Image src="/assets/images/transporter/transporter1.png" alt="no img" width={isTablet ? 71 : 140} height={isTablet ? 70 : 137} />
-              <Image src="/assets/images/transporter/transporter2.png" alt="no img" width={isTablet ? 71 : 129} height={isTablet ? 70 : 135} />
-              <Image src="/assets/images/transporter/transporter3.png" alt="no img" width={isTablet ? 71 : 115} height={isTablet ? 70 : 135} />
-              <Image src="/assets/images/transporter/transporter4.png" alt="no img" width={isTablet ? 71 : 120} height={isTablet ? 70 : 136} />
+              <Image
+                onClick={() => setSelectedPhoto(1)}
+                src="/assets/images/transporter/transporter1.jpg"
+                alt="no img"
+                width={isTablet ? 71 : 140}
+                height={isTablet ? 70 : 137}
+              />
+              <Image
+                onClick={() => setSelectedPhoto(2)}
+                src="/assets/images/transporter/transporter2.jpg"
+                alt="no img"
+                width={isTablet ? 71 : 129}
+                height={isTablet ? 70 : 135}
+              />
+              <Image
+                onClick={() => setSelectedPhoto(3)}
+                src="/assets/images/transporter/transporter3.jpg"
+                alt="no img"
+                width={isTablet ? 71 : 115}
+                height={isTablet ? 70 : 135}
+              />
+              <Image
+                onClick={() => setSelectedPhoto(4)}
+                src="/assets/images/transporter/transporter4.jpg"
+                alt="no img"
+                width={isTablet ? 71 : 120}
+                height={isTablet ? 70 : 136}
+              />
             </Photos>
           </PhotoWrapper>
           <PersonalInfo>

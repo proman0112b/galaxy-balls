@@ -10,6 +10,7 @@ interface MenuComponentProps {
 
 const MenuComponent: React.FC<MenuComponentProps> = ({ setShowSmallMenu }) => {
   const { locale } = useRouter()
+
   return (
     <Menu>
       <Link href="/">

@@ -4,7 +4,7 @@ import { useMediaQuery } from 'react-responsive'
 import Wrapper from '../../../components/wrapper'
 import { DownloadSectionContainer, Card } from './styled'
 
-const DownloadSection: React.FC<CommonProps> = ({ language }) => {
+const DownloadSection: React.FC<PageProps> = ({ language }) => {
   const isTablet = useMediaQuery({ query: '(max-width: 768px)' })
   const isMobile = useMediaQuery({ query: '(max-width: 426px)' })
 

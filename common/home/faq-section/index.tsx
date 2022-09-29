@@ -7,7 +7,7 @@ import type { FaqStaticData } from '../../../types/faq-static-data'
 import { useRouter } from 'next/router'
 import { trans } from '../../../utils/i18n'
 
-const FaqSection: React.FC<CommonProps> = ({ language }) => {
+const FaqSection: React.FC<PageProps> = ({ language }) => {
   const [selectedIndex, setSelectedIndex] = useState<number>(0)
 
   return (

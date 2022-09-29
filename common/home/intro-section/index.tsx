@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 import Wrapper from '../../../components/wrapper'
 import { BgImg, IntroSectionContainer, IozvImg, LogoImg, Title, PhoneImg } from './styled'
 
-const IntroSection: React.FC<CommonProps> = ({ language }) => {
+const IntroSection: React.FC<PageProps> = ({ language }) => {
   return (
     <Wrapper>
       <BgImg />

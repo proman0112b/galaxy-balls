@@ -7,7 +7,7 @@ import { ConditionSectionContainer, Title, CarouselWrapper, LeftButton, RightBut
 import { useRouter } from 'next/router'
 import { trans } from '../../../utils/i18n'
 
-const ConditionSection: React.FC<CommonProps> = ({ language }) => {
+const ConditionSection: React.FC<PageProps> = ({ language }) => {
   const images = [
     { src: '/assets/images/home/banner1.jpg' },
     { src: '/assets/images/home/banner2.png' },

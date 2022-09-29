@@ -16,7 +16,7 @@ const Home: NextPage<PageProps> = ({ language }) => {
   return (
     <>
       <IntroSection language={language} />
-      <DownloadSection language={language} />
+      <DownloadSection />
       <GameSection language={language} />
       <RuleSection language={language} />
       <WorldMapSection language={language} />

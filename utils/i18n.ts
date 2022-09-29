@@ -295,7 +295,7 @@ export const translations: StringByString = {
       'card-8-title': 'Voulez-vous vous joindre à nous?',
       'card-8-desc': 'Contactez nous!',
       'card-8-detail': `Nous sommes toujours prêts à collaborer avec d'autres talents. Que vous soyez un designer, un artiste, un influenceur, etc., écrivez-nous pour que nous puissions vous impliquer dans le projet Galaxyballs!`,
-      officialsite: 'Site officiel inst',
+      officialsite: 'Site officiel',
     },
     'space-balls': {
       // intro section
@@ -468,7 +468,7 @@ export const translations: StringByString = {
       'card-8-title': '¿Le gustaría unirse a nosotros?',
       'card-8-desc': 'Póngase en contacto con nosotros.',
       'card-8-detail': `Siempre estamos dispuestos a colaborar con otros talentos. Si eres diseñador, artista, influencer, etc., ponte en contacto con nosotros para que te involucremos en el proyecto Galaxyballs.`,
-      officialsite: 'Página web oficial inst',
+      officialsite: 'Página web oficial',
     },
     'space-balls': {
       // intro section
@@ -642,7 +642,7 @@ export const translations: StringByString = {
       'card-8-title': 'Möchten Sie sich uns anschließen?',
       'card-8-desc': 'Kontaktieren Sie uns!',
       'card-8-detail': `Wir sind immer bereit, mit anderen Talenten zusammenzuarbeiten. Egal, ob du ein Designer, Künstler, Influencer, etc. bist, melde dich einfach bei uns, damit wir dich in das Galaxyballs-Projekt einbinden können!`,
-      officialsite: 'Offizielle Website inst',
+      officialsite: 'Offizielle Website',
     },
     'space-balls': {
       // intro section
@@ -989,7 +989,7 @@ export const translations: StringByString = {
       'card-8-title': 'Volete unirvi a noi?',
       'card-8-desc': 'Contattateci!',
       'card-8-detail': `Siamo sempre disposti a collaborare con altri talenti. Se sei un designer, un artista, un influencer, ecc. contattaci per farti coinvolgere nel progetto Galaxyballs!`,
-      officialsite: 'Sito ufficiale ist',
+      officialsite: 'Sito ufficiale',
     },
     'space-balls': {
       // intro section

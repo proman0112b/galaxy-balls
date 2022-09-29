@@ -51,6 +51,7 @@ const MainSection: React.FC<PageProps> = ({ language }) => {
                 alt="no img"
                 width={isTablet ? 71 : 140}
                 height={isTablet ? 70 : 137}
+                priority
               />
               <Image
                 onClick={() => setSelectedPhoto(2)}
@@ -58,6 +59,7 @@ const MainSection: React.FC<PageProps> = ({ language }) => {
                 alt="no img"
                 width={isTablet ? 71 : 129}
                 height={isTablet ? 70 : 135}
+                priority
               />
               <Image
                 onClick={() => setSelectedPhoto(3)}
@@ -65,6 +67,7 @@ const MainSection: React.FC<PageProps> = ({ language }) => {
                 alt="no img"
                 width={isTablet ? 71 : 115}
                 height={isTablet ? 70 : 135}
+                priority
               />
               <Image
                 onClick={() => setSelectedPhoto(4)}
@@ -72,6 +75,7 @@ const MainSection: React.FC<PageProps> = ({ language }) => {
                 alt="no img"
                 width={isTablet ? 71 : 120}
                 height={isTablet ? 70 : 136}
+                priority
               />
             </Photos>
           </PhotoWrapper>

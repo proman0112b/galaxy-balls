@@ -85,6 +85,11 @@ export const Menu = styled.div`
       font-weight: 600;
       font-size: 28px;
       line-height: 34px;
+
+      @media screen and (max-width: 426px) {
+        font-size: 24px;
+        line-height: 30px;
+      }
     }
   }
 `

@@ -25,20 +25,19 @@ import { trans } from '../../../utils/i18n'
 
 import WinnersModal from '../../animated/winners'
 
-const WinnersSection: React.FC = () => {
+const WinnersSection: React.FC<PageProps> = ({ language }) => {
   const { isShown, toggle } = useModal()
   const isTablet = useMediaQuery({ query: '(max-width: 1300px)' })
   const isMobile = useMediaQuery({ query: '(max-width: 426px)' })
-  const { locale } = useRouter()
 
   return (
     <Wrapper id="winner">
       <WinnersSectionContainer>
         <MeteorImg />
         <section>
-          <Title>{trans(locale, 'home', 'winners-title')}</Title>
+          <Title>{trans(language, 'home', 'winners-title')}</Title>
           <Description>
-            <p>{trans(locale, 'home', 'winners-text')}</p>
+            <p>{trans(language, 'home', 'winners-text')}</p>
             {isTablet && !isMobile && (
               <WinnersList>
                 <WinnersListButton onClick={toggle}>
@@ -89,13 +88,13 @@ const WinnersSection: React.FC = () => {
             )}
             <Tip style={{ marginTop: '60.1px' }}>
               <Image src="/assets/icons/tip1.png" width={44.55} height={44.55} layout="fixed" alt="no img" />
-              <span style={{ color: '#FE6A88' }}>{trans(locale, 'home', 'winners-text-1')}</span>
+              <span style={{ color: '#FE6A88' }}>{trans(language, 'home', 'winners-text-1')}</span>
             </Tip>
             <Tip style={{ marginTop: '28.3px' }}>
               <Image src="/assets/icons/tip2.png" width={44.55} height={44.55} layout="fixed" alt="no img" />
-              <span style={{ color: '#FEA500' }}>{trans(locale, 'home', 'winners-text-2')}</span>
+              <span style={{ color: '#FEA500' }}>{trans(language, 'home', 'winners-text-2')}</span>
             </Tip>
-            <ListButton onClick={toggle}>{trans(locale, 'home', 'winners-button')}</ListButton>
+            <ListButton onClick={toggle}>{trans(language, 'home', 'winners-button')}</ListButton>
           </Description>
         </section>
         {!isTablet && (

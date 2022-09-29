@@ -13,7 +13,7 @@ import {
   ImprintDescriptionWrapper,
 } from './styled'
 
-const MainSection: React.FC = () => {
+const MainSection: React.FC<PageProps> = ({ language }) => {
   const [selectedIndex, setSelectedIndex] = useState<number>(1)
 
   return (

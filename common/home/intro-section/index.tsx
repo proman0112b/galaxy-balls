@@ -3,14 +3,12 @@ import { useRouter } from 'next/router'
 import Wrapper from '../../../components/wrapper'
 import { BgImg, IntroSectionContainer, IozvImg, LogoImg, Title, PhoneImg } from './styled'
 
-const IntroSection: React.FC = () => {
-  const { locale } = useRouter()
-
+const IntroSection: React.FC<CommonProps> = ({ language }) => {
   return (
     <Wrapper>
       <BgImg />
       <IntroSectionContainer>
-        <IozvImg src={`/assets/images/home/iozv-${locale}.png`} />
+        <IozvImg src={`/assets/images/home/iozv-${language}.png`} />
         <Title>
           <p>
             <span>Galaxy</span>Galaxy

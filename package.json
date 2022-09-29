@@ -19,6 +19,8 @@
     "cross-env": "^7.0.3",
     "firebase-admin": "^11.0.1",
     "firebase-functions": "^3.24.0",
+    "i18next": "^21.9.2",
+    "i18next-browser-languagedetector": "^6.1.5",
     "next": "12.3.0",
     "next-export-i18n": "^2.0.3",
     "react": "18.2.0",

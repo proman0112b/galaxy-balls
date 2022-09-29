@@ -5,16 +5,15 @@ import WorldMapModal from '../../animated/world-map'
 import { useRouter } from 'next/router'
 import { trans } from '../../../utils/i18n'
 
-const WorldMapSection: React.FC = () => {
+const WorldMapSection: React.FC<PageProps> = ({ language }) => {
   const { isShown, toggle } = useModal()
-  const { locale } = useRouter()
 
   return (
     <WorldMapSectionWrapper id="worldmap">
       <BGWrapper />
       <WorldMapSectionContainer>
-        <h1>{trans(locale, 'home', 'world-map-title')}</h1>
-        <p>{trans(locale, 'home', 'world-map-text')}</p>
+        <h1>{trans(language, 'home', 'world-map-title')}</h1>
+        <p>{trans(language, 'home', 'world-map-text')}</p>
         <DiscoverButton onClick={toggle}>
           <div className="wrapper">
             <div className="content">Discover the World</div>

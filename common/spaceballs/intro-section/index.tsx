@@ -4,16 +4,14 @@ import { IntroSectionContainer, BGImg, MeteorImg, TitleContainer, PlayButton } f
 import { useRouter } from 'next/router'
 import { trans } from '../../../utils/i18n'
 
-const IntroSection: React.FC = () => {
-  const { locale } = useRouter()
-
+const IntroSection: React.FC<PageProps> = ({ language }) => {
   return (
     <Wrapper>
       <IntroSectionContainer>
         <TitleContainer>
           <MeteorImg />
-          <h1>{trans(locale, 'space-balls', 'title')}</h1>
-          <p>{trans(locale, 'space-balls', 'desc')}</p>
+          <h1>{trans(language, 'space-balls', 'title')}</h1>
+          <p>{trans(language, 'space-balls', 'desc')}</p>
           <PlayButton>
             <span>Let&apos;s play</span>
           </PlayButton>

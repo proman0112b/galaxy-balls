@@ -5,13 +5,12 @@ import { PrizesSectionContainer, Title, Description, BGWrapper } from './styled'
 import { useRouter } from 'next/router'
 import { trans } from '../../../utils/i18n'
 
-const PrizesSection: React.FC = () => {
-  const { locale } = useRouter()
+const PrizesSection: React.FC<PageProps> = ({ language }) => {
   return (
     <Wrapper>
       <PrizesSectionContainer>
-        <Title>{trans(locale, 'home', 'prize-title')}</Title>
-        <Description>{trans(locale, 'home', 'prize-text')}</Description>
+        <Title>{trans(language, 'home', 'prize-title')}</Title>
+        <Description>{trans(language, 'home', 'prize-text')}</Description>
         <BGWrapper />
       </PrizesSectionContainer>
     </Wrapper>

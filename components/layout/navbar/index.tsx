@@ -9,18 +9,69 @@ import Wrapper from '../../wrapper'
 import { NavbarContainer, Logo, DownloadButton, LangButton, SmallMenu, NavMenu, LangMenu } from './styled'
 import Menu from './menu'
 import type { LangStaticData } from '../../../types/navbar'
-import { langStaticData } from '../../../static/lang-static-data'
+import { langStaticData, languages } from '../../../static/lang-static-data'
+
+interface LinkComponentProps {
+  children: any
+  locale: any
+  href?: any
+}
+
+export const LinkComponent: React.FC<LinkComponentProps> = ({ children, locale, ...props }) => {
+  const router = useRouter()
+  const { pathname, query, asPath } = router
+
+  // Detect current language
+  const slug = asPath.split('/')[1]
+  const langSlug = languages.includes(slug) && slug
+  const language = query.lang || langSlug || 'en'
+  let href = props.href || pathname
+
+  if (locale) {
+    if (props.href) {
+      href = `/${locale}${href}`
+    } else {
+      if (pathname.startsWith('/404')) {
+        href = `/${locale}`
+      } else {
+        href = pathname.replace('[lang]', locale)
+      }
+    }
+  } else {
+    if (language) {
+      href = `/${language}${href}`
+    } else {
+      href = `/${href}`
+    }
+  }
+
+  // Fix double slashes
+  href = href.replace(/([^:]\/)\/+/g, '$1').replace('//', '/')
+
+  return (
+    <Link href={href} passHref>
+      {children}
+    </Link>
+  )
+}
 
 const Navbar: React.FC = () => {
   const isMobile = useMediaQuery({ query: '(max-width: 426px)' })
   const isSmallMenu = useMediaQuery({ query: '(max-width: 1250px)' })
   const [showSmallMenu, setShowSmallMenu] = useState<boolean>(false)
   const [selectedLang, setSelectedLang] = useState<LangStaticData>(langStaticData[0])
-  const { pathname, query, asPath, locale } = useRouter()
+  const { pathname, query, asPath } = useRouter()
+
+  // Detect current language
+  const slug = asPath.split('/')[1]
+  const langSlug = languages.includes(slug) && slug
+  const language = query.lang || langSlug || 'en'
 
   useEffect(() => {
-    setSelectedLang(langStaticData.filter(lang => lang.locale === locale ?? lang)[0])
-  }, [])
+    setSelectedLang(langStaticData.filter(lang => lang.locale === language ?? lang)[0])
+  }, [language])
+
+  if (!language) return null
 
   const LangSection = (
     <LangButton>
@@ -28,12 +79,12 @@ const Navbar: React.FC = () => {
       <label>{selectedLang.label}</label>
       <LangMenu>
         {langStaticData.map((data: LangStaticData, index: number) => (
-          <Link href={{ pathname, query }} as={asPath} locale={data.locale} key={index}>
+          <LinkComponent locale={data.locale} key={index}>
             <div onClick={() => setSelectedLang(langStaticData[index])}>
               <Image src={data.src} alt="no logo" width="30px" height="30px" layout="fixed" />
               <label>{data.label}</label>
             </div>
-          </Link>
+          </LinkComponent>
         ))}
       </LangMenu>
     </LangButton>

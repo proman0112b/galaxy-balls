@@ -26,16 +26,15 @@ import 'swiper/css/navigation'
 import { useRouter } from 'next/router'
 import { trans } from '../../../utils/i18n'
 
-const MainSection: React.FC = () => {
+const MainSection: React.FC<PageProps> = ({ language }) => {
   const isTablet = useMediaQuery({ query: '(max-width: 768px)' })
-  const { locale } = useRouter()
   const [selectedPhoto, setSelectedPhoto] = useState<number>(0)
 
   return (
     <Wrapper>
       <MainSectionContainer>
-        <Title>{trans(locale, 'transporter', 'page-title')}</Title>
-        <Description>{trans(locale, 'transporter', 'desc')}</Description>
+        <Title>{trans(language, 'transporter', 'page-title')}</Title>
+        <Description>{trans(language, 'transporter', 'desc')}</Description>
         <Content>
           <PhotoWrapper>
             <Image
@@ -78,15 +77,15 @@ const MainSection: React.FC = () => {
           </PhotoWrapper>
           <PersonalInfo>
             <ContactInfo>
-              <span>{trans(locale, 'transporter', 'insta-link')}</span>
+              <span>{trans(language, 'transporter', 'insta-link')}</span>
               <Link href="https://www.instagram.com/besnik_tafallari/?next=%2Fgalaxyballs_official%2F">
                 <a target="_blank" rel="noreferrer" style={{ paddingTop: '3px' }}>
                   <AiOutlineInstagram size={20} />
                 </a>
               </Link>
             </ContactInfo>
-            <h3>{trans(locale, 'transporter', 'title')}</h3>
-            <p dangerouslySetInnerHTML={{ __html: trans(locale, 'transporter', 'details') }}></p>
+            <h3>{trans(language, 'transporter', 'title')}</h3>
+            <p dangerouslySetInnerHTML={{ __html: trans(language, 'transporter', 'details') }}></p>
           </PersonalInfo>
         </Content>
       </MainSectionContainer>

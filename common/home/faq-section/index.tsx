@@ -7,15 +7,14 @@ import type { FaqStaticData } from '../../../types/faq-static-data'
 import { useRouter } from 'next/router'
 import { trans } from '../../../utils/i18n'
 
-const FaqSection: React.FC = () => {
+const FaqSection: React.FC<CommonProps> = ({ language }) => {
   const [selectedIndex, setSelectedIndex] = useState<number>(0)
-  const { locale } = useRouter()
 
   return (
     <Wrapper>
       <FaqSectionContainer>
-        <Title>{trans(locale, 'home', 'faq-title')}</Title>
-        <Description>{trans(locale, 'home', 'faq-description')}</Description>
+        <Title>{trans(language, 'home', 'faq-title')}</Title>
+        <Description>{trans(language, 'home', 'faq-description')}</Description>
         <CardListWrapper>
           <CardList>
             {faqStaticData.map((data: FaqStaticData, index: number) => {
@@ -29,9 +28,9 @@ const FaqSection: React.FC = () => {
                       }}
                     >
                       {selectedIndex === index ? <FaChevronUp /> : <FaChevronDown />}
-                      <span>{trans(locale, 'home', `question-description-${index + 1}`)}</span>
+                      <span>{trans(language, 'home', `question-description-${index + 1}`)}</span>
                     </div>
-                    <div>{trans(locale, 'home', `answer-description-${index + 1}`)}</div>
+                    <div>{trans(language, 'home', `answer-description-${index + 1}`)}</div>
                   </Card>
                 )
             })}
@@ -48,9 +47,9 @@ const FaqSection: React.FC = () => {
                       }}
                     >
                       {selectedIndex === index ? <FaChevronUp /> : <FaChevronDown />}
-                      <span>{trans(locale, 'home', `question-description-${index + 1}`)}</span>
+                      <span>{trans(language, 'home', `question-description-${index + 1}`)}</span>
                     </div>
-                    <div>{trans(locale, 'home', `answer-description-${index + 1}`)}</div>
+                    <div>{trans(language, 'home', `answer-description-${index + 1}`)}</div>
                   </Card>
                 )
             })}

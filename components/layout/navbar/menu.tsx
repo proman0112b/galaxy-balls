@@ -3,43 +3,49 @@ import Link from 'next/link'
 import { Menu } from './styled'
 import { useRouter } from 'next/router'
 import { trans } from '../../../utils/i18n'
+import { LinkComponent } from './index'
+import { languages } from '../../../static/lang-static-data'
 
 interface MenuComponentProps {
   setShowSmallMenu: Function
 }
 
 const MenuComponent: React.FC<MenuComponentProps> = ({ setShowSmallMenu }) => {
-  const { locale } = useRouter()
+  const { pathname, query, asPath } = useRouter()
+  // Detect current language
+  const slug = asPath.split('/')[1]
+  const langSlug = languages.includes(slug) && slug
+  const language = query.lang || langSlug || 'en'
 
   return (
     <Menu>
-      <Link href="/">
-        <a onClick={() => setShowSmallMenu(false)}>{trans(locale, 'menu', 'home')}</a>
-      </Link>
-      <Link href="/#start">
-        <a onClick={() => setShowSmallMenu(false)}>{trans(locale, 'menu', 'start')}</a>
-      </Link>
-      <Link href="/#rules">
-        <a onClick={() => setShowSmallMenu(false)}>{trans(locale, 'menu', 'rules')}</a>
-      </Link>
-      <Link href="/#worldmap">
-        <a onClick={() => setShowSmallMenu(false)}>{trans(locale, 'menu', 'world-map')}</a>
-      </Link>
-      <Link href="/#winner">
-        <a onClick={() => setShowSmallMenu(false)}>{trans(locale, 'menu', 'winner')}</a>
-      </Link>
-      <Link href="/spaceballs">
-        <a onClick={() => setShowSmallMenu(false)}>{trans(locale, 'menu', 'space-balls')}</a>
-      </Link>
-      <Link href="/partners">
-        <a onClick={() => setShowSmallMenu(false)}>{trans(locale, 'menu', 'partner')}</a>
-      </Link>
-      <Link href="/transporter">
-        <a onClick={() => setShowSmallMenu(false)}>{trans(locale, 'menu', 'transporter')}</a>
-      </Link>
-      <Link href="/documents">
-        <a onClick={() => setShowSmallMenu(false)}>{trans(locale, 'menu', 'faq')}</a>
-      </Link>
+      <LinkComponent href="/" locale={language}>
+        <a onClick={() => setShowSmallMenu(false)}>{trans(language, 'menu', 'home')}</a>
+      </LinkComponent>
+      <LinkComponent href="/#start" locale={language}>
+        <a onClick={() => setShowSmallMenu(false)}>{trans(language, 'menu', 'start')}</a>
+      </LinkComponent>
+      <LinkComponent href="/#rules" locale={language}>
+        <a onClick={() => setShowSmallMenu(false)}>{trans(language, 'menu', 'rules')}</a>
+      </LinkComponent>
+      <LinkComponent href="/#worldmap" locale={language}>
+        <a onClick={() => setShowSmallMenu(false)}>{trans(language, 'menu', 'world-map')}</a>
+      </LinkComponent>
+      <LinkComponent href="/#winner" locale={language}>
+        <a onClick={() => setShowSmallMenu(false)}>{trans(language, 'menu', 'winner')}</a>
+      </LinkComponent>
+      <LinkComponent href={`/spaceballs`} locale={language}>
+        <a onClick={() => setShowSmallMenu(false)}>{trans(language, 'menu', 'space-balls')}</a>
+      </LinkComponent>
+      <LinkComponent href={`/partners`} locale={language}>
+        <a onClick={() => setShowSmallMenu(false)}>{trans(language, 'menu', 'partner')}</a>
+      </LinkComponent>
+      <LinkComponent href={`/transporter`} locale={language}>
+        <a onClick={() => setShowSmallMenu(false)}>{trans(language, 'menu', 'transporter')}</a>
+      </LinkComponent>
+      <LinkComponent href={`/documents`} locale={language}>
+        <a onClick={() => setShowSmallMenu(false)}>{trans(language, 'menu', 'faq')}</a>
+      </LinkComponent>
     </Menu>
   )
 }

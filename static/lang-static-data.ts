@@ -8,3 +8,5 @@ export const langStaticData: LangStaticData[] = [
   { src: '/assets/icons/flag-es.png', label: 'Es', locale: 'es' },
   { src: '/assets/icons/flag-pt.png', label: 'Pt', locale: 'pt' },
 ]
+
+export const languages = ['en', 'de', 'fr', 'it', 'es', 'pt']

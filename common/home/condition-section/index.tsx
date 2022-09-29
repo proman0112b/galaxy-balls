@@ -7,7 +7,7 @@ import { ConditionSectionContainer, Title, CarouselWrapper, LeftButton, RightBut
 import { useRouter } from 'next/router'
 import { trans } from '../../../utils/i18n'
 
-const ConditionSection: React.FC = () => {
+const ConditionSection: React.FC<CommonProps> = ({ language }) => {
   const images = [
     { src: '/assets/images/home/banner1.jpg' },
     { src: '/assets/images/home/banner2.png' },
@@ -16,13 +16,12 @@ const ConditionSection: React.FC = () => {
   ]
   const isTablet = useMediaQuery({ query: '(max-width: 1024px)' })
   const carouselRef = useRef<CarouselRef | null>(null)
-  const { locale } = useRouter()
 
   return (
     <Wrapper>
       <ConditionSectionContainer>
-        <Title>{trans(locale, 'home', 'conditions-title')}</Title>
-        <p>{trans(locale, 'home', 'conditions-text')}</p>
+        <Title>{trans(language, 'home', 'conditions-title')}</Title>
+        <p>{trans(language, 'home', 'conditions-text')}</p>
         <CarouselWrapper>
           <Carousel
             className="Carousel"

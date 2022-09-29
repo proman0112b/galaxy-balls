@@ -8,11 +8,10 @@ import { MoreSectionContainer, SwiperWrapper, NavigationNext, NavigationPrev, Co
 import { useRouter } from 'next/router'
 import { trans } from '../../../utils/i18n'
 
-const MoreSection: React.FC = () => {
+const MoreSection: React.FC<PageProps> = ({ language }) => {
   const [perView, setPerView] = useState<number>(3)
   const isTablet = useMediaQuery({ query: '(max-width: 1024px)' })
   const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
-  const { locale } = useRouter()
 
   useEffect(() => {
     if (isTablet && isMobile) setPerView(1)
@@ -22,8 +21,8 @@ const MoreSection: React.FC = () => {
   return (
     <Wrapper>
       <MoreSectionContainer>
-        <h2>{trans(locale, 'space-balls', 'more-about')}</h2>
-        <p>{trans(locale, 'space-balls', 'more-about-text')}</p>
+        <h2>{trans(language, 'space-balls', 'more-about')}</h2>
+        <p>{trans(language, 'space-balls', 'more-about-text')}</p>
         <SwiperWrapper>
           <NavigationPrev className="prev">
             <FiChevronLeft size={30} />

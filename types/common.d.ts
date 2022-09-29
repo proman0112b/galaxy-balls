@@ -1,0 +1,3 @@
+interface CommonProps {
+  langauge: string
+}

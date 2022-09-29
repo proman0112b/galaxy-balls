@@ -1,29 +1,15 @@
-import type { NextPage } from 'next'
+import { useEffect } from 'react'
 import { useRouter } from 'next/router'
-import IntroSection from '../common/home/intro-section'
-import DownloadSection from '../common/home/dowload-section'
-import GameSection from '../common/home/game-section'
-import RuleSection from '../common/home/rule-section'
-import WorldMapSection from '../common/home/worldmap-section'
-import WinnersSection from '../common/home/winners-section'
-import ConditionSection from '../common/home/condition-section'
-import PrizesSection from '../common/home/prizes-section'
-import FaqSection from '../common/home/faq-section'
+import i18next from 'i18next'
 
-const Home: NextPage = () => {
-  return (
-    <>
-      <IntroSection />
-      <DownloadSection />
-      <GameSection />
-      <RuleSection />
-      <WorldMapSection />
-      <WinnersSection />
-      <ConditionSection />
-      <PrizesSection />
-      <FaqSection />
-    </>
-  )
+export default function Home() {
+  const router = useRouter()
+
+  useEffect(() => {
+    if (router.pathname === '/') {
+      router.push('/' + i18next.language.substring(0, 2))
+    }
+  })
+
+  return null
 }
-
-export default Home

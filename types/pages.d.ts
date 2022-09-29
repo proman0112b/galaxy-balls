@@ -1,0 +1,3 @@
+interface PageProps {
+  language: string
+}

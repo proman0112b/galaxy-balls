@@ -196,6 +196,7 @@ export const WinnersListButton = styled.div`
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  z-index: 2;
 
   :hover {
     box-shadow: none;
@@ -208,6 +209,12 @@ export const WinnersListButton = styled.div`
   @media screen and (max-width: 768px) {
     width: 39.51vw;
     height: 12.46vw;
+  }
+
+  @media screen and (max-width: 426px) {
+    border-radius: 16px;
+    position: absolute;
+    margin-top: 56px;
   }
 
   div {
@@ -223,6 +230,12 @@ export const WinnersListButton = styled.div`
     @media screen and (max-width: 768px) {
       width: 36.03vw;
       height: 9.76vw;
+    }
+
+    @media screen and (max-width: 426px) {
+      width: 35.03vw;
+      height: 8.76vw;
+      border-radius: 10px;
     }
 
     span {
@@ -243,6 +256,7 @@ export const WinnersListButton = styled.div`
 export const WinnerTable = styled.table`
   width: 291px;
   height: 322px;
+  z-index: 1;
   background: linear-gradient(135deg, #222236 0%, #181820 100%);
   border: 0.510767px solid #36333e;
   border-radius: 25.5384px;
@@ -277,4 +291,34 @@ export const WinnerTable = styled.table`
       }
     }
   }
+`
+
+export const Rectangle1 = styled.div`
+  width: 68.3vw;
+  height: 76vw;
+  position: absolute;
+  top: 86px;
+  background: linear-gradient(135deg, #222236 0%, #181820 100%);
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  border: 0.496059px solid #36333e;
+  border-radius: 24.803px;
+  transform: rotate(15deg);
+  /* @media screen and (max-width: 376px) {
+    width: 251px;
+    height: 290.93px;
+  } */
+`
+
+export const Rectangle2 = styled.div`
+  width: 68.3vw;
+  height: 76vw;
+  position: absolute;
+  top: 86px;
+  background: linear-gradient(135deg, #222236 0%, #181820 100%);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+  border: 0.496059px solid #36333e;
+  border-radius: 24.803px;
+  transform: rotate(30deg);
 `

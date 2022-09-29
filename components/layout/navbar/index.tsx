@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
@@ -16,7 +16,11 @@ const Navbar: React.FC = () => {
   const isSmallMenu = useMediaQuery({ query: '(max-width: 1250px)' })
   const [showSmallMenu, setShowSmallMenu] = useState<boolean>(false)
   const [selectedLang, setSelectedLang] = useState<LangStaticData>(langStaticData[0])
-  const { pathname, query, asPath } = useRouter()
+  const { pathname, query, asPath, locale } = useRouter()
+
+  useEffect(() => {
+    setSelectedLang(langStaticData.filter(lang => lang.locale === locale ?? lang)[0])
+  }, [])
 
   const LangSection = (
     <LangButton>

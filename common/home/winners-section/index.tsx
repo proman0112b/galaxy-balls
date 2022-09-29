@@ -5,7 +5,19 @@ import { useMediaQuery } from 'react-responsive'
 import { FaFacebookF } from 'react-icons/fa'
 import { AiFillInstagram, AiOutlineTwitter } from 'react-icons/ai'
 import Wrapper from '../../../components/wrapper'
-import { WinnersSectionContainer, Title, Description, Tip, ListButton, MeteorImg, WinnersList, WinnerTable, WinnersListButton } from './styled'
+import {
+  WinnersSectionContainer,
+  Title,
+  Description,
+  Tip,
+  ListButton,
+  MeteorImg,
+  WinnersList,
+  WinnerTable,
+  WinnersListButton,
+  Rectangle1,
+  Rectangle2,
+} from './styled'
 import type { WinnerlistStaticData } from '../../../types/winnerlist-static-data'
 import { winnerlistStaticData } from '../../../static/winnerlist-static-data'
 import { useRouter } from 'next/router'
@@ -37,34 +49,43 @@ const WinnersSection: React.FC = () => {
               </WinnersList>
             )}
             {isMobile && (
-              <WinnerTable>
-                <thead>
-                  <tr>
-                    <th>#</th>
-                    <th>Finder name</th>
-                    <th>Link</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {winnerlistStaticData.map((data: WinnerlistStaticData, index: number) => (
-                    <tr key={index}>
-                      <td style={{ color: `${data.color}` }}>{data.id}</td>
-                      <td style={{ color: `${data.color}` }}>{data.name}</td>
-                      <td>
-                        <div>
-                          <FaFacebookF />
-                        </div>
-                        <div>
-                          <AiFillInstagram />
-                        </div>
-                        <div>
-                          <AiOutlineTwitter />
-                        </div>
-                      </td>
+              <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+                <WinnersListButton onClick={toggle}>
+                  <div className="wrapper">
+                    <span>Show all Winners</span>
+                  </div>
+                </WinnersListButton>
+                <WinnerTable>
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Finder name</th>
+                      <th>Link</th>
                     </tr>
-                  ))}
-                </tbody>
-              </WinnerTable>
+                  </thead>
+                  <tbody>
+                    {winnerlistStaticData.map((data: WinnerlistStaticData, index: number) => (
+                      <tr key={index}>
+                        <td style={{ color: `${data.color}` }}>{data.id}</td>
+                        <td style={{ color: `${data.color}` }}>{data.name}</td>
+                        <td>
+                          <div>
+                            <FaFacebookF />
+                          </div>
+                          <div>
+                            <AiFillInstagram />
+                          </div>
+                          <div>
+                            <AiOutlineTwitter />
+                          </div>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </WinnerTable>
+                <Rectangle1 />
+                <Rectangle2 />
+              </div>
             )}
             <Tip style={{ marginTop: '60.1px' }}>
               <Image src="/assets/icons/tip1.png" width={44.55} height={44.55} layout="fixed" alt="no img" />

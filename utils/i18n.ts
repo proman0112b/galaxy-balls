@@ -994,7 +994,7 @@ export const translations: StringByString = {
     'space-balls': {
       // intro section
       title: 'SpaceBalls',
-      desc: 'Le SpaceBalls sono qui e ti aspettano. Vivete momenti unici che non avete mai visto prima in Augment Realty!',
+      desc: 'Le SpaceBalls sono qui e ti aspettano. Vivete momenti unici che non avete mai visto prima in Augmented Realty!',
 
       // chance section
       'chance-to-win': 'La possibilità di vincere!',

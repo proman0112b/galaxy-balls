@@ -139,9 +139,9 @@ export const translations: StringByString = {
       // feature-section
       'about-space-balls': 'Something about SpaceBalls',
       'about-text': 'Three things you should know about the SpaceBalls',
-      'about-desc-1': 'Your level increases and you are entered in a rank',
-      'about-desc-2': 'They are scattered all over the world',
-      'about-desc-3': 'They come in different colors, sizes and some are rare',
+      'about-desc-1': 'They are scattered all over the world',
+      'about-desc-2': 'They come in different colors, sizes and some are rare',
+      'about-desc-3': 'If your level increases, you will be placed in a ranking',
       'find-a-ball': 'What happens when you find a SpaceBall?',
       'find-a-ball-text': 'Three other important things you should know',
       'find-desc-4': 'You get experience points every time',
@@ -162,7 +162,7 @@ export const translations: StringByString = {
 
       // values-section
       rankinglist: 'Rankinglist',
-      'rankinglist-desc': 'Be entered in the rankinglist so that everyone can see you.',
+      'rankinglist-desc': 'Gain visibility through the Rankinglist',
       chat: 'Chat',
       'chat-desc': 'Chat with your team and with other users worldwide',
       team: 'Team',
@@ -300,7 +300,7 @@ export const translations: StringByString = {
     'space-balls': {
       // intro section
       title: 'SpaceBalls',
-      desc: `Les SpaceBalls sont là et vous attendent. Vivez des moments uniques dans réalité augmentée que vous n'avez jamais vus auparavant !`,
+      desc: `Les SpaceBalls sont là et vous attendent. Vivez des moments uniques en réalité augmentée que vous n'avez jamais vus auparavant !`,
 
       // chance section
       'chance-to-win': 'Votre chance de gagner!',
@@ -310,11 +310,11 @@ export const translations: StringByString = {
       win: 'Gagner',
 
       // feature-section
-      'about-space-balls': 'Quelque chose à propos des SpaceBalls',
+      'about-space-balls': 'À propos des SpaceBalls ',
       'about-text': 'Trois choses à savoir sur les SpaceBalls',
-      'about-desc-1': 'Ton niveau augmente et tu es inscrit dans un classement',
-      'about-desc-2': 'Ils sont dispersés dans le monde entier',
-      'about-desc-3': 'Il y en a de différentes couleurs, tailles et certains sont rares',
+      'about-desc-1': 'Ils sont dispersés dans le monde entier',
+      'about-desc-2': 'Il y en a de différentes couleurs, tailles et certains sont rares',
+      'about-desc-3': 'Lorsque ton niveau augmente tu es inscrit dans un classement',
       'find-a-ball': 'Que se passe-t-il lorsque tu trouves une SpaceBall?',
       'find-a-ball-text': 'Trois autres choses importantes que tu dois savoir',
       'find-desc-4': `Tu gagnes des points d'expérience à chaque fois.`,
@@ -333,7 +333,7 @@ export const translations: StringByString = {
 
       // values-section
       rankinglist: 'Rankinglist',
-      'rankinglist-desc': 'Soyez inscrit dans le rankingliste pour que tout le monde puisse vous voir.',
+      'rankinglist-desc': 'Gagner en visibilité grâce au rankinglist',
       chat: 'Chat',
       'chat-desc': `Chattez avec votre équipe et avec d'autres utilisateurs dans le monde entier`,
       team: 'Équipe',
@@ -485,9 +485,9 @@ export const translations: StringByString = {
       // feature-section
       'about-space-balls': 'Más información sobre SpaceBalls',
       'about-text': 'Tres cosas que debe saber  sobre SpaceBalls',
-      'about-desc-1': 'Tu nivel aumenta y entras en una lista de clasificación',
-      'about-desc-2': 'Están dispersas por todo el mundo',
-      'about-desc-3': 'Vienen en diferentes colores, tamaños y algunas son raras',
+      'about-desc-1': 'Están dispersas por todo el mundo',
+      'about-desc-2': 'Vienen en diferentes colores, tamaños y algunas son raras',
+      'about-desc-3': 'Si tu nivel aumenta, serás colocado en una clasificación',
       'find-a-ball': '¿Qué pasa cuando encuentras una SpaceBall?',
       'find-a-ball-text': 'Otras tres cosas importantes que debes saber',
       'find-desc-4': 'Obtienes puntos de experiencia',
@@ -506,7 +506,7 @@ export const translations: StringByString = {
 
       // values-section
       rankinglist: 'Lista de clasificación ',
-      'rankinglist-desc': 'Ingresa en la lista de clasificación para que todos puedan verte.	',
+      'rankinglist-desc': 'Ganar visibilidad a través de la lista de rankinglist',
       chat: 'Chat',
       'chat-desc': 'Chatea con tu equipo y con otros usuarios de todo el mundo',
       team: 'Equipo',
@@ -647,7 +647,7 @@ export const translations: StringByString = {
     'space-balls': {
       // intro section
       title: 'SpaceBalls',
-      desc: 'Die SpaceBalls sind hier und warten auf dich. Erleben Sie in Augment Realty einzigartige Momente, die Sie noch nie gesehen haben!',
+      desc: 'Die SpaceBalls sind hier und warten auf dich. Erlebe in Augment Realty einzigartige Momente, die du zuvor noch nie gesehen hast!',
 
       // chance section
       'chance-to-win': 'Ihre Chance zu gewinnen!',
@@ -658,10 +658,10 @@ export const translations: StringByString = {
 
       // feature-section
       'about-space-balls': 'Mehr über SpaceBalls',
-      'about-text': 'Drei Dinge, die Sie über die SpaceBalls wissen sollten',
-      'about-desc-1': 'Dein Level steigt und du wirst in eine Rangliste eingetragen',
-      'about-desc-2': 'Sie sind über die ganze Welt verstreut',
-      'about-desc-3': 'Es gibt sie in verschiedenen Farben, Größen und einige sind selten',
+      'about-text': 'Drei Dinge, die du über die SpaceBalls wissen solltest',
+      'about-desc-1': 'Sie sind über die ganze Welt verstreut',
+      'about-desc-2': 'Es gibt sie in verschiedenen Farben, Größen und einige sind selten',
+      'about-desc-3': 'Wenn dein Level steigt, wirst du in eine Rangliste eingetragen',
       'find-a-ball': 'Was passiert, wenn du einen SpaceBall findest?',
       'find-a-ball-text': 'Drei weitere wichtige Dinge, die du wissen solltest',
       'find-desc-4': 'Du erhälst jedes Mal Erfahrungspunkte',
@@ -680,7 +680,7 @@ export const translations: StringByString = {
 
       // values-section
       rankinglist: 'Rangliste',
-      'rankinglist-desc': 'Tragen Sie sich in die Rangliste ein, damit jeder Sie sehen kann.',
+      'rankinglist-desc': 'Gewinn an Sichtbarkeit durch die Rankinglist',
       chat: 'Chatten',
       'chat-desc': 'Chatten Sie mit Ihrem Team und mit anderen Benutzern weltweit',
       team: 'Team',
@@ -833,9 +833,9 @@ export const translations: StringByString = {
       // feature-section
       'about-space-balls': 'Mais sobre SpaceBalls',
       'about-text': 'Três coisas que você deve saber sobre as SpaceBalls',
-      'about-desc-1': 'Seu nível sobe e você é incluído em uma lista de classificação',
-      'about-desc-2': 'Estão espalhados pelo mundo inteiro',
-      'about-desc-3': 'Existem em diferentes cores, tamanhos e alguns são raros.',
+      'about-desc-1': 'Estão espalhados pelo mundo inteiro',
+      'about-desc-2': 'Existem em diferentes cores, tamanhos e alguns são raros.',
+      'about-desc-3': 'Se o seu nível aumentar, será colocado numa classificação',
       'find-a-ball': 'O que acontece quando você encontra uma SpaceBall?',
       'find-a-ball-text': 'Três outras coisas importantes que você deve saber',
       'find-desc-4': 'Todas as vezes você ganha pontos de experiência',
@@ -854,7 +854,7 @@ export const translations: StringByString = {
 
       // values-section
       rankinglist: 'Lista de ranking ',
-      'rankinglist-desc': 'Inscreva-se na lista de classificação para que todos possam vê-lo.',
+      'rankinglist-desc': 'Ganhar visibilidade através do Rankinglist',
       chat: 'Bate-papo',
       'chat-desc': 'Converse com sua equipe e com outros usuários em todo o mundo',
       team: 'Equipe',
@@ -1008,9 +1008,9 @@ export const translations: StringByString = {
       'about-text': 'Tre cose da sapere sulle SpaceBalls',
       'find-a-ball': 'Cosa succede quando si trova una SpaceBall',
       'find-a-ball-text': 'Altre tre cose importanti da sapere',
-      'about-desc-1': 'Il vostro livello aumenta e venite inseriti in una classifica',
-      'about-desc-2': 'Sono sparsi in tutto il mondo',
-      'about-desc-3': 'Sono disponibili in diversi colori e dimensioni e alcuni sono rari.',
+      'about-desc-1': 'Sono sparsi in tutto il mondo',
+      'about-desc-2': 'Sono disponibili in diversi colori e dimensioni e alcuni sono rari.',
+      'about-desc-3': 'Se il vostro livello aumenta, verrete inseriti in una classifica ',
       'find-desc-4': 'Si ottengono punti esperienza ogni volta',
       'find-desc-5': 'Tutte le SpaceBall finiscono in tasca e molte hanno diverse funzioni che aiutano a progredire nel gioco.',
       'find-desc-6': 'Ottenete 3 cose diverse che vi aiuteranno ad andare avanti',
@@ -1027,7 +1027,7 @@ export const translations: StringByString = {
 
       // values-section
       rankinglist: 'Classifica ',
-      'rankinglist-desc': 'Inseritevi nella classifica in modo che tutti possano vedervi.',
+      'rankinglist-desc': 'Ottieni visibilità attraverso  Rankinglist',
       chat: 'Chat',
       'chat-desc': 'Chatta con il tuo team e con altri utenti in tutto il mondo',
       team: 'Squadra ',

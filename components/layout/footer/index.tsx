@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
+import Link from 'next/link'
 import { useMediaQuery } from 'react-responsive'
 import Wrapper from '../../wrapper'
 import DownloadSection from '../../../common/home/dowload-section'
@@ -24,23 +25,59 @@ const Footer: React.FC = () => {
         <SocialLinks>
           {isTablet && !isMobile && (
             <>
-              <Image src="/assets/icons/facebook.png" alt="no img" width={25} height={25} layout="fixed" />
-              <Image src="/assets/icons/insta.png" alt="no img" width={25} height={25} layout="fixed" />
-              <Image src="/assets/icons/twitter.png" alt="no img" width={25} height={25} layout="fixed" />
+              <Link href="https://www.facebook.com/profile.php?id=100084007755536&is_tour_dismissed=true">
+                <a target="_blank" rel="noreferrer">
+                  <Image src="/assets/icons/facebook.png" alt="no img" width={25} height={25} layout="fixed" />
+                </a>
+              </Link>
+              <Link href="https://www.instagram.com/galaxyballs_official/?next=%2Fgalaxyballs_official%2F">
+                <a target="_blank" rel="noreferrer">
+                  <Image src="/assets/icons/insta.png" alt="no img" width={25} height={25} layout="fixed" />
+                </a>
+              </Link>
+              <Link href="https://twitter.com/BallsGalaxy">
+                <a target="_blank" rel="noreferrer">
+                  <Image src="/assets/icons/twitter.png" alt="no img" width={25} height={25} layout="fixed" />
+                </a>
+              </Link>
             </>
           )}
           {!isTablet && !isMobile && (
             <>
-              <Image src="/assets/icons/facebook.png" alt="no img" width={39} height={39} layout="fixed" />
-              <Image src="/assets/icons/insta.png" alt="no img" width={39} height={39} layout="fixed" />
-              <Image src="/assets/icons/twitter.png" alt="no img" width={39} height={39} layout="fixed" />
+              <Link href="https://www.facebook.com/profile.php?id=100084007755536&is_tour_dismissed=true">
+                <a target="_blank" rel="noreferrer">
+                  <Image src="/assets/icons/facebook.png" alt="no img" width={39} height={39} layout="fixed" />
+                </a>
+              </Link>
+              <Link href="https://www.instagram.com/galaxyballs_official/?next=%2Fgalaxyballs_official%2F">
+                <a target="_blank" rel="noreferrer">
+                  <Image src="/assets/icons/insta.png" alt="no img" width={39} height={39} layout="fixed" />
+                </a>
+              </Link>
+              <Link href="https://twitter.com/BallsGalaxy">
+                <a target="_blank" rel="noreferrer">
+                  <Image src="/assets/icons/twitter.png" alt="no img" width={39} height={39} layout="fixed" />
+                </a>
+              </Link>
             </>
           )}
           {isMobile && (
             <>
-              <Image src="/assets/icons/facebook.png" alt="no img" width={13.84} height={13.84} layout="fixed" />
-              <Image src="/assets/icons/insta.png" alt="no img" width={13.84} height={13.84} layout="fixed" />
-              <Image src="/assets/icons/twitter.png" alt="no img" width={13.84} height={13.84} layout="fixed" />
+              <Link href="https://www.facebook.com/profile.php?id=100084007755536&is_tour_dismissed=true">
+                <a target="_blank" rel="noreferrer">
+                  <Image src="/assets/icons/facebook.png" alt="no img" width={13.84} height={13.84} layout="fixed" />
+                </a>
+              </Link>
+              <Link href="https://www.instagram.com/galaxyballs_official/?next=%2Fgalaxyballs_official%2F">
+                <a target="_blank" rel="noreferrer">
+                  <Image src="/assets/icons/insta.png" alt="no img" width={13.84} height={13.84} layout="fixed" />
+                </a>
+              </Link>
+              <Link href="https://twitter.com/BallsGalaxy">
+                <a target="_blank" rel="noreferrer">
+                  <Image src="/assets/icons/twitter.png" alt="no img" width={13.84} height={13.84} layout="fixed" />
+                </a>
+              </Link>
             </>
           )}
         </SocialLinks>

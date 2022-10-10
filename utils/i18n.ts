@@ -850,7 +850,7 @@ export const translations: StringByString = {
       A segunda parte do jogo é particularmente interessante para os gamers e exploradores. Todos os dias, novas aventuras, desafios e SpaceBalls muito valiosas esperam por você.
       <br />
       <br />
-      Com algumas dessas bolas espaciais você pode desbloquear mais opções de jogo para subir de nível, entrar no ranking e ganhar prêmios. Há também uma loja que o ajudará a atingir seus objetivos com mais rapidez.`,
+      Com algumas dessas SpaceBalls espaciais você pode desbloquear mais opções de jogo para subir de nível, entrar no ranking e ganhar prêmios. Há também uma loja que o ajudará a atingir seus objetivos com mais rapidez.`,
 
       // values-section
       rankinglist: 'Lista de ranking ',
@@ -1023,7 +1023,7 @@ export const translations: StringByString = {
       La seconda parte del gioco è particolarmente interessante per i giocatori e gli esploratori. Ogni giorno ti aspettano nuove avventure, sfide e preziosissime SpaceBall.
       <br />
       <br />
-      Con alcune di queste Balle spaziali, è possibile sbloccare altre opzioni di gioco per aumentare il livello, ottenere voci di classifica e vincere premi. C'è anche un negozio che vi aiuterà a raggiungere i vostri obiettivi più velocemente.`,
+      Con alcune di queste SpaceBalls spaziali, è possibile sbloccare altre opzioni di gioco per aumentare il livello, ottenere voci di classifica e vincere premi. C'è anche un negozio che vi aiuterà a raggiungere i vostri obiettivi più velocemente.`,
 
       // values-section
       rankinglist: 'Classifica ',
